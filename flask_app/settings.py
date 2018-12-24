@@ -31,9 +31,9 @@ class Config(object):
     BAI_DU_URL = "http://https://www.baidu.com"
 
     # 指定日志的格式，按照每天一个日志文件的方式
-    LOG_FILE = './logs/{0}-{1}.log'.format('flask_app', datetime.datetime.now().strftime("%Y-%m-%d"))
+    LOG_FILE = PROJECT_ROOT + '/logs/{0}-{1}.log'.format('flask_app', datetime.datetime.now().strftime("%Y-%m-%d"))
 
-    LOGCONFIGsss = {
+    LOGCONFIG = {
         'version': 1,
         'disable_existing_loggers': False,
         'formatters': {
@@ -77,17 +77,22 @@ class Config(object):
         }
     }
 
+    def load_other_config(self, config_list: 'config class list'):
+        for config_class in config_list:
+            self.__dict__.update(config_class.load_config())
+
 
 class ProdConfig(Config):
     """Production configuration."""
 
     ENV = 'prod'
     DEBUG = False
+    # mysql config
     SQLALCHEMY_RECORD_QUERIES = True
-    SQLALCHEMY_TRACK_MODIFICATIONS = False
     FLASKY_DB_QUERY_TIMEOUT = 1
     SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:root1234@localhost/flask_app?charset=utf8'
     SQLALCHEMY_POOL_SIZE = 100
+
     DEBUG_TB_ENABLED = False  # Disable Debug toolbar
     JSON_AS_ASCII = False
     multisubnetfailover = True
@@ -98,9 +103,14 @@ class DevConfig(Config):
 
     ENV = 'dev'
     DEBUG = True
-    SQLALCHEMY_TRACK_MODIFICATIONS = False
     SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:root1234@localhost/flask_app?charset=utf8'
     SQLALCHEMY_POOL_SIZE = 100
+    FLASKY_DB_QUERY_TIMEOUT = 1  # second level
+    # mysql config，debug use
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
+    SQLALCHEMY_RECORD_QUERIES = False
+    SQLALCHEMY_ECHO = False
+
     DEBUG_TB_ENABLED = True
     ASSETS_DEBUG = True  # Don't bundle/minify static assets
     CACHE_TYPE = 'simple'  # Can be "memcached", "redis", etc.

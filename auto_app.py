@@ -13,11 +13,13 @@ from flask_app.app import create_app
 from flask_script import Manager
 from flask_app.settings import DevConfig, ProdConfig
 from flask.helpers import get_debug_flag
-
+from flask_app.services_config import RedisConfig
 
 CONFIG = DevConfig if get_debug_flag() else ProdConfig
-
-app = create_app(CONFIG)
+config = CONFIG()
+config.load_other_config([RedisConfig])
+print(dir(config))
+app = create_app(config)
 manager = Manager(app)
 
 if __name__ == '__main__':

@@ -12,6 +12,7 @@ Database module, including the SQLAlchemy database object and DB-related utiliti
 
 from .compat import basestring
 from .extensions import db
+import datetime as dt
 
 # Alias common SQLAlchemy names
 Column = db.Column
@@ -50,6 +51,10 @@ class Model(CRUDMixin, db.Model):
     """Base model class that includes CRUD convenience methods."""
 
     __abstract__ = True
+
+    create_time = Column(db.DateTime, nullable=False, default=dt.datetime.utcnow)
+    update_time = Column(db.DateTime, nullable=False, default=dt.datetime.utcnow)
+    ordering = Column(db.Integer, default=0)
 
 
 # From Mike Bayer's "Building the app" talk
