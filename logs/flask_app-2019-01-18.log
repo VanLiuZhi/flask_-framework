@@ -1,0 +1,11 @@
+[2019-01-18 22:46:18,086] [INFO] _internal :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2019-01-18 22:46:21,160] [DEBUG] _internal : Initializing Flask-DebugToolbar log handler
+[2019-01-18 22:46:21,166] [INFO] _internal : 127.0.0.1 - - [18/Jan/2019 22:46:21] "GET / HTTP/1.1" 404 -
+[2019-01-18 22:46:21,241] [INFO] _internal : 127.0.0.1 - - [18/Jan/2019 22:46:21] "GET / HTTP/1.1" 404 -
+[2019-01-18 22:46:21,739] [INFO] _internal : 127.0.0.1 - - [18/Jan/2019 22:46:21] "GET /favicon.ico HTTP/1.1" 404 -
+[2019-01-18 22:47:19,418] [INFO] _internal :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2019-01-18 22:49:50,970] [INFO] _internal :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2019-01-18 22:49:52,538] [DEBUG] _internal : Initializing Flask-DebugToolbar log handler
+[2019-01-18 22:49:52,548] [INFO] _internal : 127.0.0.1 - - [18/Jan/2019 22:49:52] "GET / HTTP/1.1" 404 -
+[2019-01-18 22:49:52,992] [INFO] _internal : 127.0.0.1 - - [18/Jan/2019 22:49:52] "GET / HTTP/1.1" 404 -
+[2019-01-18 22:54:06,081] [INFO] _internal :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)

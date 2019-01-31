@@ -1,0 +1,155 @@
+[2019-01-19 00:30:39,666] [ERROR] __init__ : Error: Directory migrations already exists
+[2019-01-19 00:31:09,809] [DEBUG] connectionpool : Starting new HTTP connection (1): localhost:9200
+[2019-01-19 00:31:10,050] [DEBUG] connectionpool : http://localhost:9200 "DELETE /test HTTP/1.1" 200 21
+[2019-01-19 00:31:10,050] [INFO] base : DELETE http://localhost:9200/test [status:200 request:0.241s]
+[2019-01-19 00:31:10,050] [DEBUG] base : > None
+[2019-01-19 00:31:10,051] [DEBUG] base : < {"acknowledged":true}
+[2019-01-19 00:31:10,062] [DEBUG] connectionpool : http://localhost:9200 "HEAD /test HTTP/1.1" 404 0
+[2019-01-19 00:31:10,210] [DEBUG] connectionpool : http://localhost:9200 "PUT /test HTTP/1.1" 200 63
+[2019-01-19 00:31:10,211] [INFO] base : PUT http://localhost:9200/test [status:200 request:0.148s]
+[2019-01-19 00:31:10,211] [DEBUG] base : > {"mappings":{"doc":{"properties":{"id":{"type":"integer"},"title":{"type":"text"},"kind":{"type":"integer"},"content":{"type":"text"},"n_likes":{"type":"integer"},"n_collects":{"type":"integer"},"n_comments":{"type":"integer"},"can_show":{"type":"boolean"},"created_at":{"type":"date"},"tags":{"fields":{"raw":{"type":"keyword"}},"type":"text"}}}}}
+[2019-01-19 00:31:10,211] [DEBUG] base : < {"acknowledged":true,"shards_acknowledged":true,"index":"test"}
+[2019-01-19 00:37:42,786] [DEBUG] connectionpool : Starting new HTTP connection (1): localhost:9200
+[2019-01-19 00:37:42,828] [DEBUG] connectionpool : http://localhost:9200 "DELETE /test HTTP/1.1" 200 21
+[2019-01-19 00:37:42,829] [INFO] base : DELETE http://localhost:9200/test [status:200 request:0.043s]
+[2019-01-19 00:37:42,829] [DEBUG] base : > None
+[2019-01-19 00:37:42,829] [DEBUG] base : < {"acknowledged":true}
+[2019-01-19 00:37:42,832] [DEBUG] connectionpool : http://localhost:9200 "HEAD /test HTTP/1.1" 404 0
+[2019-01-19 00:37:42,917] [DEBUG] connectionpool : http://localhost:9200 "PUT /test HTTP/1.1" 200 63
+[2019-01-19 00:37:42,918] [INFO] base : PUT http://localhost:9200/test [status:200 request:0.085s]
+[2019-01-19 00:37:42,918] [DEBUG] base : > {"mappings":{"doc":{"properties":{"id":{"type":"integer"},"title":{"type":"text"},"kind":{"type":"integer"},"content":{"type":"text"},"n_likes":{"type":"integer"},"n_collects":{"type":"integer"},"n_comments":{"type":"integer"},"can_show":{"type":"boolean"},"created_at":{"type":"date"},"tags":{"fields":{"raw":{"type":"keyword"}},"type":"text"}}}}}
+[2019-01-19 00:37:42,918] [DEBUG] base : < {"acknowledged":true,"shards_acknowledged":true,"index":"test"}
+[2019-01-19 00:37:48,005] [DEBUG] connection : Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@rabbit', 'copyright': 'Copyright (C) 2007-2018 Pivotal Software, Inc.', 'information': 'Licensed under the MPL.  See http://www.rabbitmq.com/', 'platform': 'Erlang/OTP 20.3.8.5', 'product': 'RabbitMQ', 'version': '3.7.8'}, mechanisms: [b'PLAIN', b'AMQPLAIN'], locales: ['en_US']
+[2019-01-19 00:37:48,007] [DEBUG] channel : using channel_id: 1
+[2019-01-19 00:37:48,010] [DEBUG] channel : Channel open
+[2019-01-19 00:40:43,956] [DEBUG] lock : NeedRegenerationException
+[2019-01-19 00:40:43,956] [DEBUG] lock : no value, waiting for create lock
+[2019-01-19 00:40:43,957] [DEBUG] lock : value creation lock <dogpile.cache.region.CacheRegion._LockWrapper object at 0x1068f8198> acquired
+[2019-01-19 00:40:43,957] [DEBUG] lock : Calling creation function for not-yet-present value
+[2019-01-19 00:40:43,970] [DEBUG] lock : Released creation lock
+[2019-01-19 01:01:19,665] [INFO] _internal :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2019-01-19 14:50:40,377] [INFO] log : SHOW VARIABLES LIKE 'sql_mode'
+[2019-01-19 14:50:40,377] [INFO] log : {}
+[2019-01-19 14:50:40,382] [INFO] log : SHOW VARIABLES LIKE 'lower_case_table_names'
+[2019-01-19 14:50:40,382] [INFO] log : {}
+[2019-01-19 14:50:40,385] [INFO] log : SELECT DATABASE()
+[2019-01-19 14:50:40,385] [INFO] log : {}
+[2019-01-19 14:50:40,386] [INFO] log : show collation where `Charset` = 'utf8mb4' and `Collation` = 'utf8mb4_bin'
+[2019-01-19 14:50:40,386] [INFO] log : {}
+[2019-01-19 14:50:40,391] [INFO] log : SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
+[2019-01-19 14:50:40,391] [INFO] log : {}
+[2019-01-19 14:50:40,392] [INFO] log : SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
+[2019-01-19 14:50:40,392] [INFO] log : {}
+[2019-01-19 14:50:40,393] [INFO] log : SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8mb4) COLLATE utf8mb4_bin AS anon_1
+[2019-01-19 14:50:40,393] [INFO] log : {}
+[2019-01-19 14:50:40,394] [INFO] log : BEGIN (implicit)
+[2019-01-19 14:50:40,395] [INFO] log : SELECT posts.id AS posts_id, posts.created_at AS posts_created_at, posts.updated_at AS posts_updated_at, posts.author_id AS posts_author_id, posts.title AS posts_title, posts.orig_url AS posts_orig_url, posts.can_comment AS posts_can_comment 
+FROM posts 
+WHERE posts.id = %(id_1)s 
+ LIMIT %(param_1)s
+[2019-01-19 14:50:40,395] [INFO] log : {'id_1': 1, 'param_1': 1}
+[2019-01-19 14:51:04,517] [INFO] log : SELECT posts.id AS posts_id, posts.created_at AS posts_created_at, posts.updated_at AS posts_updated_at, posts.author_id AS posts_author_id, posts.title AS posts_title, posts.orig_url AS posts_orig_url, posts.can_comment AS posts_can_comment 
+FROM posts 
+WHERE posts.id = %(id_1)s 
+ LIMIT %(param_1)s
+[2019-01-19 14:51:04,517] [INFO] log : {'id_1': 1, 'param_1': 1}
+[2019-01-19 15:48:27,293] [INFO] log : SELECT posts.id AS posts_id, posts.created_at AS posts_created_at, posts.updated_at AS posts_updated_at, posts.author_id AS posts_author_id, posts.title AS posts_title, posts.orig_url AS posts_orig_url, posts.can_comment AS posts_can_comment 
+FROM posts 
+WHERE posts.id = %(param_1)s
+[2019-01-19 15:48:27,294] [INFO] log : {'param_1': 1}
+[2019-01-19 15:48:32,331] [INFO] log : SELECT posts.id AS posts_id, posts.created_at AS posts_created_at, posts.updated_at AS posts_updated_at, posts.author_id AS posts_author_id, posts.title AS posts_title, posts.orig_url AS posts_orig_url, posts.can_comment AS posts_can_comment 
+FROM posts 
+WHERE posts.id = %(param_1)s
+[2019-01-19 15:48:32,331] [INFO] log : {'param_1': 1}
+[2019-01-19 15:48:39,577] [INFO] log : SELECT posts.id AS posts_id, posts.created_at AS posts_created_at, posts.updated_at AS posts_updated_at, posts.author_id AS posts_author_id, posts.title AS posts_title, posts.orig_url AS posts_orig_url, posts.can_comment AS posts_can_comment 
+FROM posts 
+WHERE posts.id = %(param_1)s
+[2019-01-19 15:48:39,577] [INFO] log : {'param_1': 1}
+[2019-01-19 15:48:42,883] [INFO] log : SELECT posts.id AS posts_id, posts.created_at AS posts_created_at, posts.updated_at AS posts_updated_at, posts.author_id AS posts_author_id, posts.title AS posts_title, posts.orig_url AS posts_orig_url, posts.can_comment AS posts_can_comment 
+FROM posts 
+WHERE posts.id = %(param_1)s
+[2019-01-19 15:48:42,883] [INFO] log : {'param_1': 2}
+[2019-01-19 15:48:45,633] [INFO] log : SELECT posts.id AS posts_id, posts.created_at AS posts_created_at, posts.updated_at AS posts_updated_at, posts.author_id AS posts_author_id, posts.title AS posts_title, posts.orig_url AS posts_orig_url, posts.can_comment AS posts_can_comment 
+FROM posts 
+WHERE posts.id = %(param_1)s
+[2019-01-19 15:48:45,633] [INFO] log : {'param_1': 2}
+[2019-01-19 16:58:57,112] [INFO] log : SELECT posts.id AS posts_id, posts.created_at AS posts_created_at, posts.updated_at AS posts_updated_at, posts.author_id AS posts_author_id, posts.title AS posts_title, posts.orig_url AS posts_orig_url, posts.can_comment AS posts_can_comment 
+FROM posts
+[2019-01-19 16:58:57,114] [INFO] log : {}
+[2019-01-19 16:59:15,686] [INFO] log : SELECT posts.id AS posts_id, posts.created_at AS posts_created_at, posts.updated_at AS posts_updated_at, posts.author_id AS posts_author_id, posts.title AS posts_title, posts.orig_url AS posts_orig_url, posts.can_comment AS posts_can_comment 
+FROM posts 
+ LIMIT %(param_1)s, 18446744073709551615
+[2019-01-19 16:59:15,687] [INFO] log : {'param_1': 2}
+[2019-01-19 17:01:12,585] [INFO] log : SELECT posts.id AS posts_id, posts.created_at AS posts_created_at, posts.updated_at AS posts_updated_at, posts.author_id AS posts_author_id, posts.title AS posts_title, posts.orig_url AS posts_orig_url, posts.can_comment AS posts_can_comment 
+FROM posts 
+ LIMIT %(param_1)s, %(param_2)s
+[2019-01-19 17:01:12,586] [INFO] log : {'param_1': 2, 'param_2': 6}
+[2019-01-19 17:03:13,182] [INFO] log : SELECT posts.id AS posts_id, posts.created_at AS posts_created_at, posts.updated_at AS posts_updated_at, posts.author_id AS posts_author_id, posts.title AS posts_title, posts.orig_url AS posts_orig_url, posts.can_comment AS posts_can_comment 
+FROM posts 
+ LIMIT %(param_1)s, %(param_2)s
+[2019-01-19 17:03:13,182] [INFO] log : {'param_1': 10, 'param_2': 10}
+[2019-01-19 17:03:29,207] [INFO] log : SELECT posts.id AS posts_id, posts.created_at AS posts_created_at, posts.updated_at AS posts_updated_at, posts.author_id AS posts_author_id, posts.title AS posts_title, posts.orig_url AS posts_orig_url, posts.can_comment AS posts_can_comment 
+FROM posts
+[2019-01-19 17:03:29,207] [INFO] log : {}
+[2019-01-19 17:12:52,411] [INFO] log : SELECT posts.id AS posts_id, posts.created_at AS posts_created_at, posts.updated_at AS posts_updated_at, posts.author_id AS posts_author_id, posts.title AS posts_title, posts.orig_url AS posts_orig_url, posts.can_comment AS posts_can_comment 
+FROM posts
+[2019-01-19 17:12:52,412] [INFO] log : {}
+[2019-01-19 17:13:02,010] [INFO] log : SELECT posts.id AS posts_id, posts.created_at AS posts_created_at, posts.updated_at AS posts_updated_at, posts.author_id AS posts_author_id, posts.title AS posts_title, posts.orig_url AS posts_orig_url, posts.can_comment AS posts_can_comment 
+FROM posts
+[2019-01-19 17:13:02,011] [INFO] log : {}
+[2019-01-19 17:13:15,807] [INFO] log : SELECT posts.id AS posts_id, posts.created_at AS posts_created_at, posts.updated_at AS posts_updated_at, posts.author_id AS posts_author_id, posts.title AS posts_title, posts.orig_url AS posts_orig_url, posts.can_comment AS posts_can_comment 
+FROM posts 
+ LIMIT %(param_1)s, %(param_2)s
+[2019-01-19 17:13:15,808] [INFO] log : {'param_1': 2, 'param_2': 6}
+[2019-01-19 17:13:38,339] [INFO] log : SELECT posts.id AS posts_id, posts.created_at AS posts_created_at, posts.updated_at AS posts_updated_at, posts.author_id AS posts_author_id, posts.title AS posts_title, posts.orig_url AS posts_orig_url, posts.can_comment AS posts_can_comment 
+FROM posts 
+ LIMIT %(param_1)s, %(param_2)s
+[2019-01-19 17:13:38,340] [INFO] log : {'param_1': 2, 'param_2': 6}
+[2019-01-19 17:13:46,898] [INFO] log : SELECT posts.id AS posts_id, posts.created_at AS posts_created_at, posts.updated_at AS posts_updated_at, posts.author_id AS posts_author_id, posts.title AS posts_title, posts.orig_url AS posts_orig_url, posts.can_comment AS posts_can_comment 
+FROM posts
+[2019-01-19 17:13:46,898] [INFO] log : {}
+[2019-01-19 17:14:58,137] [INFO] log : ROLLBACK
+[2019-01-19 17:15:04,507] [INFO] log : SHOW VARIABLES LIKE 'sql_mode'
+[2019-01-19 17:15:04,507] [INFO] log : {}
+[2019-01-19 17:15:04,513] [INFO] log : SHOW VARIABLES LIKE 'lower_case_table_names'
+[2019-01-19 17:15:04,513] [INFO] log : {}
+[2019-01-19 17:15:04,515] [INFO] log : SELECT DATABASE()
+[2019-01-19 17:15:04,515] [INFO] log : {}
+[2019-01-19 17:15:04,516] [INFO] log : show collation where `Charset` = 'utf8mb4' and `Collation` = 'utf8mb4_bin'
+[2019-01-19 17:15:04,516] [INFO] log : {}
+[2019-01-19 17:15:04,521] [INFO] log : SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
+[2019-01-19 17:15:04,521] [INFO] log : {}
+[2019-01-19 17:15:04,521] [INFO] log : SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
+[2019-01-19 17:15:04,522] [INFO] log : {}
+[2019-01-19 17:15:04,522] [INFO] log : SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8mb4) COLLATE utf8mb4_bin AS anon_1
+[2019-01-19 17:15:04,522] [INFO] log : {}
+[2019-01-19 17:15:04,523] [INFO] log : BEGIN (implicit)
+[2019-01-19 17:15:04,524] [INFO] log : SELECT posts.id AS posts_id, posts.created_at AS posts_created_at, posts.updated_at AS posts_updated_at, posts.author_id AS posts_author_id, posts.title AS posts_title, posts.orig_url AS posts_orig_url, posts.can_comment AS posts_can_comment 
+FROM posts
+[2019-01-19 17:15:04,525] [INFO] log : {}
+[2019-01-19 17:15:20,824] [INFO] log : SELECT posts.id AS posts_id, posts.created_at AS posts_created_at, posts.updated_at AS posts_updated_at, posts.author_id AS posts_author_id, posts.title AS posts_title, posts.orig_url AS posts_orig_url, posts.can_comment AS posts_can_comment 
+FROM posts
+[2019-01-19 17:15:20,824] [INFO] log : {}
+[2019-01-19 17:15:37,159] [INFO] log : ROLLBACK
+[2019-01-19 17:16:25,543] [INFO] log : SHOW VARIABLES LIKE 'sql_mode'
+[2019-01-19 17:16:25,543] [INFO] log : {}
+[2019-01-19 17:16:25,545] [INFO] log : SHOW VARIABLES LIKE 'lower_case_table_names'
+[2019-01-19 17:16:25,546] [INFO] log : {}
+[2019-01-19 17:16:25,547] [INFO] log : SELECT DATABASE()
+[2019-01-19 17:16:25,547] [INFO] log : {}
+[2019-01-19 17:16:25,548] [INFO] log : show collation where `Charset` = 'utf8mb4' and `Collation` = 'utf8mb4_bin'
+[2019-01-19 17:16:25,548] [INFO] log : {}
+[2019-01-19 17:16:25,551] [INFO] log : SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
+[2019-01-19 17:16:25,551] [INFO] log : {}
+[2019-01-19 17:16:25,552] [INFO] log : SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
+[2019-01-19 17:16:25,552] [INFO] log : {}
+[2019-01-19 17:16:25,553] [INFO] log : SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8mb4) COLLATE utf8mb4_bin AS anon_1
+[2019-01-19 17:16:25,553] [INFO] log : {}
+[2019-01-19 17:16:25,554] [INFO] log : BEGIN (implicit)
+[2019-01-19 17:16:25,555] [INFO] log : SELECT posts.id AS posts_id, posts.created_at AS posts_created_at, posts.updated_at AS posts_updated_at, posts.author_id AS posts_author_id, posts.title AS posts_title, posts.orig_url AS posts_orig_url, posts.can_comment AS posts_can_comment 
+FROM posts
+[2019-01-19 17:16:25,555] [INFO] log : {}
+[2019-01-19 17:16:28,720] [INFO] log : SELECT posts.id AS posts_id, posts.created_at AS posts_created_at, posts.updated_at AS posts_updated_at, posts.author_id AS posts_author_id, posts.title AS posts_title, posts.orig_url AS posts_orig_url, posts.can_comment AS posts_can_comment 
+FROM posts 
+ LIMIT %(param_1)s, %(param_2)s
+[2019-01-19 17:16:28,720] [INFO] log : {'param_1': 2, 'param_2': 6}

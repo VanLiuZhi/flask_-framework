@@ -1,0 +1,530 @@
+[2019-01-31 00:02:05,320] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:02:05] "GET /index/ HTTP/1.1" 200 -
+[2019-01-31 00:02:05,439] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:02:05] "GET /static/ele_ui_web/static/js/manifest.c582ee93643d7c50d417.js HTTP/1.1" 200 -
+[2019-01-31 00:02:05,440] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:02:05] "GET /static/ele_ui_web/static/js/app.9116e98aa994e2b5edde.js HTTP/1.1" 200 -
+[2019-01-31 00:02:05,443] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:02:05] "GET /static/ele_ui_web/static/css/app.ec55e1543cb9e0de8f55453c106d7e4e.css HTTP/1.1" 200 -
+[2019-01-31 00:02:05,444] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:02:05] "GET /static/ele_ui_web/static/js/vendor.d9f8435f7a13d4255019.js HTTP/1.1" 200 -
+[2019-01-31 00:02:05,450] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:02:05] "GET /_debug_toolbar/static/js/jquery.js HTTP/1.1" 200 -
+[2019-01-31 00:02:05,462] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:02:05] "GET /_debug_toolbar/static/js/jquery.tablesorter.js HTTP/1.1" 200 -
+[2019-01-31 00:02:05,468] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:02:05] "GET /_debug_toolbar/static/js/toolbar.js HTTP/1.1" 200 -
+[2019-01-31 00:02:05,702] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:02:05] "GET /static/html/apple_watch.html HTTP/1.1" 200 -
+[2019-01-31 00:02:05,836] [INFO] post_api : getPostList
+[2019-01-31 00:02:05,845] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:02:05] "POST /api/post/getTag HTTP/1.1" 200 -
+[2019-01-31 00:02:05,855] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:02:05] "GET /_debug_toolbar/static/css/toolbar.css?0.02137677904691815 HTTP/1.1" 200 -
+[2019-01-31 00:02:05,883] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:02:05] "POST /api/post/getPostList HTTP/1.1" 500 -
+[2019-01-31 00:02:05,978] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:02:05] "GET /_debug_toolbar/static/img/tick-red.png HTTP/1.1" 200 -
+[2019-01-31 00:02:06,204] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:02:06] "GET /static/ele_ui_web/favicon.ico HTTP/1.1" 200 -
+[2019-01-31 00:02:14,539] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:02:14] "GET /_debug_toolbar/static/img/djdt_vertical.png HTTP/1.1" 200 -
+[2019-01-31 00:03:51,867] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:03:51] "GET /index/ HTTP/1.1" 200 -
+[2019-01-31 00:03:52,217] [INFO] post_api : getPostList
+[2019-01-31 00:03:52,227] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:03:52] "POST /api/post/getTag HTTP/1.1" 200 -
+[2019-01-31 00:03:52,245] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:03:52] "GET /_debug_toolbar/static/css/toolbar.css?0.7847006823542486 HTTP/1.1" 200 -
+[2019-01-31 00:03:52,482] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:03:52] "GET /static/ele_ui_web/favicon.ico HTTP/1.1" 200 -
+[2019-01-31 00:03:52,588] [INFO] log : SHOW VARIABLES LIKE 'sql_mode'
+[2019-01-31 00:03:52,588] [INFO] log : {}
+[2019-01-31 00:03:52,613] [INFO] log : SHOW VARIABLES LIKE 'lower_case_table_names'
+[2019-01-31 00:03:52,614] [INFO] log : {}
+[2019-01-31 00:03:52,622] [INFO] log : SELECT DATABASE()
+[2019-01-31 00:03:52,622] [INFO] log : {}
+[2019-01-31 00:03:52,627] [INFO] log : show collation where `Charset` = 'utf8mb4' and `Collation` = 'utf8mb4_bin'
+[2019-01-31 00:03:52,627] [INFO] log : {}
+[2019-01-31 00:03:52,641] [INFO] log : SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
+[2019-01-31 00:03:52,642] [INFO] log : {}
+[2019-01-31 00:03:52,644] [INFO] log : SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
+[2019-01-31 00:03:52,644] [INFO] log : {}
+[2019-01-31 00:03:52,647] [INFO] log : SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8mb4) COLLATE utf8mb4_bin AS anon_1
+[2019-01-31 00:03:52,648] [INFO] log : {}
+[2019-01-31 00:03:52,652] [INFO] log : BEGIN (implicit)
+[2019-01-31 00:03:52,660] [INFO] log : SELECT posts.id AS posts_id, posts.created_at AS posts_created_at, posts.updated_at AS posts_updated_at, posts.author_id AS posts_author_id, posts.title AS posts_title, posts.orig_url AS posts_orig_url, posts.can_comment AS posts_can_comment 
+FROM posts ORDER BY -created_at 
+ LIMIT %(param_1)s, %(param_2)s
+[2019-01-31 00:03:52,661] [INFO] log : {'param_1': 0, 'param_2': 5}
+[2019-01-31 00:03:52,763] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT posts.id AS posts_id, posts.created_at AS posts_created_at, posts.updated_at AS posts_updated_at, posts.author_id AS posts_author_id, posts.title AS posts_title, posts.orig_url AS posts_orig_url, posts.can_comment AS posts_can_comment 
+FROM posts) AS anon_1
+[2019-01-31 00:03:52,764] [INFO] log : {}
+[2019-01-31 00:03:52,802] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT comment_items.id AS comment_items_id, comment_items.created_at AS comment_items_created_at, comment_items.updated_at AS comment_items_updated_at, comment_items.user_id AS comment_items_user_id, comment_items.target_id AS comment_items_target_id, comment_items.target_kind AS comment_items_target_kind, comment_items.ref_id AS comment_items_ref_id 
+FROM comment_items 
+WHERE comment_items.target_id = %(target_id_1)s AND comment_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-01-31 00:03:52,802] [INFO] log : {'target_id_1': 1, 'target_kind_1': 1001}
+[2019-01-31 00:03:52,817] [INFO] log : SELECT post_tags.tag_id AS post_tags_tag_id 
+FROM post_tags 
+WHERE post_tags.post_id = %(post_id_1)s
+[2019-01-31 00:03:52,818] [INFO] log : {'post_id_1': 1}
+[2019-01-31 00:03:52,828] [INFO] log : SELECT tags.id AS tags_id, tags.created_at AS tags_created_at, tags.updated_at AS tags_updated_at, tags.name AS tags_name 
+FROM tags 
+WHERE tags.id IN (%(id_1)s, %(id_2)s, %(id_3)s, %(id_4)s)
+[2019-01-31 00:03:52,828] [INFO] log : {'id_1': 1, 'id_2': 2, 'id_3': 3, 'id_4': 4}
+[2019-01-31 00:03:52,854] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT collect_items.id AS collect_items_id, collect_items.created_at AS collect_items_created_at, collect_items.updated_at AS collect_items_updated_at, collect_items.user_id AS collect_items_user_id, collect_items.target_id AS collect_items_target_id, collect_items.target_kind AS collect_items_target_kind 
+FROM collect_items 
+WHERE collect_items.target_id = %(target_id_1)s AND collect_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-01-31 00:03:52,855] [INFO] log : {'target_id_1': 1, 'target_kind_1': 1001}
+[2019-01-31 00:03:52,874] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT like_items.id AS like_items_id, like_items.created_at AS like_items_created_at, like_items.updated_at AS like_items_updated_at, like_items.user_id AS like_items_user_id, like_items.target_id AS like_items_target_id, like_items.target_kind AS like_items_target_kind 
+FROM like_items 
+WHERE like_items.target_id = %(target_id_1)s AND like_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-01-31 00:03:52,874] [INFO] log : {'target_id_1': 1, 'target_kind_1': 1001}
+[2019-01-31 00:03:52,892] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT comment_items.id AS comment_items_id, comment_items.created_at AS comment_items_created_at, comment_items.updated_at AS comment_items_updated_at, comment_items.user_id AS comment_items_user_id, comment_items.target_id AS comment_items_target_id, comment_items.target_kind AS comment_items_target_kind, comment_items.ref_id AS comment_items_ref_id 
+FROM comment_items 
+WHERE comment_items.target_id = %(target_id_1)s AND comment_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-01-31 00:03:52,893] [INFO] log : {'target_id_1': 2, 'target_kind_1': 1001}
+[2019-01-31 00:03:52,900] [INFO] log : SELECT post_tags.tag_id AS post_tags_tag_id 
+FROM post_tags 
+WHERE post_tags.post_id = %(post_id_1)s
+[2019-01-31 00:03:52,900] [INFO] log : {'post_id_1': 2}
+[2019-01-31 00:03:52,905] [INFO] log : SELECT tags.id AS tags_id, tags.created_at AS tags_created_at, tags.updated_at AS tags_updated_at, tags.name AS tags_name 
+FROM tags 
+WHERE tags.id IN (%(id_1)s, %(id_2)s)
+[2019-01-31 00:03:52,906] [INFO] log : {'id_1': 5, 'id_2': 6}
+[2019-01-31 00:03:52,922] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT collect_items.id AS collect_items_id, collect_items.created_at AS collect_items_created_at, collect_items.updated_at AS collect_items_updated_at, collect_items.user_id AS collect_items_user_id, collect_items.target_id AS collect_items_target_id, collect_items.target_kind AS collect_items_target_kind 
+FROM collect_items 
+WHERE collect_items.target_id = %(target_id_1)s AND collect_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-01-31 00:03:52,923] [INFO] log : {'target_id_1': 2, 'target_kind_1': 1001}
+[2019-01-31 00:03:52,938] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT like_items.id AS like_items_id, like_items.created_at AS like_items_created_at, like_items.updated_at AS like_items_updated_at, like_items.user_id AS like_items_user_id, like_items.target_id AS like_items_target_id, like_items.target_kind AS like_items_target_kind 
+FROM like_items 
+WHERE like_items.target_id = %(target_id_1)s AND like_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-01-31 00:03:52,939] [INFO] log : {'target_id_1': 2, 'target_kind_1': 1001}
+[2019-01-31 00:03:52,955] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT comment_items.id AS comment_items_id, comment_items.created_at AS comment_items_created_at, comment_items.updated_at AS comment_items_updated_at, comment_items.user_id AS comment_items_user_id, comment_items.target_id AS comment_items_target_id, comment_items.target_kind AS comment_items_target_kind, comment_items.ref_id AS comment_items_ref_id 
+FROM comment_items 
+WHERE comment_items.target_id = %(target_id_1)s AND comment_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-01-31 00:03:52,956] [INFO] log : {'target_id_1': 3, 'target_kind_1': 1001}
+[2019-01-31 00:03:52,963] [INFO] log : SELECT post_tags.tag_id AS post_tags_tag_id 
+FROM post_tags 
+WHERE post_tags.post_id = %(post_id_1)s
+[2019-01-31 00:03:52,963] [INFO] log : {'post_id_1': 3}
+[2019-01-31 00:03:52,968] [INFO] log : SELECT tags.id AS tags_id, tags.created_at AS tags_created_at, tags.updated_at AS tags_updated_at, tags.name AS tags_name 
+FROM tags 
+WHERE tags.id IN (%(id_1)s, %(id_2)s)
+[2019-01-31 00:03:52,969] [INFO] log : {'id_1': 8, 'id_2': 7}
+[2019-01-31 00:03:52,991] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT collect_items.id AS collect_items_id, collect_items.created_at AS collect_items_created_at, collect_items.updated_at AS collect_items_updated_at, collect_items.user_id AS collect_items_user_id, collect_items.target_id AS collect_items_target_id, collect_items.target_kind AS collect_items_target_kind 
+FROM collect_items 
+WHERE collect_items.target_id = %(target_id_1)s AND collect_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-01-31 00:03:52,993] [INFO] log : {'target_id_1': 3, 'target_kind_1': 1001}
+[2019-01-31 00:03:53,012] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT like_items.id AS like_items_id, like_items.created_at AS like_items_created_at, like_items.updated_at AS like_items_updated_at, like_items.user_id AS like_items_user_id, like_items.target_id AS like_items_target_id, like_items.target_kind AS like_items_target_kind 
+FROM like_items 
+WHERE like_items.target_id = %(target_id_1)s AND like_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-01-31 00:03:53,013] [INFO] log : {'target_id_1': 3, 'target_kind_1': 1001}
+[2019-01-31 00:03:53,029] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT comment_items.id AS comment_items_id, comment_items.created_at AS comment_items_created_at, comment_items.updated_at AS comment_items_updated_at, comment_items.user_id AS comment_items_user_id, comment_items.target_id AS comment_items_target_id, comment_items.target_kind AS comment_items_target_kind, comment_items.ref_id AS comment_items_ref_id 
+FROM comment_items 
+WHERE comment_items.target_id = %(target_id_1)s AND comment_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-01-31 00:03:53,030] [INFO] log : {'target_id_1': 4, 'target_kind_1': 1001}
+[2019-01-31 00:03:53,037] [INFO] log : SELECT post_tags.tag_id AS post_tags_tag_id 
+FROM post_tags 
+WHERE post_tags.post_id = %(post_id_1)s
+[2019-01-31 00:03:53,037] [INFO] log : {'post_id_1': 4}
+[2019-01-31 00:03:53,043] [INFO] log : SELECT tags.id AS tags_id, tags.created_at AS tags_created_at, tags.updated_at AS tags_updated_at, tags.name AS tags_name 
+FROM tags 
+WHERE tags.id IN (%(id_1)s, %(id_2)s, %(id_3)s, %(id_4)s, %(id_5)s)
+[2019-01-31 00:03:53,044] [INFO] log : {'id_1': 5, 'id_2': 6, 'id_3': 8, 'id_4': 9, 'id_5': 10}
+[2019-01-31 00:03:53,063] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT collect_items.id AS collect_items_id, collect_items.created_at AS collect_items_created_at, collect_items.updated_at AS collect_items_updated_at, collect_items.user_id AS collect_items_user_id, collect_items.target_id AS collect_items_target_id, collect_items.target_kind AS collect_items_target_kind 
+FROM collect_items 
+WHERE collect_items.target_id = %(target_id_1)s AND collect_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-01-31 00:03:53,064] [INFO] log : {'target_id_1': 4, 'target_kind_1': 1001}
+[2019-01-31 00:03:53,077] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT like_items.id AS like_items_id, like_items.created_at AS like_items_created_at, like_items.updated_at AS like_items_updated_at, like_items.user_id AS like_items_user_id, like_items.target_id AS like_items_target_id, like_items.target_kind AS like_items_target_kind 
+FROM like_items 
+WHERE like_items.target_id = %(target_id_1)s AND like_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-01-31 00:03:53,078] [INFO] log : {'target_id_1': 4, 'target_kind_1': 1001}
+[2019-01-31 00:03:53,094] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT comment_items.id AS comment_items_id, comment_items.created_at AS comment_items_created_at, comment_items.updated_at AS comment_items_updated_at, comment_items.user_id AS comment_items_user_id, comment_items.target_id AS comment_items_target_id, comment_items.target_kind AS comment_items_target_kind, comment_items.ref_id AS comment_items_ref_id 
+FROM comment_items 
+WHERE comment_items.target_id = %(target_id_1)s AND comment_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-01-31 00:03:53,095] [INFO] log : {'target_id_1': 5, 'target_kind_1': 1001}
+[2019-01-31 00:03:53,102] [INFO] log : SELECT post_tags.tag_id AS post_tags_tag_id 
+FROM post_tags 
+WHERE post_tags.post_id = %(post_id_1)s
+[2019-01-31 00:03:53,102] [INFO] log : {'post_id_1': 5}
+[2019-01-31 00:03:53,108] [INFO] log : SELECT tags.id AS tags_id, tags.created_at AS tags_created_at, tags.updated_at AS tags_updated_at, tags.name AS tags_name 
+FROM tags 
+WHERE tags.id IN (%(id_1)s, %(id_2)s, %(id_3)s, %(id_4)s, %(id_5)s)
+[2019-01-31 00:03:53,108] [INFO] log : {'id_1': 8, 'id_2': 9, 'id_3': 10, 'id_4': 11, 'id_5': 12}
+[2019-01-31 00:03:53,126] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT collect_items.id AS collect_items_id, collect_items.created_at AS collect_items_created_at, collect_items.updated_at AS collect_items_updated_at, collect_items.user_id AS collect_items_user_id, collect_items.target_id AS collect_items_target_id, collect_items.target_kind AS collect_items_target_kind 
+FROM collect_items 
+WHERE collect_items.target_id = %(target_id_1)s AND collect_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-01-31 00:03:53,127] [INFO] log : {'target_id_1': 5, 'target_kind_1': 1001}
+[2019-01-31 00:03:53,147] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT like_items.id AS like_items_id, like_items.created_at AS like_items_created_at, like_items.updated_at AS like_items_updated_at, like_items.user_id AS like_items_user_id, like_items.target_id AS like_items_target_id, like_items.target_kind AS like_items_target_kind 
+FROM like_items 
+WHERE like_items.target_id = %(target_id_1)s AND like_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-01-31 00:03:53,148] [INFO] log : {'target_id_1': 5, 'target_kind_1': 1001}
+[2019-01-31 00:03:53,155] [INFO] log : ROLLBACK
+[2019-01-31 00:03:53,157] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:03:53] "POST /api/post/getPostList HTTP/1.1" 200 -
+[2019-01-31 00:04:01,266] [INFO] post_api : getPostList
+[2019-01-31 00:04:01,288] [INFO] log : BEGIN (implicit)
+[2019-01-31 00:04:01,293] [INFO] log : SELECT posts.id AS posts_id, posts.created_at AS posts_created_at, posts.updated_at AS posts_updated_at, posts.author_id AS posts_author_id, posts.title AS posts_title, posts.orig_url AS posts_orig_url, posts.can_comment AS posts_can_comment 
+FROM posts ORDER BY -created_at 
+ LIMIT %(param_1)s, %(param_2)s
+[2019-01-31 00:04:01,294] [INFO] log : {'param_1': 15, 'param_2': 5}
+[2019-01-31 00:04:01,315] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT posts.id AS posts_id, posts.created_at AS posts_created_at, posts.updated_at AS posts_updated_at, posts.author_id AS posts_author_id, posts.title AS posts_title, posts.orig_url AS posts_orig_url, posts.can_comment AS posts_can_comment 
+FROM posts) AS anon_1
+[2019-01-31 00:04:01,317] [INFO] log : {}
+[2019-01-31 00:04:01,348] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT comment_items.id AS comment_items_id, comment_items.created_at AS comment_items_created_at, comment_items.updated_at AS comment_items_updated_at, comment_items.user_id AS comment_items_user_id, comment_items.target_id AS comment_items_target_id, comment_items.target_kind AS comment_items_target_kind, comment_items.ref_id AS comment_items_ref_id 
+FROM comment_items 
+WHERE comment_items.target_id = %(target_id_1)s AND comment_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-01-31 00:04:01,348] [INFO] log : {'target_id_1': 16, 'target_kind_1': 1001}
+[2019-01-31 00:04:01,357] [INFO] log : SELECT post_tags.tag_id AS post_tags_tag_id 
+FROM post_tags 
+WHERE post_tags.post_id = %(post_id_1)s
+[2019-01-31 00:04:01,358] [INFO] log : {'post_id_1': 16}
+[2019-01-31 00:04:01,364] [INFO] log : SELECT tags.id AS tags_id, tags.created_at AS tags_created_at, tags.updated_at AS tags_updated_at, tags.name AS tags_name 
+FROM tags 
+WHERE tags.id IN (%(id_1)s, %(id_2)s, %(id_3)s, %(id_4)s)
+[2019-01-31 00:04:01,365] [INFO] log : {'id_1': 36, 'id_2': 37, 'id_3': 38, 'id_4': 39}
+[2019-01-31 00:04:01,391] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT collect_items.id AS collect_items_id, collect_items.created_at AS collect_items_created_at, collect_items.updated_at AS collect_items_updated_at, collect_items.user_id AS collect_items_user_id, collect_items.target_id AS collect_items_target_id, collect_items.target_kind AS collect_items_target_kind 
+FROM collect_items 
+WHERE collect_items.target_id = %(target_id_1)s AND collect_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-01-31 00:04:01,392] [INFO] log : {'target_id_1': 16, 'target_kind_1': 1001}
+[2019-01-31 00:04:01,409] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT like_items.id AS like_items_id, like_items.created_at AS like_items_created_at, like_items.updated_at AS like_items_updated_at, like_items.user_id AS like_items_user_id, like_items.target_id AS like_items_target_id, like_items.target_kind AS like_items_target_kind 
+FROM like_items 
+WHERE like_items.target_id = %(target_id_1)s AND like_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-01-31 00:04:01,410] [INFO] log : {'target_id_1': 16, 'target_kind_1': 1001}
+[2019-01-31 00:04:01,429] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT comment_items.id AS comment_items_id, comment_items.created_at AS comment_items_created_at, comment_items.updated_at AS comment_items_updated_at, comment_items.user_id AS comment_items_user_id, comment_items.target_id AS comment_items_target_id, comment_items.target_kind AS comment_items_target_kind, comment_items.ref_id AS comment_items_ref_id 
+FROM comment_items 
+WHERE comment_items.target_id = %(target_id_1)s AND comment_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-01-31 00:04:01,429] [INFO] log : {'target_id_1': 17, 'target_kind_1': 1001}
+[2019-01-31 00:04:01,438] [INFO] log : SELECT post_tags.tag_id AS post_tags_tag_id 
+FROM post_tags 
+WHERE post_tags.post_id = %(post_id_1)s
+[2019-01-31 00:04:01,438] [INFO] log : {'post_id_1': 17}
+[2019-01-31 00:04:01,445] [INFO] log : SELECT tags.id AS tags_id, tags.created_at AS tags_created_at, tags.updated_at AS tags_updated_at, tags.name AS tags_name 
+FROM tags 
+WHERE tags.id IN (%(id_1)s, %(id_2)s, %(id_3)s, %(id_4)s, %(id_5)s)
+[2019-01-31 00:04:01,445] [INFO] log : {'id_1': 40, 'id_2': 41, 'id_3': 42, 'id_4': 43, 'id_5': 44}
+[2019-01-31 00:04:01,471] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT collect_items.id AS collect_items_id, collect_items.created_at AS collect_items_created_at, collect_items.updated_at AS collect_items_updated_at, collect_items.user_id AS collect_items_user_id, collect_items.target_id AS collect_items_target_id, collect_items.target_kind AS collect_items_target_kind 
+FROM collect_items 
+WHERE collect_items.target_id = %(target_id_1)s AND collect_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-01-31 00:04:01,472] [INFO] log : {'target_id_1': 17, 'target_kind_1': 1001}
+[2019-01-31 00:04:01,498] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT like_items.id AS like_items_id, like_items.created_at AS like_items_created_at, like_items.updated_at AS like_items_updated_at, like_items.user_id AS like_items_user_id, like_items.target_id AS like_items_target_id, like_items.target_kind AS like_items_target_kind 
+FROM like_items 
+WHERE like_items.target_id = %(target_id_1)s AND like_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-01-31 00:04:01,499] [INFO] log : {'target_id_1': 17, 'target_kind_1': 1001}
+[2019-01-31 00:04:01,536] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT comment_items.id AS comment_items_id, comment_items.created_at AS comment_items_created_at, comment_items.updated_at AS comment_items_updated_at, comment_items.user_id AS comment_items_user_id, comment_items.target_id AS comment_items_target_id, comment_items.target_kind AS comment_items_target_kind, comment_items.ref_id AS comment_items_ref_id 
+FROM comment_items 
+WHERE comment_items.target_id = %(target_id_1)s AND comment_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-01-31 00:04:01,537] [INFO] log : {'target_id_1': 18, 'target_kind_1': 1001}
+[2019-01-31 00:04:01,548] [INFO] log : SELECT post_tags.tag_id AS post_tags_tag_id 
+FROM post_tags 
+WHERE post_tags.post_id = %(post_id_1)s
+[2019-01-31 00:04:01,550] [INFO] log : {'post_id_1': 18}
+[2019-01-31 00:04:01,558] [INFO] log : SELECT tags.id AS tags_id, tags.created_at AS tags_created_at, tags.updated_at AS tags_updated_at, tags.name AS tags_name 
+FROM tags 
+WHERE tags.id IN (%(id_1)s, %(id_2)s, %(id_3)s, %(id_4)s)
+[2019-01-31 00:04:01,559] [INFO] log : {'id_1': 46, 'id_2': 45, 'id_3': 22, 'id_4': 47}
+[2019-01-31 00:04:01,583] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT collect_items.id AS collect_items_id, collect_items.created_at AS collect_items_created_at, collect_items.updated_at AS collect_items_updated_at, collect_items.user_id AS collect_items_user_id, collect_items.target_id AS collect_items_target_id, collect_items.target_kind AS collect_items_target_kind 
+FROM collect_items 
+WHERE collect_items.target_id = %(target_id_1)s AND collect_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-01-31 00:04:01,583] [INFO] log : {'target_id_1': 18, 'target_kind_1': 1001}
+[2019-01-31 00:04:01,601] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT like_items.id AS like_items_id, like_items.created_at AS like_items_created_at, like_items.updated_at AS like_items_updated_at, like_items.user_id AS like_items_user_id, like_items.target_id AS like_items_target_id, like_items.target_kind AS like_items_target_kind 
+FROM like_items 
+WHERE like_items.target_id = %(target_id_1)s AND like_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-01-31 00:04:01,602] [INFO] log : {'target_id_1': 18, 'target_kind_1': 1001}
+[2019-01-31 00:04:01,621] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT comment_items.id AS comment_items_id, comment_items.created_at AS comment_items_created_at, comment_items.updated_at AS comment_items_updated_at, comment_items.user_id AS comment_items_user_id, comment_items.target_id AS comment_items_target_id, comment_items.target_kind AS comment_items_target_kind, comment_items.ref_id AS comment_items_ref_id 
+FROM comment_items 
+WHERE comment_items.target_id = %(target_id_1)s AND comment_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-01-31 00:04:01,621] [INFO] log : {'target_id_1': 19, 'target_kind_1': 1001}
+[2019-01-31 00:04:01,629] [INFO] log : SELECT post_tags.tag_id AS post_tags_tag_id 
+FROM post_tags 
+WHERE post_tags.post_id = %(post_id_1)s
+[2019-01-31 00:04:01,630] [INFO] log : {'post_id_1': 19}
+[2019-01-31 00:04:01,635] [INFO] log : SELECT tags.id AS tags_id, tags.created_at AS tags_created_at, tags.updated_at AS tags_updated_at, tags.name AS tags_name 
+FROM tags 
+WHERE tags.id IN (%(id_1)s, %(id_2)s, %(id_3)s)
+[2019-01-31 00:04:01,635] [INFO] log : {'id_1': 48, 'id_2': 49, 'id_3': 50}
+[2019-01-31 00:04:01,652] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT collect_items.id AS collect_items_id, collect_items.created_at AS collect_items_created_at, collect_items.updated_at AS collect_items_updated_at, collect_items.user_id AS collect_items_user_id, collect_items.target_id AS collect_items_target_id, collect_items.target_kind AS collect_items_target_kind 
+FROM collect_items 
+WHERE collect_items.target_id = %(target_id_1)s AND collect_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-01-31 00:04:01,653] [INFO] log : {'target_id_1': 19, 'target_kind_1': 1001}
+[2019-01-31 00:04:01,667] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT like_items.id AS like_items_id, like_items.created_at AS like_items_created_at, like_items.updated_at AS like_items_updated_at, like_items.user_id AS like_items_user_id, like_items.target_id AS like_items_target_id, like_items.target_kind AS like_items_target_kind 
+FROM like_items 
+WHERE like_items.target_id = %(target_id_1)s AND like_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-01-31 00:04:01,667] [INFO] log : {'target_id_1': 19, 'target_kind_1': 1001}
+[2019-01-31 00:04:01,683] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT comment_items.id AS comment_items_id, comment_items.created_at AS comment_items_created_at, comment_items.updated_at AS comment_items_updated_at, comment_items.user_id AS comment_items_user_id, comment_items.target_id AS comment_items_target_id, comment_items.target_kind AS comment_items_target_kind, comment_items.ref_id AS comment_items_ref_id 
+FROM comment_items 
+WHERE comment_items.target_id = %(target_id_1)s AND comment_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-01-31 00:04:01,683] [INFO] log : {'target_id_1': 20, 'target_kind_1': 1001}
+[2019-01-31 00:04:01,689] [INFO] log : SELECT post_tags.tag_id AS post_tags_tag_id 
+FROM post_tags 
+WHERE post_tags.post_id = %(post_id_1)s
+[2019-01-31 00:04:01,689] [INFO] log : {'post_id_1': 20}
+[2019-01-31 00:04:01,695] [INFO] log : SELECT tags.id AS tags_id, tags.created_at AS tags_created_at, tags.updated_at AS tags_updated_at, tags.name AS tags_name 
+FROM tags 
+WHERE tags.id IN (%(id_1)s, %(id_2)s, %(id_3)s)
+[2019-01-31 00:04:01,695] [INFO] log : {'id_1': 51, 'id_2': 52, 'id_3': 53}
+[2019-01-31 00:04:01,729] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT collect_items.id AS collect_items_id, collect_items.created_at AS collect_items_created_at, collect_items.updated_at AS collect_items_updated_at, collect_items.user_id AS collect_items_user_id, collect_items.target_id AS collect_items_target_id, collect_items.target_kind AS collect_items_target_kind 
+FROM collect_items 
+WHERE collect_items.target_id = %(target_id_1)s AND collect_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-01-31 00:04:01,730] [INFO] log : {'target_id_1': 20, 'target_kind_1': 1001}
+[2019-01-31 00:04:01,746] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT like_items.id AS like_items_id, like_items.created_at AS like_items_created_at, like_items.updated_at AS like_items_updated_at, like_items.user_id AS like_items_user_id, like_items.target_id AS like_items_target_id, like_items.target_kind AS like_items_target_kind 
+FROM like_items 
+WHERE like_items.target_id = %(target_id_1)s AND like_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-01-31 00:04:01,746] [INFO] log : {'target_id_1': 20, 'target_kind_1': 1001}
+[2019-01-31 00:04:01,753] [INFO] log : ROLLBACK
+[2019-01-31 00:04:01,755] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:04:01] "POST /api/post/getPostList HTTP/1.1" 200 -
+[2019-01-31 00:04:04,437] [INFO] post_api : getPostList
+[2019-01-31 00:04:04,446] [INFO] log : BEGIN (implicit)
+[2019-01-31 00:04:04,450] [INFO] log : SELECT posts.id AS posts_id, posts.created_at AS posts_created_at, posts.updated_at AS posts_updated_at, posts.author_id AS posts_author_id, posts.title AS posts_title, posts.orig_url AS posts_orig_url, posts.can_comment AS posts_can_comment 
+FROM posts ORDER BY -created_at 
+ LIMIT %(param_1)s, %(param_2)s
+[2019-01-31 00:04:04,450] [INFO] log : {'param_1': 25, 'param_2': 5}
+[2019-01-31 00:04:04,465] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT posts.id AS posts_id, posts.created_at AS posts_created_at, posts.updated_at AS posts_updated_at, posts.author_id AS posts_author_id, posts.title AS posts_title, posts.orig_url AS posts_orig_url, posts.can_comment AS posts_can_comment 
+FROM posts) AS anon_1
+[2019-01-31 00:04:04,466] [INFO] log : {}
+[2019-01-31 00:04:04,486] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT comment_items.id AS comment_items_id, comment_items.created_at AS comment_items_created_at, comment_items.updated_at AS comment_items_updated_at, comment_items.user_id AS comment_items_user_id, comment_items.target_id AS comment_items_target_id, comment_items.target_kind AS comment_items_target_kind, comment_items.ref_id AS comment_items_ref_id 
+FROM comment_items 
+WHERE comment_items.target_id = %(target_id_1)s AND comment_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-01-31 00:04:04,487] [INFO] log : {'target_id_1': 26, 'target_kind_1': 1001}
+[2019-01-31 00:04:04,495] [INFO] log : SELECT post_tags.tag_id AS post_tags_tag_id 
+FROM post_tags 
+WHERE post_tags.post_id = %(post_id_1)s
+[2019-01-31 00:04:04,496] [INFO] log : {'post_id_1': 26}
+[2019-01-31 00:04:04,501] [INFO] log : SELECT tags.id AS tags_id, tags.created_at AS tags_created_at, tags.updated_at AS tags_updated_at, tags.name AS tags_name 
+FROM tags 
+WHERE tags.id IN (%(id_1)s, %(id_2)s, %(id_3)s)
+[2019-01-31 00:04:04,502] [INFO] log : {'id_1': 54, 'id_2': 37, 'id_3': 38}
+[2019-01-31 00:04:04,521] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT collect_items.id AS collect_items_id, collect_items.created_at AS collect_items_created_at, collect_items.updated_at AS collect_items_updated_at, collect_items.user_id AS collect_items_user_id, collect_items.target_id AS collect_items_target_id, collect_items.target_kind AS collect_items_target_kind 
+FROM collect_items 
+WHERE collect_items.target_id = %(target_id_1)s AND collect_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-01-31 00:04:04,522] [INFO] log : {'target_id_1': 26, 'target_kind_1': 1001}
+[2019-01-31 00:04:04,537] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT like_items.id AS like_items_id, like_items.created_at AS like_items_created_at, like_items.updated_at AS like_items_updated_at, like_items.user_id AS like_items_user_id, like_items.target_id AS like_items_target_id, like_items.target_kind AS like_items_target_kind 
+FROM like_items 
+WHERE like_items.target_id = %(target_id_1)s AND like_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-01-31 00:04:04,537] [INFO] log : {'target_id_1': 26, 'target_kind_1': 1001}
+[2019-01-31 00:04:04,554] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT comment_items.id AS comment_items_id, comment_items.created_at AS comment_items_created_at, comment_items.updated_at AS comment_items_updated_at, comment_items.user_id AS comment_items_user_id, comment_items.target_id AS comment_items_target_id, comment_items.target_kind AS comment_items_target_kind, comment_items.ref_id AS comment_items_ref_id 
+FROM comment_items 
+WHERE comment_items.target_id = %(target_id_1)s AND comment_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-01-31 00:04:04,555] [INFO] log : {'target_id_1': 27, 'target_kind_1': 1001}
+[2019-01-31 00:04:04,562] [INFO] log : SELECT post_tags.tag_id AS post_tags_tag_id 
+FROM post_tags 
+WHERE post_tags.post_id = %(post_id_1)s
+[2019-01-31 00:04:04,562] [INFO] log : {'post_id_1': 27}
+[2019-01-31 00:04:04,568] [INFO] log : SELECT tags.id AS tags_id, tags.created_at AS tags_created_at, tags.updated_at AS tags_updated_at, tags.name AS tags_name 
+FROM tags 
+WHERE tags.id IN (%(id_1)s, %(id_2)s)
+[2019-01-31 00:04:04,569] [INFO] log : {'id_1': 37, 'id_2': 38}
+[2019-01-31 00:04:04,597] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT collect_items.id AS collect_items_id, collect_items.created_at AS collect_items_created_at, collect_items.updated_at AS collect_items_updated_at, collect_items.user_id AS collect_items_user_id, collect_items.target_id AS collect_items_target_id, collect_items.target_kind AS collect_items_target_kind 
+FROM collect_items 
+WHERE collect_items.target_id = %(target_id_1)s AND collect_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-01-31 00:04:04,598] [INFO] log : {'target_id_1': 27, 'target_kind_1': 1001}
+[2019-01-31 00:04:04,613] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT like_items.id AS like_items_id, like_items.created_at AS like_items_created_at, like_items.updated_at AS like_items_updated_at, like_items.user_id AS like_items_user_id, like_items.target_id AS like_items_target_id, like_items.target_kind AS like_items_target_kind 
+FROM like_items 
+WHERE like_items.target_id = %(target_id_1)s AND like_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-01-31 00:04:04,613] [INFO] log : {'target_id_1': 27, 'target_kind_1': 1001}
+[2019-01-31 00:04:04,630] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT comment_items.id AS comment_items_id, comment_items.created_at AS comment_items_created_at, comment_items.updated_at AS comment_items_updated_at, comment_items.user_id AS comment_items_user_id, comment_items.target_id AS comment_items_target_id, comment_items.target_kind AS comment_items_target_kind, comment_items.ref_id AS comment_items_ref_id 
+FROM comment_items 
+WHERE comment_items.target_id = %(target_id_1)s AND comment_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-01-31 00:04:04,630] [INFO] log : {'target_id_1': 28, 'target_kind_1': 1001}
+[2019-01-31 00:04:04,638] [INFO] log : SELECT post_tags.tag_id AS post_tags_tag_id 
+FROM post_tags 
+WHERE post_tags.post_id = %(post_id_1)s
+[2019-01-31 00:04:04,638] [INFO] log : {'post_id_1': 28}
+[2019-01-31 00:04:04,643] [INFO] log : SELECT tags.id AS tags_id, tags.created_at AS tags_created_at, tags.updated_at AS tags_updated_at, tags.name AS tags_name 
+FROM tags 
+WHERE tags.id IN (%(id_1)s, %(id_2)s, %(id_3)s)
+[2019-01-31 00:04:04,644] [INFO] log : {'id_1': 48, 'id_2': 61, 'id_3': 62}
+[2019-01-31 00:04:04,664] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT collect_items.id AS collect_items_id, collect_items.created_at AS collect_items_created_at, collect_items.updated_at AS collect_items_updated_at, collect_items.user_id AS collect_items_user_id, collect_items.target_id AS collect_items_target_id, collect_items.target_kind AS collect_items_target_kind 
+FROM collect_items 
+WHERE collect_items.target_id = %(target_id_1)s AND collect_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-01-31 00:04:04,665] [INFO] log : {'target_id_1': 28, 'target_kind_1': 1001}
+[2019-01-31 00:04:04,692] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT like_items.id AS like_items_id, like_items.created_at AS like_items_created_at, like_items.updated_at AS like_items_updated_at, like_items.user_id AS like_items_user_id, like_items.target_id AS like_items_target_id, like_items.target_kind AS like_items_target_kind 
+FROM like_items 
+WHERE like_items.target_id = %(target_id_1)s AND like_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-01-31 00:04:04,694] [INFO] log : {'target_id_1': 28, 'target_kind_1': 1001}
+[2019-01-31 00:04:04,715] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT comment_items.id AS comment_items_id, comment_items.created_at AS comment_items_created_at, comment_items.updated_at AS comment_items_updated_at, comment_items.user_id AS comment_items_user_id, comment_items.target_id AS comment_items_target_id, comment_items.target_kind AS comment_items_target_kind, comment_items.ref_id AS comment_items_ref_id 
+FROM comment_items 
+WHERE comment_items.target_id = %(target_id_1)s AND comment_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-01-31 00:04:04,715] [INFO] log : {'target_id_1': 29, 'target_kind_1': 1001}
+[2019-01-31 00:04:04,725] [INFO] log : SELECT post_tags.tag_id AS post_tags_tag_id 
+FROM post_tags 
+WHERE post_tags.post_id = %(post_id_1)s
+[2019-01-31 00:04:04,725] [INFO] log : {'post_id_1': 29}
+[2019-01-31 00:04:04,731] [INFO] log : SELECT tags.id AS tags_id, tags.created_at AS tags_created_at, tags.updated_at AS tags_updated_at, tags.name AS tags_name 
+FROM tags 
+WHERE tags.id IN (%(id_1)s, %(id_2)s, %(id_3)s, %(id_4)s)
+[2019-01-31 00:04:04,732] [INFO] log : {'id_1': 64, 'id_2': 65, 'id_3': 60, 'id_4': 63}
+[2019-01-31 00:04:04,752] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT collect_items.id AS collect_items_id, collect_items.created_at AS collect_items_created_at, collect_items.updated_at AS collect_items_updated_at, collect_items.user_id AS collect_items_user_id, collect_items.target_id AS collect_items_target_id, collect_items.target_kind AS collect_items_target_kind 
+FROM collect_items 
+WHERE collect_items.target_id = %(target_id_1)s AND collect_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-01-31 00:04:04,752] [INFO] log : {'target_id_1': 29, 'target_kind_1': 1001}
+[2019-01-31 00:04:04,766] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT like_items.id AS like_items_id, like_items.created_at AS like_items_created_at, like_items.updated_at AS like_items_updated_at, like_items.user_id AS like_items_user_id, like_items.target_id AS like_items_target_id, like_items.target_kind AS like_items_target_kind 
+FROM like_items 
+WHERE like_items.target_id = %(target_id_1)s AND like_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-01-31 00:04:04,767] [INFO] log : {'target_id_1': 29, 'target_kind_1': 1001}
+[2019-01-31 00:04:04,783] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT comment_items.id AS comment_items_id, comment_items.created_at AS comment_items_created_at, comment_items.updated_at AS comment_items_updated_at, comment_items.user_id AS comment_items_user_id, comment_items.target_id AS comment_items_target_id, comment_items.target_kind AS comment_items_target_kind, comment_items.ref_id AS comment_items_ref_id 
+FROM comment_items 
+WHERE comment_items.target_id = %(target_id_1)s AND comment_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-01-31 00:04:04,783] [INFO] log : {'target_id_1': 30, 'target_kind_1': 1001}
+[2019-01-31 00:04:04,789] [INFO] log : SELECT post_tags.tag_id AS post_tags_tag_id 
+FROM post_tags 
+WHERE post_tags.post_id = %(post_id_1)s
+[2019-01-31 00:04:04,790] [INFO] log : {'post_id_1': 30}
+[2019-01-31 00:04:04,795] [INFO] log : SELECT tags.id AS tags_id, tags.created_at AS tags_created_at, tags.updated_at AS tags_updated_at, tags.name AS tags_name 
+FROM tags 
+WHERE tags.id IN (%(id_1)s, %(id_2)s, %(id_3)s)
+[2019-01-31 00:04:04,796] [INFO] log : {'id_1': 64, 'id_2': 66, 'id_3': 67}
+[2019-01-31 00:04:04,811] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT collect_items.id AS collect_items_id, collect_items.created_at AS collect_items_created_at, collect_items.updated_at AS collect_items_updated_at, collect_items.user_id AS collect_items_user_id, collect_items.target_id AS collect_items_target_id, collect_items.target_kind AS collect_items_target_kind 
+FROM collect_items 
+WHERE collect_items.target_id = %(target_id_1)s AND collect_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-01-31 00:04:04,811] [INFO] log : {'target_id_1': 30, 'target_kind_1': 1001}
+[2019-01-31 00:04:04,823] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT like_items.id AS like_items_id, like_items.created_at AS like_items_created_at, like_items.updated_at AS like_items_updated_at, like_items.user_id AS like_items_user_id, like_items.target_id AS like_items_target_id, like_items.target_kind AS like_items_target_kind 
+FROM like_items 
+WHERE like_items.target_id = %(target_id_1)s AND like_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-01-31 00:04:04,824] [INFO] log : {'target_id_1': 30, 'target_kind_1': 1001}
+[2019-01-31 00:04:04,830] [INFO] log : ROLLBACK
+[2019-01-31 00:04:04,831] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:04:04] "POST /api/post/getPostList HTTP/1.1" 200 -
+[2019-01-31 00:04:08,526] [INFO] post_api : getPostList
+[2019-01-31 00:04:08,535] [INFO] log : BEGIN (implicit)
+[2019-01-31 00:04:08,538] [INFO] log : SELECT tags.id AS tags_id, tags.created_at AS tags_created_at, tags.updated_at AS tags_updated_at, tags.name AS tags_name 
+FROM tags 
+WHERE tags.name = %(name_1)s 
+ LIMIT %(param_1)s
+[2019-01-31 00:04:08,538] [INFO] log : {'name_1': 'javascript', 'param_1': 1}
+[2019-01-31 00:04:08,546] [INFO] log : SELECT post_tags.post_id AS post_tags_post_id 
+FROM post_tags 
+WHERE post_tags.tag_id = %(tag_id_1)s
+[2019-01-31 00:04:08,546] [INFO] log : {'tag_id_1': 21}
+[2019-01-31 00:04:08,556] [INFO] log : SELECT posts.id AS posts_id, posts.created_at AS posts_created_at, posts.updated_at AS posts_updated_at, posts.author_id AS posts_author_id, posts.title AS posts_title, posts.orig_url AS posts_orig_url, posts.can_comment AS posts_can_comment 
+FROM posts 
+WHERE posts.id IN (%(id_1)s, %(id_2)s, %(id_3)s, %(id_4)s, %(id_5)s, %(id_6)s, %(id_7)s, %(id_8)s, %(id_9)s, %(id_10)s, %(id_11)s, %(id_12)s, %(id_13)s, %(id_14)s, %(id_15)s) ORDER BY posts.id DESC 
+ LIMIT %(param_1)s, %(param_2)s
+[2019-01-31 00:04:08,557] [INFO] log : {'id_1': 10, 'id_2': 14, 'id_3': 21, 'id_4': 23, 'id_5': 33, 'id_6': 38, 'id_7': 41, 'id_8': 48, 'id_9': 55, 'id_10': 56, 'id_11': 60, 'id_12': 62, 'id_13': 65, 'id_14': 67, 'id_15': 68, 'param_1': 25, 'param_2': 5}
+[2019-01-31 00:04:08,563] [INFO] log : ROLLBACK
+[2019-01-31 00:04:08,565] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:04:08] "POST /api/post/getPostList HTTP/1.1" 200 -
+[2019-01-31 00:04:17,706] [INFO] post_api : getPostList
+[2019-01-31 00:04:17,714] [INFO] log : BEGIN (implicit)
+[2019-01-31 00:04:17,717] [INFO] log : SELECT tags.id AS tags_id, tags.created_at AS tags_created_at, tags.updated_at AS tags_updated_at, tags.name AS tags_name 
+FROM tags 
+WHERE tags.name = %(name_1)s 
+ LIMIT %(param_1)s
+[2019-01-31 00:04:17,717] [INFO] log : {'name_1': 'python', 'param_1': 1}
+[2019-01-31 00:04:17,725] [INFO] log : ROLLBACK
+[2019-01-31 00:04:17,726] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:04:17] "POST /api/post/getPostList HTTP/1.1" 200 -
+[2019-01-31 00:04:19,216] [INFO] post_api : getPostList
+[2019-01-31 00:04:19,223] [INFO] log : BEGIN (implicit)
+[2019-01-31 00:04:19,228] [INFO] log : SELECT tags.id AS tags_id, tags.created_at AS tags_created_at, tags.updated_at AS tags_updated_at, tags.name AS tags_name 
+FROM tags 
+WHERE tags.name = %(name_1)s 
+ LIMIT %(param_1)s
+[2019-01-31 00:04:19,229] [INFO] log : {'name_1': 'linux', 'param_1': 1}
+[2019-01-31 00:04:19,235] [INFO] log : SELECT post_tags.post_id AS post_tags_post_id 
+FROM post_tags 
+WHERE post_tags.tag_id = %(tag_id_1)s
+[2019-01-31 00:04:19,235] [INFO] log : {'tag_id_1': 64}
+[2019-01-31 00:04:19,241] [INFO] log : SELECT posts.id AS posts_id, posts.created_at AS posts_created_at, posts.updated_at AS posts_updated_at, posts.author_id AS posts_author_id, posts.title AS posts_title, posts.orig_url AS posts_orig_url, posts.can_comment AS posts_can_comment 
+FROM posts 
+WHERE posts.id IN (%(id_1)s, %(id_2)s) ORDER BY posts.id DESC 
+ LIMIT %(param_1)s, %(param_2)s
+[2019-01-31 00:04:19,242] [INFO] log : {'id_1': 29, 'id_2': 30, 'param_1': 25, 'param_2': 5}
+[2019-01-31 00:04:19,248] [INFO] log : ROLLBACK
+[2019-01-31 00:04:19,249] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:04:19] "POST /api/post/getPostList HTTP/1.1" 200 -
+[2019-01-31 00:04:42,453] [INFO] post_api : getPostList
+[2019-01-31 00:04:42,460] [INFO] log : BEGIN (implicit)
+[2019-01-31 00:04:42,462] [INFO] log : SELECT tags.id AS tags_id, tags.created_at AS tags_created_at, tags.updated_at AS tags_updated_at, tags.name AS tags_name 
+FROM tags 
+WHERE tags.name = %(name_1)s 
+ LIMIT %(param_1)s
+[2019-01-31 00:04:42,463] [INFO] log : {'name_1': 'overflow', 'param_1': 1}
+[2019-01-31 00:04:42,469] [INFO] log : SELECT post_tags.post_id AS post_tags_post_id 
+FROM post_tags 
+WHERE post_tags.tag_id = %(tag_id_1)s
+[2019-01-31 00:04:42,470] [INFO] log : {'tag_id_1': 26}
+[2019-01-31 00:04:42,476] [INFO] log : SELECT posts.id AS posts_id, posts.created_at AS posts_created_at, posts.updated_at AS posts_updated_at, posts.author_id AS posts_author_id, posts.title AS posts_title, posts.orig_url AS posts_orig_url, posts.can_comment AS posts_can_comment 
+FROM posts 
+WHERE posts.id IN (%(id_1)s) ORDER BY posts.id DESC 
+ LIMIT %(param_1)s, %(param_2)s
+[2019-01-31 00:04:42,476] [INFO] log : {'id_1': 13, 'param_1': 25, 'param_2': 5}
+[2019-01-31 00:04:42,481] [INFO] log : ROLLBACK
+[2019-01-31 00:04:42,482] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:04:42] "POST /api/post/getPostList HTTP/1.1" 200 -
+[2019-01-31 00:04:47,548] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:04:47] "GET /index/ HTTP/1.1" 200 -
+[2019-01-31 00:04:47,829] [INFO] post_api : getPostList
+[2019-01-31 00:04:47,843] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:04:47] "POST /api/post/getTag HTTP/1.1" 200 -
+[2019-01-31 00:04:47,859] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:04:47] "GET /_debug_toolbar/static/css/toolbar.css?0.5398662062300679 HTTP/1.1" 200 -
+[2019-01-31 00:04:47,881] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:04:47] "POST /api/post/getPostList HTTP/1.1" 200 -
+[2019-01-31 00:04:48,135] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:04:48] "GET /static/ele_ui_web/favicon.ico HTTP/1.1" 200 -
+[2019-01-31 00:04:54,007] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:04:54] "GET /static/ele_ui_web/static/js/vendor.d9f8435f7a13d4255019.js.map HTTP/1.1" 200 -
+[2019-01-31 00:04:54,009] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:04:54] "GET /static/ele_ui_web/static/js/manifest.c582ee93643d7c50d417.js.map HTTP/1.1" 200 -
+[2019-01-31 00:04:54,022] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:04:54] "GET /static/ele_ui_web/static/js/app.9116e98aa994e2b5edde.js.map HTTP/1.1" 200 -
+[2019-01-31 00:04:54,028] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:04:54] "GET /static/ele_ui_web/static/css/app.ec55e1543cb9e0de8f55453c106d7e4e.css.map HTTP/1.1" 200 -
+[2019-01-31 00:04:56,793] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:04:56] "GET /index/ HTTP/1.1" 200 -
+[2019-01-31 00:04:56,861] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:04:56] "GET /static/ele_ui_web/static/js/manifest.c582ee93643d7c50d417.js HTTP/1.1" 200 -
+[2019-01-31 00:04:56,862] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:04:56] "GET /static/ele_ui_web/static/js/vendor.d9f8435f7a13d4255019.js HTTP/1.1" 200 -
+[2019-01-31 00:04:56,868] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:04:56] "GET /static/ele_ui_web/static/css/app.ec55e1543cb9e0de8f55453c106d7e4e.css HTTP/1.1" 200 -
+[2019-01-31 00:04:56,896] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:04:56] "GET /static/ele_ui_web/static/js/app.9116e98aa994e2b5edde.js HTTP/1.1" 200 -
+[2019-01-31 00:04:56,898] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:04:56] "GET /_debug_toolbar/static/js/jquery.js HTTP/1.1" 200 -
+[2019-01-31 00:04:56,904] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:04:56] "GET /_debug_toolbar/static/js/jquery.tablesorter.js HTTP/1.1" 200 -
+[2019-01-31 00:04:56,905] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:04:56] "GET /_debug_toolbar/static/js/toolbar.js HTTP/1.1" 200 -
+[2019-01-31 00:04:56,951] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:04:56] "GET /static/ele_ui_web/static/js/manifest.c582ee93643d7c50d417.js.map HTTP/1.1" 200 -
+[2019-01-31 00:04:57,039] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:04:57] "GET /static/ele_ui_web/static/css/app.ec55e1543cb9e0de8f55453c106d7e4e.css.map HTTP/1.1" 200 -
+[2019-01-31 00:04:57,249] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:04:57] "GET /static/ele_ui_web/static/js/vendor.d9f8435f7a13d4255019.js.map HTTP/1.1" 200 -
+[2019-01-31 00:04:57,290] [INFO] post_api : getPostList
+[2019-01-31 00:04:57,309] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:04:57] "POST /api/post/getTag HTTP/1.1" 200 -
+[2019-01-31 00:04:57,318] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:04:57] "GET /static/ele_ui_web/static/js/app.9116e98aa994e2b5edde.js.map HTTP/1.1" 200 -
+[2019-01-31 00:04:57,321] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:04:57] "GET /static/html/apple_watch.html HTTP/1.1" 200 -
+[2019-01-31 00:04:57,332] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:04:57] "GET /_debug_toolbar/static/css/toolbar.css?0.18115192643763955 HTTP/1.1" 200 -
+[2019-01-31 00:04:57,360] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:04:57] "POST /api/post/getPostList HTTP/1.1" 200 -
+[2019-01-31 00:04:57,410] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:04:57] "GET /_debug_toolbar/static/img/djdt_vertical.png HTTP/1.1" 200 -
+[2019-01-31 00:04:57,671] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:04:57] "GET /static/ele_ui_web/favicon.ico HTTP/1.1" 200 -
+[2019-01-31 00:13:02,096] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:13:02] "GET /static/ele_ui_web/static/js/vendor.d9f8435f7a13d4255019.js.map HTTP/1.1" 200 -
+[2019-01-31 00:13:02,098] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:13:02] "GET /static/ele_ui_web/static/js/manifest.c582ee93643d7c50d417.js.map HTTP/1.1" 200 -
+[2019-01-31 00:13:02,112] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:13:02] "GET /static/ele_ui_web/static/js/app.9116e98aa994e2b5edde.js.map HTTP/1.1" 200 -
+[2019-01-31 00:13:02,117] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:13:02] "GET /static/ele_ui_web/static/css/app.ec55e1543cb9e0de8f55453c106d7e4e.css.map HTTP/1.1" 200 -
+[2019-01-31 00:13:08,260] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:13:08] "GET /index/ HTTP/1.1" 200 -
+[2019-01-31 00:13:08,354] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:13:08] "GET /static/ele_ui_web/static/css/app.ec55e1543cb9e0de8f55453c106d7e4e.css HTTP/1.1" 200 -
+[2019-01-31 00:13:08,369] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:13:08] "GET /static/ele_ui_web/static/js/manifest.c582ee93643d7c50d417.js HTTP/1.1" 200 -
+[2019-01-31 00:13:08,378] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:13:08] "GET /static/ele_ui_web/static/js/vendor.d9f8435f7a13d4255019.js HTTP/1.1" 200 -
+[2019-01-31 00:13:08,379] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:13:08] "GET /static/ele_ui_web/static/js/app.9116e98aa994e2b5edde.js HTTP/1.1" 200 -
+[2019-01-31 00:13:08,385] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:13:08] "GET /_debug_toolbar/static/js/jquery.js HTTP/1.1" 200 -
+[2019-01-31 00:13:08,400] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:13:08] "GET /_debug_toolbar/static/js/jquery.tablesorter.js HTTP/1.1" 200 -
+[2019-01-31 00:13:08,412] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:13:08] "GET /_debug_toolbar/static/js/toolbar.js HTTP/1.1" 200 -
+[2019-01-31 00:13:08,459] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:13:08] "GET /static/ele_ui_web/static/js/manifest.c582ee93643d7c50d417.js.map HTTP/1.1" 200 -
+[2019-01-31 00:13:08,478] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:13:08] "GET /static/ele_ui_web/static/css/app.ec55e1543cb9e0de8f55453c106d7e4e.css.map HTTP/1.1" 200 -
+[2019-01-31 00:13:08,707] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:13:08] "GET /static/ele_ui_web/static/js/vendor.d9f8435f7a13d4255019.js.map HTTP/1.1" 200 -
+[2019-01-31 00:13:08,729] [INFO] post_api : getPostList
+[2019-01-31 00:13:08,748] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:13:08] "POST /api/post/getTag HTTP/1.1" 200 -
+[2019-01-31 00:13:08,748] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:13:08] "GET /static/html/apple_watch.html HTTP/1.1" 200 -
+[2019-01-31 00:13:08,750] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:13:08] "GET /static/ele_ui_web/static/js/app.9116e98aa994e2b5edde.js.map HTTP/1.1" 200 -
+[2019-01-31 00:13:08,766] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:13:08] "GET /_debug_toolbar/static/css/toolbar.css?0.5841835225863061 HTTP/1.1" 200 -
+[2019-01-31 00:13:08,797] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:13:08] "POST /api/post/getPostList HTTP/1.1" 200 -
+[2019-01-31 00:13:08,853] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:13:08] "GET /_debug_toolbar/static/img/djdt_vertical.png HTTP/1.1" 200 -
+[2019-01-31 00:13:09,108] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:13:09] "GET /static/ele_ui_web/favicon.ico HTTP/1.1" 200 -
