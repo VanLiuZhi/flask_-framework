@@ -1,0 +1,35 @@
+version: '3'
+services:
+  # dev:
+  #   build: .
+  #   ports:
+  #    - "5000:5000"
+  #   volumes:
+  #     - /Users/liuzhi/MyDocument/composetest:/code
+  #   depends_on:
+  #     - redis
+  #     - rabbitmq
+  #     - celery
+  redis:
+    image: "redis"
+    ports:
+      - "6379:6379"
+  rabbitmq:
+    image: rabbitmq
+    hostname: rabbit
+    environment:
+      - RABBITMQ_DEFAULT_USER=developer
+      - RABBITMQ_DEFAULT_PASS=dev1234
+    ports:
+      - "5672:5672"  # we forward this port because it's useful for debugging
+      - "15672:15672"  # here, we can access rabbitmq management plugin
+  elasticsearch:
+    image: "elasticsearch:5-alpine"
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    environment:
+      - discovery.type=single-node
+
+  # celery:
+  #   image: "celery"
