@@ -10,6 +10,8 @@
 """
 
 from flask import flash
+from dotenv import find_dotenv, load_dotenv
+import os
 
 
 def flash_errors(form, category='warning'):
@@ -20,10 +22,20 @@ def flash_errors(form, category='warning'):
 
 
 def get_env_value(key: str, default='') -> str:
+    return os.environ.get(key, False) or default
+
+
+def load_env_value():
     """
     load environment variable from .env
     """
-    from dotenv import find_dotenv, load_dotenv
-    import os
     load_dotenv(find_dotenv())  # 相当于把.env配置的变量导入，pipenv依赖于python-dotenv
-    return os.environ.get(key, False) or default
+
+
+def test():
+    from models.user import User, UserMixin
+    return locals()
+
+if __name__ == '__main__':
+
+    print(load_env_value())

@@ -89,8 +89,8 @@ def urls(url, order):
         try:
             rule, arguments = (
                 current_app.url_map
-                           .bind('localhost')
-                           .match(url, return_rule=True))
+                    .bind('localhost')
+                    .match(url, return_rule=True))
             rows.append((rule.rule, rule.endpoint, arguments))
             column_length = 3
         except (NotFound, MethodNotAllowed) as e:

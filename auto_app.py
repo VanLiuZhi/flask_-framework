@@ -1,27 +1,29 @@
 #!/usr/bin/env python
-# encoding: utf-8
+# -*- coding: utf-8 -*-
 
 """
-@author: LiuZhi
-@contact: 1441765847@qq.com
+@author:   LiuZhi
+@time:     2019-01-13 23:10
+@contact:  vanliuzhi@qq.com
 @software: PyCharm
-@file: auto_app.py
-@time: 2018-12-23 17:07
 """
 
-from flask_app.app import create_app
-from flask_script import Manager
-from flask_app.settings import DevConfig, ProdConfig
-from flask.helpers import get_debug_flag
-from flask_app.services_config import RedisConfig
+from flask_app.app import app
+from flask_migrate import Migrate
 
-CONFIG = DevConfig if get_debug_flag() else ProdConfig
-config = CONFIG()
-config.load_other_config([RedisConfig])
-print(dir(config))
-app = create_app(config)
-manager = Manager(app)
+from base.base_extend import db
+
+
+def include_object(object, name, type_, reflected, compare_to):
+    """
+    模型管理器include规则
+    """
+    if type_ == 'table' and name.startswith('social_auth'):
+        return False
+    return True
+
+
+migrate = Migrate(app, db, include_object=include_object)
 
 if __name__ == '__main__':
-    manager.run()
-    # app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)

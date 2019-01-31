@@ -4,21 +4,29 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-pytest = "*"
+# 被注释的是无法创建依赖关系的包
 
 [packages]
-flask = "*"
-flask-login = "*"
-flask-bcrypt = "*"
-flask-caching = "*"
-flask-debugtoolbar = "*"
-flask-migrate = "*"
-flask-sqlalchemy = "*"
-flask-webpack = "*"
-flask-wtf = "*"
-flask-script = "*"
+walrus = "==0.6.4"
+requests = "==2.20.0"
+flask = "==1.0.2"
+ipython = "==7.1.1"
+flask-migrate = "==2.3.0"
+flask-sqlalchemy = "==2.3.2"
+flask-security = "==3.0.0"
+pymysql = "==0.9.2"
+#dogpile-cache = "==0.7.1"
+pytest = "*"
+#dotenv = "*"
 python-dotenv = "*"
-pymysql = "*"
+flask-debugtoolbar = "*"
+flask-script = "*"
+elasticsearch-dsl = "*"
+feedparser = "*"
+#social-app-flask-sqlalchemy = "*"
+celery = "*"
+flask-logconfig = "*"
+flask-webpack = "*"
 
 [requires]
 python_version = "3.6"
