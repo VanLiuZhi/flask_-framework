@@ -1,22 +1,20 @@
-# docker-compose 配置文件，服务器版本
-
 version: '3'
-
 services:
-   app:
-     build:
-      context: .
-      dockerfile: Dockerfile
-     ports:
-       - 8080
-     volumes:
-       - ~/webProjects:/code
-     depends_on:
-       - mysql
-       - redis
-       - rabbitmq
-       - elasticsearch
-       - nginx
+  app:
+#    build:
+#      context: .
+#      dockerfile: Dockerfile
+    image: web-python:v1
+    ports:
+     - 8080
+    volumes:
+     - ~/webProjects:/code
+    depends_on:
+     - mysql
+     - redis
+     - rabbitmq
+     - elasticsearch
+     - nginx
 
   mysql:
     image: mysql:latest
@@ -28,7 +26,7 @@ services:
       - 3306:3306
 
   redis:
-    image: redis:latest"
+    image: redis:latest
     ports:
       - 6379:6379
     volumes:
