@@ -4,12 +4,15 @@ services:
 #    build:
 #      context: .
 #      dockerfile: Dockerfile
-    image: web-python:v1
+    image: compose_docker_app
     container_name: python-web
     ports:
-     - 8080
+     - 8080:5000
     volumes:
      - ~/webProjects:/code
+    command:
+      - cd /code/flask_starlight
+      - python auto_app.py
     depends_on:
      - mysql
      - redis
