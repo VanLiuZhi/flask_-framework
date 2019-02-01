@@ -528,3 +528,23 @@ WHERE posts.id IN (%(id_1)s) ORDER BY posts.id DESC
 [2019-01-31 00:13:08,797] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:13:08] "POST /api/post/getPostList HTTP/1.1" 200 -
 [2019-01-31 00:13:08,853] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:13:08] "GET /_debug_toolbar/static/img/djdt_vertical.png HTTP/1.1" 200 -
 [2019-01-31 00:13:09,108] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 00:13:09] "GET /static/ele_ui_web/favicon.ico HTTP/1.1" 200 -
+[2019-01-31 21:06:43,552] [INFO] _internal :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2019-01-31 21:06:48,293] [DEBUG] _internal : Initializing Flask-DebugToolbar log handler
+[2019-01-31 21:06:48,294] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 21:06:48] "GET / HTTP/1.1" 200 -
+[2019-01-31 21:06:48,401] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 21:06:48] "GET / HTTP/1.1" 200 -
+[2019-01-31 21:06:48,733] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 21:06:48] "GET /favicon.ico HTTP/1.1" 200 -
+[2019-01-31 21:06:49,177] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 21:06:49] "GET /favicon.ico HTTP/1.1" 200 -
+[2019-01-31 21:06:57,326] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 21:06:57] "GET /index/ HTTP/1.1" 200 -
+[2019-01-31 21:06:57,346] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 21:06:57] "GET /static/ele_ui_web/static/css/app.ec55e1543cb9e0de8f55453c106d7e4e.css HTTP/1.1" 304 -
+[2019-01-31 21:06:57,348] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 21:06:57] "GET /static/ele_ui_web/static/js/app.9116e98aa994e2b5edde.js HTTP/1.1" 304 -
+[2019-01-31 21:06:57,349] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 21:06:57] "GET /static/ele_ui_web/static/js/vendor.d9f8435f7a13d4255019.js HTTP/1.1" 200 -
+[2019-01-31 21:06:57,350] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 21:06:57] "GET /static/ele_ui_web/static/js/manifest.c582ee93643d7c50d417.js HTTP/1.1" 304 -
+[2019-01-31 21:06:57,356] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 21:06:57] "GET /_debug_toolbar/static/js/jquery.tablesorter.js HTTP/1.1" 200 -
+[2019-01-31 21:06:57,356] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 21:06:57] "GET /_debug_toolbar/static/js/toolbar.js HTTP/1.1" 200 -
+[2019-01-31 21:06:57,356] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 21:06:57] "GET /_debug_toolbar/static/js/jquery.js HTTP/1.1" 200 -
+[2019-01-31 21:06:57,578] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 21:06:57] "GET /static/html/apple_watch.html HTTP/1.1" 304 -
+[2019-01-31 21:06:57,665] [INFO] post_api : getPostList
+[2019-01-31 21:06:57,668] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 21:06:57] "POST /api/post/getTag HTTP/1.1" 200 -
+[2019-01-31 21:06:57,689] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 21:06:57] "GET /_debug_toolbar/static/css/toolbar.css?0.14358010634878005 HTTP/1.1" 200 -
+[2019-01-31 21:06:57,760] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 21:06:57] "POST /api/post/getPostList HTTP/1.1" 200 -
+[2019-01-31 21:06:57,770] [INFO] _internal : 127.0.0.1 - - [31/Jan/2019 21:06:57] "GET /_debug_toolbar/static/img/djdt_vertical.png HTTP/1.1" 200 -

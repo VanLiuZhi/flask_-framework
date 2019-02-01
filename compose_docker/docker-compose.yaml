@@ -1,35 +1,63 @@
+# docker-compose 配置文件，服务器版本
+
 version: '3'
+
 services:
-  # dev:
-  #   build: .
-  #   ports:
-  #    - "5000:5000"
-  #   volumes:
-  #     - /Users/liuzhi/MyDocument/composetest:/code
-  #   depends_on:
-  #     - redis
-  #     - rabbitmq
-  #     - celery
-  redis:
-    image: "redis"
+   app:
+     build:
+      context: .
+      dockerfile: Dockerfile
+     ports:
+       - 8080
+     volumes:
+       - ~/webProjects:/code
+     depends_on:
+       - mysql
+       - redis
+       - rabbitmq
+       - elasticsearch
+       - nginx
+
+  mysql:
+    image: mysql:latest
+    volumes:
+      - ~/mysql/data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root1234
     ports:
-      - "6379:6379"
+      - 3306:3306
+
+  redis:
+    image: redis:latest"
+    ports:
+      - 6379:6379
+    volumes:
+      - ~/redis/data:/data
+
   rabbitmq:
-    image: rabbitmq
+    image: rabbitmq:latest
     hostname: rabbit
     environment:
       - RABBITMQ_DEFAULT_USER=developer
       - RABBITMQ_DEFAULT_PASS=dev1234
     ports:
-      - "5672:5672"  # we forward this port because it's useful for debugging
-      - "15672:15672"  # here, we can access rabbitmq management plugin
+      - 5672:5672  # we forward this port because it's useful for debugging
+      - 15672:15672  # here, we can access rabbitmq management plugin
+
   elasticsearch:
-    image: "elasticsearch:5-alpine"
+    image: elasticsearch:5-alpine
     ports:
-      - "9200:9200"
-      - "9300:9300"
+      - 9200:9200
+      - 9300:9300
     environment:
       - discovery.type=single-node
 
-  # celery:
-  #   image: "celery"
+  nginx:
+    image: nginx
+    volumes:
+      - /root/nginx:/etc/nginx
+      - /root/webProjects/hexo_blog/public:/root/blog/public
+    ports:
+      - 80:80
+    environment:
+      - NGINX_PORT=80

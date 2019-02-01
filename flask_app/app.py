@@ -42,7 +42,6 @@ def create_app(config_object):
     :param config_object: The configuration object to use.
     """
     app = Flask('flask_app')
-    print(__file__.split('/'))
     app.config.from_object(config_object)
     app.root_path = app.config['PROJECT_ROOT']
     pass
