@@ -10,9 +10,8 @@ services:
      - 8080:5000
     volumes:
      - ~/webProjects:/code
-    command:
-      - cd /code/flask_starlight
-      - python auto_app.py
+    command: ["cd", "/code/flask_starlight"]
+    command: ["python", "auto_app.py"]
     depends_on:
      - mysql
      - redis
