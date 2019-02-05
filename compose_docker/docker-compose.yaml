@@ -19,15 +19,15 @@ services:
 #     - elasticsearch
 #     - nginx
 
-  mysql:
-    image: mysql:latest
-    container_name: mysql-web
-    volumes:
-      - ~/mysql/data:/var/lib/mysql
-    environment:
-      MYSQL_ROOT_PASSWORD: root1234
-    ports:
-      - 3306:3306
+#  mysql:
+#    image: mysql:latest
+#    container_name: mysql-web
+#    volumes:
+#      - ~/mysql/data:/var/lib/mysql
+#    environment:
+#      MYSQL_ROOT_PASSWORD: root1234
+#    ports:
+#      - 3306:3306
 
   redis:
     image: redis:latest
