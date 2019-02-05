@@ -67,6 +67,7 @@ services:
     volumes:
       - /root/nginx:/etc/nginx
       - /root/webProjects/hexo_blog/public:/root/blog/public
+      - ~/webProjects:/web
     ports:
       - 80:80
     environment:
