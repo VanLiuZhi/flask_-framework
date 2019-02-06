@@ -1,0 +1,242 @@
+[2019-02-01 23:17:35,914] [INFO] _internal :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2019-02-01 23:17:35,916] [INFO] _internal :  * Restarting with stat
+[2019-02-01 23:17:36,822] [WARNING] _internal :  * Debugger is active!
+[2019-02-01 23:17:36,840] [INFO] _internal :  * Debugger PIN: 230-354-656
+[2019-02-01 23:17:42,119] [DEBUG] _internal : Initializing Flask-DebugToolbar log handler
+[2019-02-01 23:17:42,121] [INFO] _internal : 127.0.0.1 - - [01/Feb/2019 23:17:42] "GET / HTTP/1.1" 200 -
+[2019-02-01 23:17:42,506] [INFO] _internal : 127.0.0.1 - - [01/Feb/2019 23:17:42] "GET /favicon.ico HTTP/1.1" 200 -
+[2019-02-01 23:17:48,530] [INFO] _internal : 127.0.0.1 - - [01/Feb/2019 23:17:48] "GET /index HTTP/1.1" 500 -
+[2019-02-01 23:17:48,550] [INFO] _internal : 127.0.0.1 - - [01/Feb/2019 23:17:48] "GET /index?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2019-02-01 23:17:48,551] [INFO] _internal : 127.0.0.1 - - [01/Feb/2019 23:17:48] "GET /index?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+[2019-02-01 23:17:48,552] [INFO] _internal : 127.0.0.1 - - [01/Feb/2019 23:17:48] "GET /index?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2019-02-01 23:17:48,595] [INFO] _internal : 127.0.0.1 - - [01/Feb/2019 23:17:48] "GET /index?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+[2019-02-01 23:17:48,660] [INFO] _internal : 127.0.0.1 - - [01/Feb/2019 23:17:48] "GET /index?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2019-02-01 23:17:48,767] [INFO] _internal : 127.0.0.1 - - [01/Feb/2019 23:17:48] "GET /index?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2019-02-01 23:18:24,203] [INFO] _internal :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2019-02-01 23:18:28,701] [DEBUG] _internal : Initializing Flask-DebugToolbar log handler
+[2019-02-01 23:18:28,701] [ERROR] app : Exception on /index [GET]
+Traceback (most recent call last):
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/flask/app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/flask/app.py", line 1831, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/liuzhi/PycharmProjects/flask_starlight/base/flask.py", line 45, in make_response
+    len(rv) == 2 and isinstance(rv[1], int):
+TypeError: object of type 'RequestRedirect' has no len()
+[2019-02-01 23:18:28,710] [INFO] _internal : 127.0.0.1 - - [01/Feb/2019 23:18:28] "GET /index HTTP/1.1" 500 -
+[2019-02-01 23:18:28,714] [ERROR] _internal : Error on request:
+Traceback (most recent call last):
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/werkzeug/serving.py", line 258, in execute
+    application_iter = app(environ, start_response)
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/flask/app.py", line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/flask/app.py", line 2295, in wsgi_app
+    response = self.handle_exception(e)
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/flask/app.py", line 1748, in handle_exception
+    return self.finalize_request(handler(e), from_error_handler=True)
+  File "/Users/liuzhi/PycharmProjects/flask_starlight/flask_app/app.py", line 139, in error_handler
+    msg = error.message
+AttributeError: 'TypeError' object has no attribute 'message'
+[2019-02-01 23:18:28,868] [INFO] _internal : 127.0.0.1 - - [01/Feb/2019 23:18:28] "GET /favicon.ico HTTP/1.1" 200 -
+[2019-02-01 23:18:47,722] [ERROR] app : Exception on /index [GET]
+Traceback (most recent call last):
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/flask/app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/flask/app.py", line 1831, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/liuzhi/PycharmProjects/flask_starlight/base/flask.py", line 45, in make_response
+    len(rv) == 2 and isinstance(rv[1], int):
+TypeError: object of type 'RequestRedirect' has no len()
+[2019-02-01 23:18:47,724] [INFO] _internal : 127.0.0.1 - - [01/Feb/2019 23:18:47] "GET /index HTTP/1.1" 500 -
+[2019-02-01 23:18:47,727] [ERROR] _internal : Error on request:
+Traceback (most recent call last):
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/werkzeug/serving.py", line 258, in execute
+    application_iter = app(environ, start_response)
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/flask/app.py", line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/flask/app.py", line 2295, in wsgi_app
+    response = self.handle_exception(e)
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/flask/app.py", line 1748, in handle_exception
+    return self.finalize_request(handler(e), from_error_handler=True)
+  File "/Users/liuzhi/PycharmProjects/flask_starlight/flask_app/app.py", line 139, in error_handler
+    msg = error.message
+AttributeError: 'TypeError' object has no attribute 'message'
+[2019-02-01 23:18:47,881] [INFO] _internal : 127.0.0.1 - - [01/Feb/2019 23:18:47] "GET /favicon.ico HTTP/1.1" 200 -
+[2019-02-01 23:18:53,737] [INFO] _internal :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2019-02-01 23:18:55,406] [DEBUG] _internal : Initializing Flask-DebugToolbar log handler
+[2019-02-01 23:18:55,407] [INFO] _internal : 127.0.0.1 - - [01/Feb/2019 23:18:55] "GET / HTTP/1.1" 200 -
+[2019-02-01 23:18:55,495] [INFO] _internal : 127.0.0.1 - - [01/Feb/2019 23:18:55] "GET / HTTP/1.1" 200 -
+[2019-02-01 23:18:56,026] [INFO] _internal : 127.0.0.1 - - [01/Feb/2019 23:18:56] "GET /favicon.ico HTTP/1.1" 200 -
+[2019-02-01 23:18:56,885] [INFO] _internal : 127.0.0.1 - - [01/Feb/2019 23:18:56] "GET /favicon.ico HTTP/1.1" 200 -
+[2019-02-01 23:19:01,584] [INFO] _internal : 127.0.0.1 - - [01/Feb/2019 23:19:01] "GET /index/ HTTP/1.1" 200 -
+[2019-02-01 23:19:01,606] [INFO] _internal : 127.0.0.1 - - [01/Feb/2019 23:19:01] "GET /static/ele_ui_web/static/js/vendor.d9f8435f7a13d4255019.js HTTP/1.1" 200 -
+[2019-02-01 23:19:01,609] [INFO] _internal : 127.0.0.1 - - [01/Feb/2019 23:19:01] "GET /static/ele_ui_web/static/css/app.ec55e1543cb9e0de8f55453c106d7e4e.css HTTP/1.1" 304 -
+[2019-02-01 23:19:01,609] [INFO] _internal : 127.0.0.1 - - [01/Feb/2019 23:19:01] "GET /static/ele_ui_web/static/js/manifest.c582ee93643d7c50d417.js HTTP/1.1" 304 -
+[2019-02-01 23:19:01,612] [INFO] _internal : 127.0.0.1 - - [01/Feb/2019 23:19:01] "GET /static/ele_ui_web/static/js/app.9116e98aa994e2b5edde.js HTTP/1.1" 304 -
+[2019-02-01 23:19:01,618] [INFO] _internal : 127.0.0.1 - - [01/Feb/2019 23:19:01] "GET /_debug_toolbar/static/js/jquery.tablesorter.js HTTP/1.1" 304 -
+[2019-02-01 23:19:01,619] [INFO] _internal : 127.0.0.1 - - [01/Feb/2019 23:19:01] "GET /_debug_toolbar/static/js/jquery.js HTTP/1.1" 304 -
+[2019-02-01 23:19:01,621] [INFO] _internal : 127.0.0.1 - - [01/Feb/2019 23:19:01] "GET /_debug_toolbar/static/js/toolbar.js HTTP/1.1" 304 -
+[2019-02-01 23:19:01,859] [INFO] _internal : 127.0.0.1 - - [01/Feb/2019 23:19:01] "GET /static/html/apple_watch.html HTTP/1.1" 304 -
+[2019-02-01 23:19:01,943] [INFO] post_api : getPostList
+[2019-02-01 23:19:01,945] [INFO] _internal : 127.0.0.1 - - [01/Feb/2019 23:19:01] "POST /api/post/getTag HTTP/1.1" 200 -
+[2019-02-01 23:19:01,962] [INFO] _internal : 127.0.0.1 - - [01/Feb/2019 23:19:01] "GET /_debug_toolbar/static/css/toolbar.css?0.42262843872481315 HTTP/1.1" 200 -
+[2019-02-01 23:19:02,033] [INFO] _internal : 127.0.0.1 - - [01/Feb/2019 23:19:02] "GET /_debug_toolbar/static/img/djdt_vertical.png HTTP/1.1" 304 -
+[2019-02-01 23:19:02,134] [INFO] log : SHOW VARIABLES LIKE 'sql_mode'
+[2019-02-01 23:19:02,134] [INFO] log : {}
+[2019-02-01 23:19:02,166] [INFO] log : SHOW VARIABLES LIKE 'lower_case_table_names'
+[2019-02-01 23:19:02,166] [INFO] log : {}
+[2019-02-01 23:19:02,169] [INFO] log : SELECT DATABASE()
+[2019-02-01 23:19:02,169] [INFO] log : {}
+[2019-02-01 23:19:02,171] [INFO] log : show collation where `Charset` = 'utf8mb4' and `Collation` = 'utf8mb4_bin'
+[2019-02-01 23:19:02,171] [INFO] log : {}
+[2019-02-01 23:19:02,180] [INFO] log : SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
+[2019-02-01 23:19:02,180] [INFO] log : {}
+[2019-02-01 23:19:02,181] [INFO] log : SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
+[2019-02-01 23:19:02,181] [INFO] log : {}
+[2019-02-01 23:19:02,182] [INFO] log : SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8mb4) COLLATE utf8mb4_bin AS anon_1
+[2019-02-01 23:19:02,182] [INFO] log : {}
+[2019-02-01 23:19:02,183] [INFO] log : BEGIN (implicit)
+[2019-02-01 23:19:02,186] [INFO] log : SELECT posts.id AS posts_id, posts.created_at AS posts_created_at, posts.updated_at AS posts_updated_at, posts.author_id AS posts_author_id, posts.title AS posts_title, posts.orig_url AS posts_orig_url, posts.can_comment AS posts_can_comment 
+FROM posts ORDER BY -created_at 
+ LIMIT %(param_1)s, %(param_2)s
+[2019-02-01 23:19:02,186] [INFO] log : {'param_1': 0, 'param_2': 5}
+[2019-02-01 23:19:02,201] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT posts.id AS posts_id, posts.created_at AS posts_created_at, posts.updated_at AS posts_updated_at, posts.author_id AS posts_author_id, posts.title AS posts_title, posts.orig_url AS posts_orig_url, posts.can_comment AS posts_can_comment 
+FROM posts) AS anon_1
+[2019-02-01 23:19:02,201] [INFO] log : {}
+[2019-02-01 23:19:02,213] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT like_items.id AS like_items_id, like_items.created_at AS like_items_created_at, like_items.updated_at AS like_items_updated_at, like_items.user_id AS like_items_user_id, like_items.target_id AS like_items_target_id, like_items.target_kind AS like_items_target_kind 
+FROM like_items 
+WHERE like_items.target_id = %(target_id_1)s AND like_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-02-01 23:19:02,213] [INFO] log : {'target_id_1': 1, 'target_kind_1': 1001}
+[2019-02-01 23:19:02,220] [INFO] log : SELECT post_tags.tag_id AS post_tags_tag_id 
+FROM post_tags 
+WHERE post_tags.post_id = %(post_id_1)s
+[2019-02-01 23:19:02,220] [INFO] log : {'post_id_1': 1}
+[2019-02-01 23:19:02,225] [INFO] log : SELECT tags.id AS tags_id, tags.created_at AS tags_created_at, tags.updated_at AS tags_updated_at, tags.name AS tags_name 
+FROM tags 
+WHERE tags.id IN (%(id_1)s, %(id_2)s, %(id_3)s, %(id_4)s)
+[2019-02-01 23:19:02,225] [INFO] log : {'id_1': 1, 'id_2': 2, 'id_3': 3, 'id_4': 4}
+[2019-02-01 23:19:02,234] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT collect_items.id AS collect_items_id, collect_items.created_at AS collect_items_created_at, collect_items.updated_at AS collect_items_updated_at, collect_items.user_id AS collect_items_user_id, collect_items.target_id AS collect_items_target_id, collect_items.target_kind AS collect_items_target_kind 
+FROM collect_items 
+WHERE collect_items.target_id = %(target_id_1)s AND collect_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-02-01 23:19:02,234] [INFO] log : {'target_id_1': 1, 'target_kind_1': 1001}
+[2019-02-01 23:19:02,243] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT comment_items.id AS comment_items_id, comment_items.created_at AS comment_items_created_at, comment_items.updated_at AS comment_items_updated_at, comment_items.user_id AS comment_items_user_id, comment_items.target_id AS comment_items_target_id, comment_items.target_kind AS comment_items_target_kind, comment_items.ref_id AS comment_items_ref_id 
+FROM comment_items 
+WHERE comment_items.target_id = %(target_id_1)s AND comment_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-02-01 23:19:02,243] [INFO] log : {'target_id_1': 1, 'target_kind_1': 1001}
+[2019-02-01 23:19:02,250] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT like_items.id AS like_items_id, like_items.created_at AS like_items_created_at, like_items.updated_at AS like_items_updated_at, like_items.user_id AS like_items_user_id, like_items.target_id AS like_items_target_id, like_items.target_kind AS like_items_target_kind 
+FROM like_items 
+WHERE like_items.target_id = %(target_id_1)s AND like_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-02-01 23:19:02,250] [INFO] log : {'target_id_1': 2, 'target_kind_1': 1001}
+[2019-02-01 23:19:02,254] [INFO] log : SELECT post_tags.tag_id AS post_tags_tag_id 
+FROM post_tags 
+WHERE post_tags.post_id = %(post_id_1)s
+[2019-02-01 23:19:02,254] [INFO] log : {'post_id_1': 2}
+[2019-02-01 23:19:02,256] [INFO] log : SELECT tags.id AS tags_id, tags.created_at AS tags_created_at, tags.updated_at AS tags_updated_at, tags.name AS tags_name 
+FROM tags 
+WHERE tags.id IN (%(id_1)s, %(id_2)s)
+[2019-02-01 23:19:02,256] [INFO] log : {'id_1': 5, 'id_2': 6}
+[2019-02-01 23:19:02,262] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT collect_items.id AS collect_items_id, collect_items.created_at AS collect_items_created_at, collect_items.updated_at AS collect_items_updated_at, collect_items.user_id AS collect_items_user_id, collect_items.target_id AS collect_items_target_id, collect_items.target_kind AS collect_items_target_kind 
+FROM collect_items 
+WHERE collect_items.target_id = %(target_id_1)s AND collect_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-02-01 23:19:02,263] [INFO] log : {'target_id_1': 2, 'target_kind_1': 1001}
+[2019-02-01 23:19:02,268] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT comment_items.id AS comment_items_id, comment_items.created_at AS comment_items_created_at, comment_items.updated_at AS comment_items_updated_at, comment_items.user_id AS comment_items_user_id, comment_items.target_id AS comment_items_target_id, comment_items.target_kind AS comment_items_target_kind, comment_items.ref_id AS comment_items_ref_id 
+FROM comment_items 
+WHERE comment_items.target_id = %(target_id_1)s AND comment_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-02-01 23:19:02,269] [INFO] log : {'target_id_1': 2, 'target_kind_1': 1001}
+[2019-02-01 23:19:02,274] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT like_items.id AS like_items_id, like_items.created_at AS like_items_created_at, like_items.updated_at AS like_items_updated_at, like_items.user_id AS like_items_user_id, like_items.target_id AS like_items_target_id, like_items.target_kind AS like_items_target_kind 
+FROM like_items 
+WHERE like_items.target_id = %(target_id_1)s AND like_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-02-01 23:19:02,274] [INFO] log : {'target_id_1': 3, 'target_kind_1': 1001}
+[2019-02-01 23:19:02,277] [INFO] log : SELECT post_tags.tag_id AS post_tags_tag_id 
+FROM post_tags 
+WHERE post_tags.post_id = %(post_id_1)s
+[2019-02-01 23:19:02,278] [INFO] log : {'post_id_1': 3}
+[2019-02-01 23:19:02,279] [INFO] log : SELECT tags.id AS tags_id, tags.created_at AS tags_created_at, tags.updated_at AS tags_updated_at, tags.name AS tags_name 
+FROM tags 
+WHERE tags.id IN (%(id_1)s, %(id_2)s)
+[2019-02-01 23:19:02,279] [INFO] log : {'id_1': 8, 'id_2': 7}
+[2019-02-01 23:19:02,290] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT collect_items.id AS collect_items_id, collect_items.created_at AS collect_items_created_at, collect_items.updated_at AS collect_items_updated_at, collect_items.user_id AS collect_items_user_id, collect_items.target_id AS collect_items_target_id, collect_items.target_kind AS collect_items_target_kind 
+FROM collect_items 
+WHERE collect_items.target_id = %(target_id_1)s AND collect_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-02-01 23:19:02,290] [INFO] log : {'target_id_1': 3, 'target_kind_1': 1001}
+[2019-02-01 23:19:02,296] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT comment_items.id AS comment_items_id, comment_items.created_at AS comment_items_created_at, comment_items.updated_at AS comment_items_updated_at, comment_items.user_id AS comment_items_user_id, comment_items.target_id AS comment_items_target_id, comment_items.target_kind AS comment_items_target_kind, comment_items.ref_id AS comment_items_ref_id 
+FROM comment_items 
+WHERE comment_items.target_id = %(target_id_1)s AND comment_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-02-01 23:19:02,296] [INFO] log : {'target_id_1': 3, 'target_kind_1': 1001}
+[2019-02-01 23:19:02,301] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT like_items.id AS like_items_id, like_items.created_at AS like_items_created_at, like_items.updated_at AS like_items_updated_at, like_items.user_id AS like_items_user_id, like_items.target_id AS like_items_target_id, like_items.target_kind AS like_items_target_kind 
+FROM like_items 
+WHERE like_items.target_id = %(target_id_1)s AND like_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-02-01 23:19:02,301] [INFO] log : {'target_id_1': 4, 'target_kind_1': 1001}
+[2019-02-01 23:19:02,304] [INFO] log : SELECT post_tags.tag_id AS post_tags_tag_id 
+FROM post_tags 
+WHERE post_tags.post_id = %(post_id_1)s
+[2019-02-01 23:19:02,304] [INFO] log : {'post_id_1': 4}
+[2019-02-01 23:19:02,305] [INFO] log : SELECT tags.id AS tags_id, tags.created_at AS tags_created_at, tags.updated_at AS tags_updated_at, tags.name AS tags_name 
+FROM tags 
+WHERE tags.id IN (%(id_1)s, %(id_2)s, %(id_3)s, %(id_4)s, %(id_5)s)
+[2019-02-01 23:19:02,306] [INFO] log : {'id_1': 5, 'id_2': 6, 'id_3': 8, 'id_4': 9, 'id_5': 10}
+[2019-02-01 23:19:02,313] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT collect_items.id AS collect_items_id, collect_items.created_at AS collect_items_created_at, collect_items.updated_at AS collect_items_updated_at, collect_items.user_id AS collect_items_user_id, collect_items.target_id AS collect_items_target_id, collect_items.target_kind AS collect_items_target_kind 
+FROM collect_items 
+WHERE collect_items.target_id = %(target_id_1)s AND collect_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-02-01 23:19:02,313] [INFO] log : {'target_id_1': 4, 'target_kind_1': 1001}
+[2019-02-01 23:19:02,320] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT comment_items.id AS comment_items_id, comment_items.created_at AS comment_items_created_at, comment_items.updated_at AS comment_items_updated_at, comment_items.user_id AS comment_items_user_id, comment_items.target_id AS comment_items_target_id, comment_items.target_kind AS comment_items_target_kind, comment_items.ref_id AS comment_items_ref_id 
+FROM comment_items 
+WHERE comment_items.target_id = %(target_id_1)s AND comment_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-02-01 23:19:02,320] [INFO] log : {'target_id_1': 4, 'target_kind_1': 1001}
+[2019-02-01 23:19:02,325] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT like_items.id AS like_items_id, like_items.created_at AS like_items_created_at, like_items.updated_at AS like_items_updated_at, like_items.user_id AS like_items_user_id, like_items.target_id AS like_items_target_id, like_items.target_kind AS like_items_target_kind 
+FROM like_items 
+WHERE like_items.target_id = %(target_id_1)s AND like_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-02-01 23:19:02,325] [INFO] log : {'target_id_1': 5, 'target_kind_1': 1001}
+[2019-02-01 23:19:02,328] [INFO] log : SELECT post_tags.tag_id AS post_tags_tag_id 
+FROM post_tags 
+WHERE post_tags.post_id = %(post_id_1)s
+[2019-02-01 23:19:02,328] [INFO] log : {'post_id_1': 5}
+[2019-02-01 23:19:02,330] [INFO] log : SELECT tags.id AS tags_id, tags.created_at AS tags_created_at, tags.updated_at AS tags_updated_at, tags.name AS tags_name 
+FROM tags 
+WHERE tags.id IN (%(id_1)s, %(id_2)s, %(id_3)s, %(id_4)s, %(id_5)s)
+[2019-02-01 23:19:02,330] [INFO] log : {'id_1': 8, 'id_2': 9, 'id_3': 10, 'id_4': 11, 'id_5': 12}
+[2019-02-01 23:19:02,336] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT collect_items.id AS collect_items_id, collect_items.created_at AS collect_items_created_at, collect_items.updated_at AS collect_items_updated_at, collect_items.user_id AS collect_items_user_id, collect_items.target_id AS collect_items_target_id, collect_items.target_kind AS collect_items_target_kind 
+FROM collect_items 
+WHERE collect_items.target_id = %(target_id_1)s AND collect_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-02-01 23:19:02,336] [INFO] log : {'target_id_1': 5, 'target_kind_1': 1001}
+[2019-02-01 23:19:02,342] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT comment_items.id AS comment_items_id, comment_items.created_at AS comment_items_created_at, comment_items.updated_at AS comment_items_updated_at, comment_items.user_id AS comment_items_user_id, comment_items.target_id AS comment_items_target_id, comment_items.target_kind AS comment_items_target_kind, comment_items.ref_id AS comment_items_ref_id 
+FROM comment_items 
+WHERE comment_items.target_id = %(target_id_1)s AND comment_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-02-01 23:19:02,342] [INFO] log : {'target_id_1': 5, 'target_kind_1': 1001}
+[2019-02-01 23:19:02,345] [INFO] log : ROLLBACK
+[2019-02-01 23:19:02,346] [INFO] _internal : 127.0.0.1 - - [01/Feb/2019 23:19:02] "POST /api/post/getPostList HTTP/1.1" 200 -
+[2019-02-01 23:19:12,213] [INFO] _internal :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2019-02-01 23:19:12,214] [INFO] _internal :  * Restarting with stat
+[2019-02-01 23:19:13,120] [WARNING] _internal :  * Debugger is active!
+[2019-02-01 23:19:13,136] [INFO] _internal :  * Debugger PIN: 230-354-656
+[2019-02-01 23:19:16,052] [DEBUG] _internal : Initializing Flask-DebugToolbar log handler
+[2019-02-01 23:19:16,111] [INFO] _internal : 127.0.0.1 - - [01/Feb/2019 23:19:16] "GET /index/ HTTP/1.1" 200 -
+[2019-02-01 23:19:16,379] [INFO] post_api : getPostList
+[2019-02-01 23:19:16,381] [INFO] _internal : 127.0.0.1 - - [01/Feb/2019 23:19:16] "POST /api/post/getTag HTTP/1.1" 200 -
+[2019-02-01 23:19:16,402] [INFO] _internal : 127.0.0.1 - - [01/Feb/2019 23:19:16] "GET /_debug_toolbar/static/css/toolbar.css?0.9213201492526115 HTTP/1.1" 200 -
+[2019-02-01 23:19:16,427] [INFO] _internal : 127.0.0.1 - - [01/Feb/2019 23:19:16] "POST /api/post/getPostList HTTP/1.1" 200 -
+[2019-02-01 23:19:16,656] [INFO] _internal : 127.0.0.1 - - [01/Feb/2019 23:19:16] "GET /static/ele_ui_web/favicon.ico HTTP/1.1" 200 -

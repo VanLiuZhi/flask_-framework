@@ -1,0 +1,72 @@
+[2019-02-03 00:21:43,251] [INFO] _internal :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2019-02-03 00:21:43,253] [INFO] _internal :  * Restarting with stat
+[2019-02-03 00:21:44,600] [WARNING] _internal :  * Debugger is active!
+[2019-02-03 00:21:44,603] [INFO] _internal :  * Debugger PIN: 920-865-393
+[2019-02-03 00:21:54,785] [DEBUG] _internal : Initializing Flask-DebugToolbar log handler
+[2019-02-03 00:21:54,787] [INFO] _internal : 172.17.0.1 - - [03/Feb/2019 00:21:54] "GET / HTTP/1.1" 200 -
+[2019-02-03 00:21:55,018] [INFO] _internal : 172.17.0.1 - - [03/Feb/2019 00:21:55] "GET /favicon.ico HTTP/1.1" 200 -
+[2019-02-03 00:21:59,074] [INFO] _internal : 172.17.0.1 - - [03/Feb/2019 00:21:59] "GET /index HTTP/1.1" 500 -
+[2019-02-03 00:21:59,099] [INFO] _internal : 172.17.0.1 - - [03/Feb/2019 00:21:59] "GET /index?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2019-02-03 00:21:59,105] [INFO] _internal : 172.17.0.1 - - [03/Feb/2019 00:21:59] "GET /index?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+[2019-02-03 00:21:59,106] [INFO] _internal : 172.17.0.1 - - [03/Feb/2019 00:21:59] "GET /index?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2019-02-03 00:21:59,148] [INFO] _internal : 172.17.0.1 - - [03/Feb/2019 00:21:59] "GET /index?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+[2019-02-03 00:21:59,208] [INFO] _internal : 172.17.0.1 - - [03/Feb/2019 00:21:59] "GET /index?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2019-02-03 00:21:59,298] [INFO] _internal : 172.17.0.1 - - [03/Feb/2019 00:21:59] "GET /index?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2019-02-03 00:22:08,558] [INFO] _internal : 172.17.0.1 - - [03/Feb/2019 00:22:08] "GET /index HTTP/1.1" 500 -
+[2019-02-03 00:22:08,577] [INFO] _internal : 172.17.0.1 - - [03/Feb/2019 00:22:08] "GET /index?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+[2019-02-03 00:22:08,578] [INFO] _internal : 172.17.0.1 - - [03/Feb/2019 00:22:08] "GET /index?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2019-02-03 00:22:08,582] [INFO] _internal : 172.17.0.1 - - [03/Feb/2019 00:22:08] "GET /index?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2019-02-03 00:22:08,641] [INFO] _internal : 172.17.0.1 - - [03/Feb/2019 00:22:08] "GET /index?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+[2019-02-03 00:22:08,663] [INFO] _internal : 172.17.0.1 - - [03/Feb/2019 00:22:08] "GET /index?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2019-02-03 00:22:08,738] [INFO] _internal : 172.17.0.1 - - [03/Feb/2019 00:22:08] "GET /index?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2019-02-03 00:22:15,723] [INFO] _internal : 172.17.0.1 - - [03/Feb/2019 00:22:15] "GET /index HTTP/1.1" 500 -
+[2019-02-03 00:22:15,770] [INFO] _internal : 172.17.0.1 - - [03/Feb/2019 00:22:15] "GET /index?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2019-02-03 00:22:15,770] [INFO] _internal : 172.17.0.1 - - [03/Feb/2019 00:22:15] "GET /index?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+[2019-02-03 00:22:15,777] [INFO] _internal : 172.17.0.1 - - [03/Feb/2019 00:22:15] "GET /index?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2019-02-03 00:22:15,929] [INFO] _internal : 172.17.0.1 - - [03/Feb/2019 00:22:15] "GET /index?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+[2019-02-03 00:22:16,016] [INFO] _internal : 172.17.0.1 - - [03/Feb/2019 00:22:16] "GET /index?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2019-02-03 00:22:32,320] [INFO] _internal :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2019-02-03 00:22:32,321] [INFO] _internal :  * Restarting with stat
+[2019-02-03 00:22:33,556] [WARNING] _internal :  * Debugger is active!
+[2019-02-03 00:22:33,558] [INFO] _internal :  * Debugger PIN: 920-865-393
+[2019-02-03 00:22:35,984] [DEBUG] _internal : Initializing Flask-DebugToolbar log handler
+[2019-02-03 00:22:35,999] [INFO] _internal : 172.17.0.1 - - [03/Feb/2019 00:22:35] "GET /index HTTP/1.1" 500 -
+[2019-02-03 00:22:36,022] [INFO] _internal : 172.17.0.1 - - [03/Feb/2019 00:22:36] "GET /index?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2019-02-03 00:22:36,025] [INFO] _internal : 172.17.0.1 - - [03/Feb/2019 00:22:36] "GET /index?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2019-02-03 00:22:36,030] [INFO] _internal : 172.17.0.1 - - [03/Feb/2019 00:22:36] "GET /index?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+[2019-02-03 00:22:36,068] [INFO] _internal : 172.17.0.1 - - [03/Feb/2019 00:22:36] "GET /index?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+[2019-02-03 00:22:36,085] [INFO] _internal : 172.17.0.1 - - [03/Feb/2019 00:22:36] "GET /index?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2019-02-03 00:22:36,223] [INFO] _internal : 172.17.0.1 - - [03/Feb/2019 00:22:36] "GET /index?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2019-02-03 00:22:39,453] [INFO] _internal : 172.17.0.1 - - [03/Feb/2019 00:22:39] "GET /index/ HTTP/1.1" 200 -
+[2019-02-03 00:22:39,498] [INFO] _internal : 172.17.0.1 - - [03/Feb/2019 00:22:39] "GET /_debug_toolbar/static/js/jquery.js HTTP/1.1" 200 -
+[2019-02-03 00:22:39,500] [INFO] _internal : 172.17.0.1 - - [03/Feb/2019 00:22:39] "GET /_debug_toolbar/static/js/jquery.tablesorter.js HTTP/1.1" 200 -
+[2019-02-03 00:22:39,501] [INFO] _internal : 172.17.0.1 - - [03/Feb/2019 00:22:39] "GET /static/ele_ui_web/static/css/app.ec55e1543cb9e0de8f55453c106d7e4e.css HTTP/1.1" 200 -
+[2019-02-03 00:22:39,509] [INFO] _internal : 172.17.0.1 - - [03/Feb/2019 00:22:39] "GET /static/ele_ui_web/static/js/vendor.d9f8435f7a13d4255019.js HTTP/1.1" 200 -
+[2019-02-03 00:22:39,522] [INFO] _internal : 172.17.0.1 - - [03/Feb/2019 00:22:39] "GET /static/ele_ui_web/static/js/manifest.c582ee93643d7c50d417.js HTTP/1.1" 200 -
+[2019-02-03 00:22:39,528] [INFO] _internal : 172.17.0.1 - - [03/Feb/2019 00:22:39] "GET /_debug_toolbar/static/js/toolbar.js HTTP/1.1" 200 -
+[2019-02-03 00:22:39,529] [INFO] _internal : 172.17.0.1 - - [03/Feb/2019 00:22:39] "GET /static/ele_ui_web/static/js/app.9116e98aa994e2b5edde.js HTTP/1.1" 200 -
+[2019-02-03 00:22:39,800] [INFO] _internal : 172.17.0.1 - - [03/Feb/2019 00:22:39] "GET /static/html/apple_watch.html HTTP/1.1" 200 -
+[2019-02-03 00:22:39,889] [INFO] _internal : 172.17.0.1 - - [03/Feb/2019 00:22:39] "POST /api/post/getTag HTTP/1.1" 200 -
+[2019-02-03 00:22:39,892] [INFO] post_api : getPostList
+[2019-02-03 00:22:39,910] [INFO] _internal : 172.17.0.1 - - [03/Feb/2019 00:22:39] "GET /_debug_toolbar/static/css/toolbar.css?0.12353861759576334 HTTP/1.1" 200 -
+[2019-02-03 00:22:39,933] [INFO] _internal : 172.17.0.1 - - [03/Feb/2019 00:22:39] "POST /api/post/getPostList HTTP/1.1" 500 -
+[2019-02-03 00:22:40,023] [INFO] _internal : 172.17.0.1 - - [03/Feb/2019 00:22:40] "GET /_debug_toolbar/static/img/tick-red.png HTTP/1.1" 200 -
+[2019-02-03 00:22:40,235] [INFO] _internal : 172.17.0.1 - - [03/Feb/2019 00:22:40] "GET /static/ele_ui_web/favicon.ico HTTP/1.1" 200 -
+[2019-02-03 00:22:45,970] [INFO] _internal : 172.17.0.1 - - [03/Feb/2019 00:22:45] "GET /_debug_toolbar/static/img/djdt_vertical.png HTTP/1.1" 200 -
+[2019-02-03 00:28:07,696] [INFO] _internal :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2019-02-03 00:28:07,698] [INFO] _internal :  * Restarting with stat
+[2019-02-03 00:28:08,817] [WARNING] _internal :  * Debugger is active!
+[2019-02-03 00:28:08,818] [INFO] _internal :  * Debugger PIN: 920-865-393
+[2019-02-03 00:28:25,631] [DEBUG] _internal : Initializing Flask-DebugToolbar log handler
+[2019-02-03 00:28:26,157] [DEBUG] _internal : Initializing Flask-DebugToolbar log handler
+[2019-02-03 00:28:26,157] [INFO] post_api : getPostList
+[2019-02-03 11:04:34,276] [DEBUG] _internal : Initializing Flask-DebugToolbar log handler
+[2019-02-03 11:04:43,430] [DEBUG] _internal : Initializing Flask-DebugToolbar log handler
+[2019-02-03 11:04:43,880] [INFO] post_api : getPostList
+[2019-02-03 11:04:43,880] [DEBUG] _internal : Initializing Flask-DebugToolbar log handler
+[2019-02-03 11:11:14,124] [DEBUG] _internal : Initializing Flask-DebugToolbar log handler
+[2019-02-03 11:11:14,567] [INFO] post_api : getPostList
+[2019-02-03 11:11:14,571] [DEBUG] _internal : Initializing Flask-DebugToolbar log handler
+[2019-02-03 11:11:19,618] [DEBUG] _internal : Initializing Flask-DebugToolbar log handler
+[2019-02-03 11:11:19,623] [DEBUG] _internal : Initializing Flask-DebugToolbar log handler
+[2019-02-03 11:11:19,652] [DEBUG] _internal : Initializing Flask-DebugToolbar log handler
