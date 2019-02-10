@@ -13,7 +13,7 @@ import math
 from urllib.request import urlparse
 
 from base.base_extend import db
-from flask_app.settings import DevConfig
+from flask_app.utils import get_config
 from base.mixin import BaseMixin
 from .consts import K_POST
 from base.mc import cache
@@ -27,7 +27,7 @@ from base.mc import rdb
 from base.utils import cached_hybrid_property, is_numeric, trunc_utf8
 from .utils import incr_key
 
-PER_PAGE = DevConfig.PER_PAGE
+PER_PAGE = get_config().PER_PAGE
 MC_KEY_ALL_TAGS = 'core:all_tags'
 MC_KEY_POSTS_BY_TAG = 'core:posts_by_tags:%s:%s'
 MC_KEY_POST_STATS_BY_TAG = 'core:count_by_tags:%s'

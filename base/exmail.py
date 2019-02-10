@@ -15,9 +15,11 @@ from flask_mail import sanitize_addresses
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-from flask_app.settings import DevConfig
+from flask_app.utils import get_config
 
-FROM_USER, EXMAIL_PASSWORD = DevConfig.FROM_USER, DevConfig.EXMAIL_PASSWORD
+CONFIG = get_config()
+
+FROM_USER, EXMAIL_PASSWORD = CONFIG.FROM_USER, CONFIG.EXMAIL_PASSWORD
 
 
 def send_mail_task(msg):

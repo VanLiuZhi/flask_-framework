@@ -8,11 +8,12 @@ from flask_sqlalchemy import Pagination
 
 from base.mc import rdb, cache
 
-from flask_app.settings import DevConfig
+from flask_app.utils import get_config
 from models.consts import K_POST, ONE_HOUR
 from models.core import Post
 
-ES_HOSTS, PER_PAGE = DevConfig.ES_HOSTS, DevConfig.PER_PAGE
+CONFIG = get_config()
+ES_HOSTS, PER_PAGE = CONFIG.ES_HOSTS, CONFIG.PER_PAGE
 
 connections.create_connection(hosts=ES_HOSTS)
 

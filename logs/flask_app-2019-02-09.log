@@ -1,0 +1,2934 @@
+[2019-02-09 00:23:17,604] [INFO] _internal :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2019-02-09 00:23:45,212] [INFO] _internal : 172.26.0.3 - - [09/Feb/2019 00:23:45] "GET /index/ HTTP/1.0" 200 -
+[2019-02-09 00:23:45,744] [INFO] post_api : getPostList
+[2019-02-09 00:23:45,746] [INFO] _internal : 172.26.0.3 - - [09/Feb/2019 00:23:45] "POST /api/post/getTag HTTP/1.0" 200 -
+[2019-02-09 00:23:45,750] [ERROR] app : Exception on /api/post/getPostList [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 493, in connect
+    sock = self._connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+OSError: [Errno 99] Cannot assign requested address
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/walrus/database.py", line 118, in execute_command
+    connection.send_command(*args)
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 594, in send_packed_command
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 498, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 99 connecting to localhost:6379. Cannot assign requested address.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 493, in connect
+    sock = self._connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+OSError: [Errno 99] Cannot assign requested address
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/code/api_views/base/api.py", line 28, in dispatch_request
+    return api_method()
+  File "/code/api_views/post_api.py", line 43, in getPostList
+    res = Post.get_posts_list(page, limit, order_by)
+  File "/code/base/mc.py", line 100, in _
+    r = rdb.get(key) if not force else None
+  File "/usr/local/lib/python3.6/site-packages/redis/client.py", line 1207, in get
+    return self.execute_command('GET', name)
+  File "/usr/local/lib/python3.6/site-packages/walrus/database.py", line 125, in execute_command
+    connection.send_command(*args)
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 594, in send_packed_command
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 498, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 99 connecting to localhost:6379. Cannot assign requested address.
+[2019-02-09 00:23:45,794] [INFO] _internal : 172.26.0.3 - - [09/Feb/2019 00:23:45] "POST /api/post/getPostList HTTP/1.0" 500 -
+[2019-02-09 00:23:45,807] [ERROR] _internal : Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python3.6/site-packages/werkzeug/serving.py", line 258, in execute
+    application_iter = app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2295, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1748, in handle_exception
+    return self.finalize_request(handler(e), from_error_handler=True)
+  File "/code/flask_app/app.py", line 139, in error_handler
+    msg = error.message
+AttributeError: 'ConnectionError' object has no attribute 'message'
+[2019-02-09 00:23:58,694] [INFO] _internal : 172.26.0.3 - - [09/Feb/2019 00:23:58] "GET /index/ HTTP/1.0" 200 -
+[2019-02-09 00:23:59,050] [INFO] post_api : getPostList
+[2019-02-09 00:23:59,055] [INFO] _internal : 172.26.0.3 - - [09/Feb/2019 00:23:59] "POST /api/post/getTag HTTP/1.0" 200 -
+[2019-02-09 00:23:59,057] [ERROR] app : Exception on /api/post/getPostList [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 493, in connect
+    sock = self._connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+OSError: [Errno 99] Cannot assign requested address
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/walrus/database.py", line 118, in execute_command
+    connection.send_command(*args)
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 594, in send_packed_command
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 498, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 99 connecting to localhost:6379. Cannot assign requested address.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 493, in connect
+    sock = self._connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+OSError: [Errno 99] Cannot assign requested address
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/code/api_views/base/api.py", line 28, in dispatch_request
+    return api_method()
+  File "/code/api_views/post_api.py", line 43, in getPostList
+    res = Post.get_posts_list(page, limit, order_by)
+  File "/code/base/mc.py", line 100, in _
+    r = rdb.get(key) if not force else None
+  File "/usr/local/lib/python3.6/site-packages/redis/client.py", line 1207, in get
+    return self.execute_command('GET', name)
+  File "/usr/local/lib/python3.6/site-packages/walrus/database.py", line 125, in execute_command
+    connection.send_command(*args)
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 594, in send_packed_command
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 498, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 99 connecting to localhost:6379. Cannot assign requested address.
+[2019-02-09 00:23:59,076] [INFO] _internal : 172.26.0.3 - - [09/Feb/2019 00:23:59] "POST /api/post/getPostList HTTP/1.0" 500 -
+[2019-02-09 00:23:59,093] [ERROR] _internal : Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python3.6/site-packages/werkzeug/serving.py", line 258, in execute
+    application_iter = app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2295, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1748, in handle_exception
+    return self.finalize_request(handler(e), from_error_handler=True)
+  File "/code/flask_app/app.py", line 139, in error_handler
+    msg = error.message
+AttributeError: 'ConnectionError' object has no attribute 'message'
+[2019-02-09 00:26:14,248] [INFO] _internal :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2019-02-09 00:26:23,738] [INFO] _internal : 172.28.0.3 - - [09/Feb/2019 00:26:23] "GET /index/ HTTP/1.0" 200 -
+[2019-02-09 00:26:24,158] [INFO] post_api : getPostList
+[2019-02-09 00:26:24,165] [INFO] _internal : 172.28.0.3 - - [09/Feb/2019 00:26:24] "POST /api/post/getTag HTTP/1.0" 200 -
+[2019-02-09 00:26:24,209] [INFO] _internal : 172.28.0.3 - - [09/Feb/2019 00:26:24] "POST /api/post/getPostList HTTP/1.0" 200 -
+[2019-02-09 00:26:56,863] [INFO] post_api : getPostList
+[2019-02-09 00:26:57,112] [ERROR] app : Exception on /api/post/getPostList [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2158, in _wrap_pool_connect
+    return fn()
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 400, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 788, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 529, in checkout
+    rec = pool._do_get()
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1193, in _do_get
+    self._dec_overflow()
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 249, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1190, in _do_get
+    return self._create_connection()
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 347, in _create_connection
+    return _ConnectionRecord(self)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 474, in __init__
+    self.__connect(first_connect_check=True)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 671, in __connect
+    connection = pool._invoke_creator(self)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/strategies.py", line 106, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 412, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.6/site-packages/pymysql/__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/pymysql/connections.py", line 327, in __init__
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/pymysql/connections.py", line 598, in connect
+    self._request_authentication()
+  File "/usr/local/lib/python3.6/site-packages/pymysql/connections.py", line 873, in _request_authentication
+    auth_packet = _auth.caching_sha2_password_auth(self, auth_packet)
+  File "/usr/local/lib/python3.6/site-packages/pymysql/_auth.py", line 253, in caching_sha2_password_auth
+    pkt = _roundtrip(conn, data)
+  File "/usr/local/lib/python3.6/site-packages/pymysql/_auth.py", line 112, in _roundtrip
+    pkt = conn._read_packet()
+  File "/usr/local/lib/python3.6/site-packages/pymysql/connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1049, "Unknown database 'starlight'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/code/api_views/base/api.py", line 28, in dispatch_request
+    return api_method()
+  File "/code/api_views/post_api.py", line 43, in getPostList
+    res = Post.get_posts_list(page, limit, order_by)
+  File "/code/base/mc.py", line 103, in _
+    r = f(*a, **kw)
+  File "/code/models/core.py", line 81, in get_posts_list
+    posts = query.paginate(page, per_page)
+  File "/usr/local/lib/python3.6/site-packages/flask_sqlalchemy/__init__.py", line 491, in paginate
+    items = self.limit(per_page).offset((page - 1) * per_page).all()
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2843, in all
+    return list(self)
+  File "/code/base/base_extend.py", line 79, in __iter__
+    return BaseQuery.__iter__(self)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2995, in __iter__
+    return self._execute_and_instances(context)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 3016, in _execute_and_instances
+    close_with_result=True)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 3025, in _get_bind_args
+    **kw
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 3007, in _connection_from_session
+    conn = self.session.connection(**kw)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1046, in connection
+    execution_options=execution_options)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1051, in _connection_for_bind
+    engine, execution_options)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 409, in _connection_for_bind
+    conn = bind.contextual_connect()
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2123, in contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2162, in _wrap_pool_connect
+    e, dialect, self)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1476, in _handle_dbapi_exception_noconnection
+    exc_info
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 265, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 248, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2158, in _wrap_pool_connect
+    return fn()
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 400, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 788, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 529, in checkout
+    rec = pool._do_get()
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1193, in _do_get
+    self._dec_overflow()
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 249, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1190, in _do_get
+    return self._create_connection()
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 347, in _create_connection
+    return _ConnectionRecord(self)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 474, in __init__
+    self.__connect(first_connect_check=True)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 671, in __connect
+    connection = pool._invoke_creator(self)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/strategies.py", line 106, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 412, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.6/site-packages/pymysql/__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/pymysql/connections.py", line 327, in __init__
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/pymysql/connections.py", line 598, in connect
+    self._request_authentication()
+  File "/usr/local/lib/python3.6/site-packages/pymysql/connections.py", line 873, in _request_authentication
+    auth_packet = _auth.caching_sha2_password_auth(self, auth_packet)
+  File "/usr/local/lib/python3.6/site-packages/pymysql/_auth.py", line 253, in caching_sha2_password_auth
+    pkt = _roundtrip(conn, data)
+  File "/usr/local/lib/python3.6/site-packages/pymysql/_auth.py", line 112, in _roundtrip
+    pkt = conn._read_packet()
+  File "/usr/local/lib/python3.6/site-packages/pymysql/connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.InternalError: (pymysql.err.InternalError) (1049, "Unknown database 'starlight'") (Background on this error at: http://sqlalche.me/e/2j85)
+[2019-02-09 00:26:57,165] [INFO] _internal : 172.28.0.3 - - [09/Feb/2019 00:26:57] "POST /api/post/getPostList HTTP/1.0" 500 -
+[2019-02-09 00:26:57,179] [ERROR] _internal : Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python3.6/site-packages/werkzeug/serving.py", line 258, in execute
+    application_iter = app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2295, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1748, in handle_exception
+    return self.finalize_request(handler(e), from_error_handler=True)
+  File "/code/flask_app/app.py", line 139, in error_handler
+    msg = error.message
+AttributeError: 'InternalError' object has no attribute 'message'
+[2019-02-09 00:26:59,683] [INFO] post_api : getPostList
+[2019-02-09 00:26:59,693] [ERROR] app : Exception on /api/post/getPostList [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2158, in _wrap_pool_connect
+    return fn()
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 400, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 788, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 529, in checkout
+    rec = pool._do_get()
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1193, in _do_get
+    self._dec_overflow()
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 249, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1190, in _do_get
+    return self._create_connection()
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 347, in _create_connection
+    return _ConnectionRecord(self)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 474, in __init__
+    self.__connect(first_connect_check=True)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 671, in __connect
+    connection = pool._invoke_creator(self)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/strategies.py", line 106, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 412, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.6/site-packages/pymysql/__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/pymysql/connections.py", line 327, in __init__
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/pymysql/connections.py", line 598, in connect
+    self._request_authentication()
+  File "/usr/local/lib/python3.6/site-packages/pymysql/connections.py", line 873, in _request_authentication
+    auth_packet = _auth.caching_sha2_password_auth(self, auth_packet)
+  File "/usr/local/lib/python3.6/site-packages/pymysql/_auth.py", line 226, in caching_sha2_password_auth
+    pkt = conn._read_packet()
+  File "/usr/local/lib/python3.6/site-packages/pymysql/connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1049, "Unknown database 'starlight'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/code/api_views/base/api.py", line 28, in dispatch_request
+    return api_method()
+  File "/code/api_views/post_api.py", line 43, in getPostList
+    res = Post.get_posts_list(page, limit, order_by)
+  File "/code/base/mc.py", line 103, in _
+    r = f(*a, **kw)
+  File "/code/models/core.py", line 81, in get_posts_list
+    posts = query.paginate(page, per_page)
+  File "/usr/local/lib/python3.6/site-packages/flask_sqlalchemy/__init__.py", line 491, in paginate
+    items = self.limit(per_page).offset((page - 1) * per_page).all()
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2843, in all
+    return list(self)
+  File "/code/base/base_extend.py", line 79, in __iter__
+    return BaseQuery.__iter__(self)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2995, in __iter__
+    return self._execute_and_instances(context)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 3016, in _execute_and_instances
+    close_with_result=True)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 3025, in _get_bind_args
+    **kw
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 3007, in _connection_from_session
+    conn = self.session.connection(**kw)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1046, in connection
+    execution_options=execution_options)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1051, in _connection_for_bind
+    engine, execution_options)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 409, in _connection_for_bind
+    conn = bind.contextual_connect()
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2123, in contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2162, in _wrap_pool_connect
+    e, dialect, self)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1476, in _handle_dbapi_exception_noconnection
+    exc_info
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 265, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 248, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2158, in _wrap_pool_connect
+    return fn()
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 400, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 788, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 529, in checkout
+    rec = pool._do_get()
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1193, in _do_get
+    self._dec_overflow()
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 249, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1190, in _do_get
+    return self._create_connection()
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 347, in _create_connection
+    return _ConnectionRecord(self)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 474, in __init__
+    self.__connect(first_connect_check=True)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 671, in __connect
+    connection = pool._invoke_creator(self)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/strategies.py", line 106, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 412, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.6/site-packages/pymysql/__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/pymysql/connections.py", line 327, in __init__
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/pymysql/connections.py", line 598, in connect
+    self._request_authentication()
+  File "/usr/local/lib/python3.6/site-packages/pymysql/connections.py", line 873, in _request_authentication
+    auth_packet = _auth.caching_sha2_password_auth(self, auth_packet)
+  File "/usr/local/lib/python3.6/site-packages/pymysql/_auth.py", line 226, in caching_sha2_password_auth
+    pkt = conn._read_packet()
+  File "/usr/local/lib/python3.6/site-packages/pymysql/connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.InternalError: (pymysql.err.InternalError) (1049, "Unknown database 'starlight'") (Background on this error at: http://sqlalche.me/e/2j85)
+[2019-02-09 00:26:59,707] [INFO] _internal : 172.28.0.3 - - [09/Feb/2019 00:26:59] "POST /api/post/getPostList HTTP/1.0" 500 -
+[2019-02-09 00:26:59,720] [ERROR] _internal : Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python3.6/site-packages/werkzeug/serving.py", line 258, in execute
+    application_iter = app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2295, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1748, in handle_exception
+    return self.finalize_request(handler(e), from_error_handler=True)
+  File "/code/flask_app/app.py", line 139, in error_handler
+    msg = error.message
+AttributeError: 'InternalError' object has no attribute 'message'
+[2019-02-09 00:27:00,763] [INFO] post_api : getPostList
+[2019-02-09 00:27:00,777] [INFO] _internal : 172.28.0.3 - - [09/Feb/2019 00:27:00] "POST /api/post/getPostList HTTP/1.0" 200 -
+[2019-02-09 00:32:29,423] [INFO] _internal : 172.28.0.3 - - [09/Feb/2019 00:32:29] "GET /index/ HTTP/1.0" 200 -
+[2019-02-09 00:32:29,848] [INFO] post_api : getPostList
+[2019-02-09 00:32:29,850] [INFO] _internal : 172.28.0.3 - - [09/Feb/2019 00:32:29] "POST /api/post/getTag HTTP/1.0" 200 -
+[2019-02-09 00:32:29,873] [INFO] _internal : 172.28.0.3 - - [09/Feb/2019 00:32:29] "POST /api/post/getPostList HTTP/1.0" 200 -
+[2019-02-09 00:32:32,762] [INFO] post_api : getPostList
+[2019-02-09 00:32:32,772] [INFO] log : SHOW VARIABLES LIKE 'sql_mode'
+[2019-02-09 00:32:32,773] [INFO] log : {}
+[2019-02-09 00:32:32,784] [INFO] log : SHOW VARIABLES LIKE 'lower_case_table_names'
+[2019-02-09 00:32:32,785] [INFO] log : {}
+[2019-02-09 00:32:32,789] [INFO] log : SELECT DATABASE()
+[2019-02-09 00:32:32,790] [INFO] log : {}
+[2019-02-09 00:32:32,792] [INFO] log : show collation where `Charset` = 'utf8mb4' and `Collation` = 'utf8mb4_bin'
+[2019-02-09 00:32:32,794] [INFO] log : {}
+[2019-02-09 00:32:32,800] [INFO] log : SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
+[2019-02-09 00:32:32,801] [INFO] log : {}
+[2019-02-09 00:32:32,803] [INFO] log : SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
+[2019-02-09 00:32:32,804] [INFO] log : {}
+[2019-02-09 00:32:32,806] [INFO] log : SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8mb4) COLLATE utf8mb4_bin AS anon_1
+[2019-02-09 00:32:32,807] [INFO] log : {}
+[2019-02-09 00:32:32,812] [INFO] log : BEGIN (implicit)
+[2019-02-09 00:32:32,818] [INFO] log : SELECT posts.id AS posts_id, posts.created_at AS posts_created_at, posts.updated_at AS posts_updated_at, posts.author_id AS posts_author_id, posts.title AS posts_title, posts.orig_url AS posts_orig_url, posts.can_comment AS posts_can_comment 
+FROM posts ORDER BY -created_at 
+ LIMIT %(param_1)s, %(param_2)s
+[2019-02-09 00:32:32,820] [INFO] log : {'param_1': 5, 'param_2': 5}
+[2019-02-09 00:32:32,823] [ERROR] app : Exception on /api/post/getPostList [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1193, in _execute_context
+    context)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 509, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.6/site-packages/pymysql/connections.py", line 516, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.6/site-packages/pymysql/connections.py", line 727, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.6/site-packages/pymysql/connections.py", line 1066, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.6/site-packages/pymysql/connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'starlight.posts' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/code/api_views/base/api.py", line 28, in dispatch_request
+    return api_method()
+  File "/code/api_views/post_api.py", line 43, in getPostList
+    res = Post.get_posts_list(page, limit, order_by)
+  File "/code/base/mc.py", line 103, in _
+    r = f(*a, **kw)
+  File "/code/models/core.py", line 81, in get_posts_list
+    posts = query.paginate(page, per_page)
+  File "/usr/local/lib/python3.6/site-packages/flask_sqlalchemy/__init__.py", line 491, in paginate
+    items = self.limit(per_page).offset((page - 1) * per_page).all()
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2843, in all
+    return list(self)
+  File "/code/base/base_extend.py", line 79, in __iter__
+    return BaseQuery.__iter__(self)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2995, in __iter__
+    return self._execute_and_instances(context)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 3018, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 948, in execute
+    return meth(self, multiparams, params)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/sql/elements.py", line 269, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1060, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1200, in _execute_context
+    context)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1413, in _handle_dbapi_exception
+    exc_info
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 265, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 248, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1193, in _execute_context
+    context)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 509, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.6/site-packages/pymysql/connections.py", line 516, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.6/site-packages/pymysql/connections.py", line 727, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.6/site-packages/pymysql/connections.py", line 1066, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.6/site-packages/pymysql/connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.ProgrammingError: (pymysql.err.ProgrammingError) (1146, "Table 'starlight.posts' doesn't exist") [SQL: 'SELECT posts.id AS posts_id, posts.created_at AS posts_created_at, posts.updated_at AS posts_updated_at, posts.author_id AS posts_author_id, posts.title AS posts_title, posts.orig_url AS posts_orig_url, posts.can_comment AS posts_can_comment \nFROM posts ORDER BY -created_at \n LIMIT %(param_1)s, %(param_2)s'] [parameters: {'param_1': 5, 'param_2': 5}] (Background on this error at: http://sqlalche.me/e/f405)
+[2019-02-09 00:32:32,839] [INFO] log : ROLLBACK
+[2019-02-09 00:32:32,846] [INFO] _internal : 172.28.0.3 - - [09/Feb/2019 00:32:32] "POST /api/post/getPostList HTTP/1.0" 500 -
+[2019-02-09 00:32:32,862] [ERROR] _internal : Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python3.6/site-packages/werkzeug/serving.py", line 258, in execute
+    application_iter = app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2295, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1748, in handle_exception
+    return self.finalize_request(handler(e), from_error_handler=True)
+  File "/code/flask_app/app.py", line 139, in error_handler
+    msg = error.message
+AttributeError: 'ProgrammingError' object has no attribute 'message'
+[2019-02-09 00:32:34,544] [INFO] post_api : getPostList
+[2019-02-09 00:32:34,560] [INFO] _internal : 172.28.0.3 - - [09/Feb/2019 00:32:34] "POST /api/post/getPostList HTTP/1.0" 200 -
+[2019-02-09 00:33:34,369] [INFO] _internal :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2019-02-09 00:33:38,390] [INFO] _internal : 172.28.0.3 - - [09/Feb/2019 00:33:38] "GET /index/ HTTP/1.0" 200 -
+[2019-02-09 00:33:38,828] [INFO] post_api : getPostList
+[2019-02-09 00:33:38,830] [INFO] _internal : 172.28.0.3 - - [09/Feb/2019 00:33:38] "POST /api/post/getTag HTTP/1.0" 200 -
+[2019-02-09 00:33:38,877] [INFO] _internal : 172.28.0.3 - - [09/Feb/2019 00:33:38] "POST /api/post/getPostList HTTP/1.0" 200 -
+[2019-02-09 00:33:40,628] [INFO] post_api : getPostList
+[2019-02-09 00:33:40,664] [INFO] log : SHOW VARIABLES LIKE 'sql_mode'
+[2019-02-09 00:33:40,665] [INFO] log : {}
+[2019-02-09 00:33:40,670] [INFO] log : SHOW VARIABLES LIKE 'lower_case_table_names'
+[2019-02-09 00:33:40,670] [INFO] log : {}
+[2019-02-09 00:33:40,673] [INFO] log : SELECT DATABASE()
+[2019-02-09 00:33:40,674] [INFO] log : {}
+[2019-02-09 00:33:40,677] [INFO] log : show collation where `Charset` = 'utf8mb4' and `Collation` = 'utf8mb4_bin'
+[2019-02-09 00:33:40,677] [INFO] log : {}
+[2019-02-09 00:33:40,682] [INFO] log : SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
+[2019-02-09 00:33:40,683] [INFO] log : {}
+[2019-02-09 00:33:40,685] [INFO] log : SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
+[2019-02-09 00:33:40,686] [INFO] log : {}
+[2019-02-09 00:33:40,688] [INFO] log : SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8mb4) COLLATE utf8mb4_bin AS anon_1
+[2019-02-09 00:33:40,689] [INFO] log : {}
+[2019-02-09 00:33:40,695] [INFO] log : BEGIN (implicit)
+[2019-02-09 00:33:40,698] [INFO] log : SELECT posts.id AS posts_id, posts.created_at AS posts_created_at, posts.updated_at AS posts_updated_at, posts.author_id AS posts_author_id, posts.title AS posts_title, posts.orig_url AS posts_orig_url, posts.can_comment AS posts_can_comment 
+FROM posts ORDER BY -created_at 
+ LIMIT %(param_1)s, %(param_2)s
+[2019-02-09 00:33:40,699] [INFO] log : {'param_1': 5, 'param_2': 5}
+[2019-02-09 00:33:40,702] [ERROR] app : Exception on /api/post/getPostList [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1193, in _execute_context
+    context)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 509, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.6/site-packages/pymysql/connections.py", line 516, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.6/site-packages/pymysql/connections.py", line 727, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.6/site-packages/pymysql/connections.py", line 1066, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.6/site-packages/pymysql/connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'starlight.posts' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/code/api_views/base/api.py", line 28, in dispatch_request
+    return api_method()
+  File "/code/api_views/post_api.py", line 43, in getPostList
+    res = Post.get_posts_list(page, limit, order_by)
+  File "/code/base/mc.py", line 103, in _
+    r = f(*a, **kw)
+  File "/code/models/core.py", line 81, in get_posts_list
+    posts = query.paginate(page, per_page)
+  File "/usr/local/lib/python3.6/site-packages/flask_sqlalchemy/__init__.py", line 491, in paginate
+    items = self.limit(per_page).offset((page - 1) * per_page).all()
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2843, in all
+    return list(self)
+  File "/code/base/base_extend.py", line 79, in __iter__
+    return BaseQuery.__iter__(self)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2995, in __iter__
+    return self._execute_and_instances(context)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 3018, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 948, in execute
+    return meth(self, multiparams, params)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/sql/elements.py", line 269, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1060, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1200, in _execute_context
+    context)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1413, in _handle_dbapi_exception
+    exc_info
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 265, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 248, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1193, in _execute_context
+    context)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 509, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.6/site-packages/pymysql/connections.py", line 516, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.6/site-packages/pymysql/connections.py", line 727, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.6/site-packages/pymysql/connections.py", line 1066, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.6/site-packages/pymysql/connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.ProgrammingError: (pymysql.err.ProgrammingError) (1146, "Table 'starlight.posts' doesn't exist") [SQL: 'SELECT posts.id AS posts_id, posts.created_at AS posts_created_at, posts.updated_at AS posts_updated_at, posts.author_id AS posts_author_id, posts.title AS posts_title, posts.orig_url AS posts_orig_url, posts.can_comment AS posts_can_comment \nFROM posts ORDER BY -created_at \n LIMIT %(param_1)s, %(param_2)s'] [parameters: {'param_1': 5, 'param_2': 5}] (Background on this error at: http://sqlalche.me/e/f405)
+[2019-02-09 00:33:40,736] [INFO] log : ROLLBACK
+[2019-02-09 00:33:40,746] [INFO] _internal : 172.28.0.3 - - [09/Feb/2019 00:33:40] "POST /api/post/getPostList HTTP/1.0" 500 -
+[2019-02-09 00:33:40,764] [ERROR] _internal : Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python3.6/site-packages/werkzeug/serving.py", line 258, in execute
+    application_iter = app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2295, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1748, in handle_exception
+    return self.finalize_request(handler(e), from_error_handler=True)
+  File "/code/flask_app/app.py", line 139, in error_handler
+    msg = error.message
+AttributeError: 'ProgrammingError' object has no attribute 'message'
+[2019-02-09 01:04:54,052] [INFO] _internal :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2019-02-09 01:04:54,057] [INFO] _internal :  * Restarting with stat
+[2019-02-09 01:04:55,495] [WARNING] _internal :  * Debugger is active!
+[2019-02-09 01:04:55,503] [INFO] _internal :  * Debugger PIN: 968-959-205
+[2019-02-09 01:07:27,606] [INFO] _internal : 172.30.0.3 - - [09/Feb/2019 01:07:27] "GET /index/ HTTP/1.0" 200 -
+[2019-02-09 01:07:28,095] [INFO] post_api : getPostList
+[2019-02-09 01:07:28,099] [INFO] _internal : 172.30.0.3 - - [09/Feb/2019 01:07:28] "POST /api/post/getTag HTTP/1.0" 200 -
+[2019-02-09 01:07:28,126] [INFO] _internal : 172.30.0.3 - - [09/Feb/2019 01:07:28] "POST /api/post/getPostList HTTP/1.0" 500 -
+[2019-02-09 01:07:32,820] [INFO] _internal : 172.30.0.3 - - [09/Feb/2019 01:07:32] "GET /index/ HTTP/1.0" 200 -
+[2019-02-09 01:07:33,276] [INFO] post_api : getPostList
+[2019-02-09 01:07:33,281] [INFO] _internal : 172.30.0.3 - - [09/Feb/2019 01:07:33] "POST /api/post/getTag HTTP/1.0" 200 -
+[2019-02-09 01:07:33,317] [INFO] _internal : 172.30.0.3 - - [09/Feb/2019 01:07:33] "POST /api/post/getPostList HTTP/1.0" 500 -
+[2019-02-09 01:12:29,514] [INFO] _internal :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2019-02-09 01:12:29,516] [INFO] _internal :  * Restarting with stat
+[2019-02-09 01:12:30,726] [WARNING] _internal :  * Debugger is active!
+[2019-02-09 01:12:30,728] [INFO] _internal :  * Debugger PIN: 968-959-205
+[2019-02-09 01:14:02,336] [INFO] _internal :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2019-02-09 01:14:35,208] [INFO] _internal :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2019-02-09 01:14:47,014] [INFO] _internal :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2019-02-09 01:14:47,016] [INFO] _internal :  * Restarting with stat
+[2019-02-09 01:14:48,257] [WARNING] _internal :  * Debugger is active!
+[2019-02-09 01:14:48,259] [INFO] _internal :  * Debugger PIN: 968-959-205
+[2019-02-09 01:16:24,777] [INFO] _internal :  * Detected change in '/code/flask_app/app.py', reloading
+[2019-02-09 01:16:24,919] [INFO] _internal :  * Restarting with stat
+[2019-02-09 01:16:26,257] [WARNING] _internal :  * Debugger is active!
+[2019-02-09 01:16:26,258] [INFO] _internal :  * Debugger PIN: 968-959-205
+[2019-02-09 01:16:31,248] [INFO] _internal :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2019-02-09 01:16:31,249] [INFO] _internal :  * Restarting with stat
+[2019-02-09 01:16:32,457] [WARNING] _internal :  * Debugger is active!
+[2019-02-09 01:16:32,458] [INFO] _internal :  * Debugger PIN: 968-959-205
+[2019-02-09 01:19:31,668] [INFO] _internal :  * Detected change in '/code/flask_app/app.py', reloading
+[2019-02-09 01:19:31,825] [INFO] _internal :  * Restarting with stat
+[2019-02-09 01:19:32,980] [WARNING] _internal :  * Debugger is active!
+[2019-02-09 01:19:32,981] [INFO] _internal :  * Debugger PIN: 968-959-205
+[2019-02-09 01:21:35,904] [INFO] _internal :  * Detected change in '/code/auto_app.py', reloading
+[2019-02-09 01:21:36,058] [INFO] _internal :  * Restarting with stat
+[2019-02-09 01:21:42,064] [INFO] _internal :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2019-02-09 01:22:11,702] [INFO] _internal : 172.30.0.3 - - [09/Feb/2019 01:22:11] "GET /index/ HTTP/1.0" 200 -
+[2019-02-09 01:22:12,203] [INFO] post_api : getPostList
+[2019-02-09 01:22:12,207] [INFO] _internal : 172.30.0.3 - - [09/Feb/2019 01:22:12] "POST /api/post/getTag HTTP/1.0" 200 -
+[2019-02-09 01:22:12,205] [ERROR] app : Exception on /api/post/getPostList [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 493, in connect
+    sock = self._connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+OSError: [Errno 99] Cannot assign requested address
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/walrus/database.py", line 118, in execute_command
+    connection.send_command(*args)
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 594, in send_packed_command
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 498, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 99 connecting to localhost:6379. Cannot assign requested address.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 493, in connect
+    sock = self._connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+OSError: [Errno 99] Cannot assign requested address
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/code/api_views/base/api.py", line 28, in dispatch_request
+    return api_method()
+  File "/code/api_views/post_api.py", line 43, in getPostList
+    res = Post.get_posts_list(page, limit, order_by)
+  File "/code/base/mc.py", line 100, in _
+    r = rdb.get(key) if not force else None
+  File "/usr/local/lib/python3.6/site-packages/redis/client.py", line 1207, in get
+    return self.execute_command('GET', name)
+  File "/usr/local/lib/python3.6/site-packages/walrus/database.py", line 125, in execute_command
+    connection.send_command(*args)
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 594, in send_packed_command
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 498, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 99 connecting to localhost:6379. Cannot assign requested address.
+[2019-02-09 01:22:12,241] [INFO] _internal : 172.30.0.3 - - [09/Feb/2019 01:22:12] "POST /api/post/getPostList HTTP/1.0" 500 -
+[2019-02-09 01:22:12,254] [ERROR] _internal : Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python3.6/site-packages/werkzeug/serving.py", line 258, in execute
+    application_iter = app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2295, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1748, in handle_exception
+    return self.finalize_request(handler(e), from_error_handler=True)
+  File "/code/flask_app/app.py", line 140, in error_handler
+    msg = error.message
+AttributeError: 'ConnectionError' object has no attribute 'message'
+[2019-02-09 01:27:38,537] [INFO] log : SHOW VARIABLES LIKE 'sql_mode'
+[2019-02-09 01:27:38,538] [INFO] log : {}
+[2019-02-09 01:27:38,546] [INFO] log : SHOW VARIABLES LIKE 'lower_case_table_names'
+[2019-02-09 01:27:38,547] [INFO] log : {}
+[2019-02-09 01:27:38,549] [INFO] log : SELECT DATABASE()
+[2019-02-09 01:27:38,550] [INFO] log : {}
+[2019-02-09 01:27:38,552] [INFO] log : show collation where `Charset` = 'utf8mb4' and `Collation` = 'utf8mb4_bin'
+[2019-02-09 01:27:38,552] [INFO] log : {}
+[2019-02-09 01:27:38,558] [INFO] log : SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
+[2019-02-09 01:27:38,559] [INFO] log : {}
+[2019-02-09 01:27:38,561] [INFO] log : SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
+[2019-02-09 01:27:38,562] [INFO] log : {}
+[2019-02-09 01:27:38,564] [INFO] log : SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8mb4) COLLATE utf8mb4_bin AS anon_1
+[2019-02-09 01:27:38,565] [INFO] log : {}
+[2019-02-09 01:27:38,568] [INFO] log : DESCRIBE `social_auth_usersocialauth`
+[2019-02-09 01:27:38,569] [INFO] log : {}
+[2019-02-09 01:27:38,572] [INFO] log : ROLLBACK
+[2019-02-09 01:27:38,574] [INFO] log : DESCRIBE `social_auth_nonce`
+[2019-02-09 01:27:38,574] [INFO] log : {}
+[2019-02-09 01:27:38,576] [INFO] log : ROLLBACK
+[2019-02-09 01:27:38,578] [INFO] log : DESCRIBE `social_auth_association`
+[2019-02-09 01:27:38,579] [INFO] log : {}
+[2019-02-09 01:27:38,580] [INFO] log : ROLLBACK
+[2019-02-09 01:27:38,582] [INFO] log : DESCRIBE `social_auth_code`
+[2019-02-09 01:27:38,582] [INFO] log : {}
+[2019-02-09 01:27:38,584] [INFO] log : ROLLBACK
+[2019-02-09 01:27:38,585] [INFO] log : DESCRIBE `social_auth_partial`
+[2019-02-09 01:27:38,586] [INFO] log : {}
+[2019-02-09 01:27:38,587] [INFO] log : ROLLBACK
+[2019-02-09 01:27:38,591] [INFO] log : DESCRIBE `contacts`
+[2019-02-09 01:27:38,593] [INFO] log : {}
+[2019-02-09 01:27:38,595] [INFO] log : ROLLBACK
+[2019-02-09 01:27:38,597] [INFO] log : DESCRIBE `user_follow_stats`
+[2019-02-09 01:27:38,598] [INFO] log : {}
+[2019-02-09 01:27:38,600] [INFO] log : ROLLBACK
+[2019-02-09 01:27:38,602] [INFO] log : DESCRIBE `roles_users`
+[2019-02-09 01:27:38,602] [INFO] log : {}
+[2019-02-09 01:27:38,604] [INFO] log : ROLLBACK
+[2019-02-09 01:27:38,605] [INFO] log : DESCRIBE `role`
+[2019-02-09 01:27:38,606] [INFO] log : {}
+[2019-02-09 01:27:38,607] [INFO] log : ROLLBACK
+[2019-02-09 01:27:38,609] [INFO] log : DESCRIBE `users`
+[2019-02-09 01:27:38,610] [INFO] log : {}
+[2019-02-09 01:27:38,612] [INFO] log : ROLLBACK
+[2019-02-09 01:27:38,613] [INFO] log : DESCRIBE `like_items`
+[2019-02-09 01:27:38,614] [INFO] log : {}
+[2019-02-09 01:27:38,616] [INFO] log : ROLLBACK
+[2019-02-09 01:27:38,617] [INFO] log : DESCRIBE `comment_items`
+[2019-02-09 01:27:38,618] [INFO] log : {}
+[2019-02-09 01:27:38,619] [INFO] log : ROLLBACK
+[2019-02-09 01:27:38,621] [INFO] log : DESCRIBE `collect_items`
+[2019-02-09 01:27:38,621] [INFO] log : {}
+[2019-02-09 01:27:38,623] [INFO] log : ROLLBACK
+[2019-02-09 01:27:38,626] [INFO] log : DESCRIBE `posts`
+[2019-02-09 01:27:38,627] [INFO] log : {}
+[2019-02-09 01:27:38,629] [INFO] log : ROLLBACK
+[2019-02-09 01:27:38,631] [INFO] log : DESCRIBE `tags`
+[2019-02-09 01:27:38,632] [INFO] log : {}
+[2019-02-09 01:27:38,634] [INFO] log : ROLLBACK
+[2019-02-09 01:27:38,635] [INFO] log : DESCRIBE `post_tags`
+[2019-02-09 01:27:38,636] [INFO] log : {}
+[2019-02-09 01:27:38,638] [INFO] log : ROLLBACK
+[2019-02-09 01:27:38,639] [INFO] log : DESCRIBE `contacts`
+[2019-02-09 01:27:38,640] [INFO] log : {}
+[2019-02-09 01:27:38,642] [INFO] log : ROLLBACK
+[2019-02-09 01:27:38,643] [INFO] log : DESCRIBE `user_follow_stats`
+[2019-02-09 01:27:38,644] [INFO] log : {}
+[2019-02-09 01:27:38,646] [INFO] log : ROLLBACK
+[2019-02-09 01:27:38,648] [INFO] log : DESCRIBE `roles_users`
+[2019-02-09 01:27:38,648] [INFO] log : {}
+[2019-02-09 01:27:38,650] [INFO] log : ROLLBACK
+[2019-02-09 01:27:38,651] [INFO] log : DESCRIBE `role`
+[2019-02-09 01:27:38,652] [INFO] log : {}
+[2019-02-09 01:27:38,654] [INFO] log : ROLLBACK
+[2019-02-09 01:27:38,655] [INFO] log : DESCRIBE `users`
+[2019-02-09 01:27:38,656] [INFO] log : {}
+[2019-02-09 01:27:38,659] [INFO] log : ROLLBACK
+[2019-02-09 01:27:38,661] [INFO] log : DESCRIBE `like_items`
+[2019-02-09 01:27:38,662] [INFO] log : {}
+[2019-02-09 01:27:38,665] [INFO] log : ROLLBACK
+[2019-02-09 01:27:38,666] [INFO] log : DESCRIBE `comment_items`
+[2019-02-09 01:27:38,667] [INFO] log : {}
+[2019-02-09 01:27:38,668] [INFO] log : ROLLBACK
+[2019-02-09 01:27:38,670] [INFO] log : DESCRIBE `collect_items`
+[2019-02-09 01:27:38,670] [INFO] log : {}
+[2019-02-09 01:27:38,672] [INFO] log : ROLLBACK
+[2019-02-09 01:27:38,674] [INFO] log : DESCRIBE `posts`
+[2019-02-09 01:27:38,674] [INFO] log : {}
+[2019-02-09 01:27:38,676] [INFO] log : ROLLBACK
+[2019-02-09 01:27:38,678] [INFO] log : DESCRIBE `tags`
+[2019-02-09 01:27:38,679] [INFO] log : {}
+[2019-02-09 01:27:38,681] [INFO] log : ROLLBACK
+[2019-02-09 01:27:38,682] [INFO] log : DESCRIBE `post_tags`
+[2019-02-09 01:27:38,682] [INFO] log : {}
+[2019-02-09 01:27:38,684] [INFO] log : ROLLBACK
+[2019-02-09 01:27:38,686] [INFO] log : 
+CREATE TABLE contacts (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created_at DATETIME, 
+	updated_at DATETIME, 
+	to_id INTEGER, 
+	from_id INTEGER, 
+	PRIMARY KEY (id), 
+	CONSTRAINT uk_from_to UNIQUE (from_id, to_id)
+)
+
+
+[2019-02-09 01:27:38,687] [INFO] log : {}
+[2019-02-09 01:27:38,778] [INFO] log : COMMIT
+[2019-02-09 01:27:38,780] [INFO] log : CREATE INDEX idx_time_to_from ON contacts (created_at, to_id, from_id)
+[2019-02-09 01:27:38,780] [INFO] log : {}
+[2019-02-09 01:27:38,805] [INFO] log : COMMIT
+[2019-02-09 01:27:38,806] [INFO] log : CREATE INDEX idx_to_time_from ON contacts (to_id, created_at, from_id)
+[2019-02-09 01:27:38,807] [INFO] log : {}
+[2019-02-09 01:27:38,827] [INFO] log : COMMIT
+[2019-02-09 01:27:38,830] [INFO] log : 
+CREATE TABLE user_follow_stats (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created_at DATETIME, 
+	updated_at DATETIME, 
+	follower_count INTEGER, 
+	following_count INTEGER, 
+	PRIMARY KEY (id)
+)CHARSET=utf8mb4
+
+
+[2019-02-09 01:27:38,831] [INFO] log : {}
+[2019-02-09 01:27:38,851] [INFO] log : COMMIT
+[2019-02-09 01:27:38,852] [INFO] log : 
+CREATE TABLE `role` (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created_at DATETIME, 
+	updated_at DATETIME, 
+	name VARCHAR(80), 
+	description VARCHAR(191), 
+	PRIMARY KEY (id), 
+	UNIQUE (name)
+)CHARSET=utf8mb4
+
+
+[2019-02-09 01:27:38,853] [INFO] log : {}
+[2019-02-09 01:27:38,881] [INFO] log : COMMIT
+[2019-02-09 01:27:38,883] [INFO] log : 
+CREATE TABLE users (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created_at DATETIME, 
+	updated_at DATETIME, 
+	bio VARCHAR(128), 
+	name VARCHAR(128), 
+	nickname VARCHAR(128), 
+	email VARCHAR(191), 
+	password VARCHAR(191), 
+	website VARCHAR(191), 
+	github_url VARCHAR(191), 
+	last_login_at DATETIME, 
+	current_login_at DATETIME, 
+	last_login_ip VARCHAR(100), 
+	current_login_ip VARCHAR(100), 
+	login_count INTEGER, 
+	active BOOL, 
+	icon_color VARCHAR(7), 
+	confirmed_at DATETIME, 
+	company VARCHAR(191), 
+	avatar_id VARCHAR(20), 
+	PRIMARY KEY (id), 
+	CHECK (active IN (0, 1))
+)
+
+
+[2019-02-09 01:27:38,884] [INFO] log : {}
+[2019-02-09 01:27:38,906] [INFO] log : COMMIT
+[2019-02-09 01:27:38,908] [INFO] log : CREATE INDEX idx_email ON users (email)
+[2019-02-09 01:27:38,909] [INFO] log : {}
+[2019-02-09 01:27:38,935] [INFO] log : COMMIT
+[2019-02-09 01:27:38,936] [INFO] log : 
+CREATE TABLE like_items (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created_at DATETIME, 
+	updated_at DATETIME, 
+	user_id INTEGER, 
+	target_id INTEGER, 
+	target_kind INTEGER, 
+	PRIMARY KEY (id)
+)
+
+
+[2019-02-09 01:27:38,937] [INFO] log : {}
+[2019-02-09 01:27:38,955] [INFO] log : COMMIT
+[2019-02-09 01:27:38,957] [INFO] log : CREATE INDEX idx_ti ON like_items (target_id, target_kind, user_id)
+[2019-02-09 01:27:38,958] [INFO] log : {}
+[2019-02-09 01:27:38,981] [INFO] log : COMMIT
+[2019-02-09 01:27:38,983] [INFO] log : 
+CREATE TABLE comment_items (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created_at DATETIME, 
+	updated_at DATETIME, 
+	user_id INTEGER, 
+	target_id INTEGER, 
+	target_kind INTEGER, 
+	ref_id INTEGER, 
+	PRIMARY KEY (id)
+)
+
+
+[2019-02-09 01:27:38,984] [INFO] log : {}
+[2019-02-09 01:27:39,006] [INFO] log : COMMIT
+[2019-02-09 01:27:39,008] [INFO] log : CREATE INDEX idx_ti_tk ON comment_items (target_id, target_kind, user_id)
+[2019-02-09 01:27:39,009] [INFO] log : {}
+[2019-02-09 01:27:39,032] [INFO] log : COMMIT
+[2019-02-09 01:27:39,034] [INFO] log : 
+CREATE TABLE collect_items (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created_at DATETIME, 
+	updated_at DATETIME, 
+	user_id INTEGER, 
+	target_id INTEGER, 
+	target_kind INTEGER, 
+	PRIMARY KEY (id)
+)
+
+
+[2019-02-09 01:27:39,035] [INFO] log : {}
+[2019-02-09 01:27:39,055] [INFO] log : COMMIT
+[2019-02-09 01:27:39,056] [INFO] log : CREATE INDEX idx_ti_tk_ui ON collect_items (target_id, target_kind, user_id)
+[2019-02-09 01:27:39,058] [INFO] log : {}
+[2019-02-09 01:27:39,082] [INFO] log : COMMIT
+[2019-02-09 01:27:39,084] [INFO] log : 
+CREATE TABLE posts (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created_at DATETIME, 
+	updated_at DATETIME, 
+	author_id INTEGER, 
+	title VARCHAR(128), 
+	orig_url VARCHAR(255), 
+	can_comment BOOL, 
+	PRIMARY KEY (id), 
+	CHECK (can_comment IN (0, 1))
+)
+
+
+[2019-02-09 01:27:39,085] [INFO] log : {}
+[2019-02-09 01:27:39,107] [INFO] log : COMMIT
+[2019-02-09 01:27:39,109] [INFO] log : CREATE INDEX `idx_authorId` ON posts (author_id)
+[2019-02-09 01:27:39,109] [INFO] log : {}
+[2019-02-09 01:27:39,136] [INFO] log : COMMIT
+[2019-02-09 01:27:39,137] [INFO] log : CREATE INDEX idx_title ON posts (title)
+[2019-02-09 01:27:39,138] [INFO] log : {}
+[2019-02-09 01:27:39,161] [INFO] log : COMMIT
+[2019-02-09 01:27:39,163] [INFO] log : 
+CREATE TABLE tags (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created_at DATETIME, 
+	updated_at DATETIME, 
+	name VARCHAR(128), 
+	PRIMARY KEY (id), 
+	UNIQUE (name)
+)
+
+
+[2019-02-09 01:27:39,164] [INFO] log : {}
+[2019-02-09 01:27:39,194] [INFO] log : COMMIT
+[2019-02-09 01:27:39,198] [INFO] log : CREATE INDEX idx_name ON tags (name)
+[2019-02-09 01:27:39,199] [INFO] log : {}
+[2019-02-09 01:27:39,227] [INFO] log : COMMIT
+[2019-02-09 01:27:39,230] [INFO] log : 
+CREATE TABLE post_tags (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created_at DATETIME, 
+	updated_at DATETIME, 
+	post_id INTEGER, 
+	tag_id INTEGER, 
+	PRIMARY KEY (id)
+)
+
+
+[2019-02-09 01:27:39,231] [INFO] log : {}
+[2019-02-09 01:27:39,256] [INFO] log : COMMIT
+[2019-02-09 01:27:39,258] [INFO] log : CREATE INDEX idx_tag_id ON post_tags (tag_id, updated_at)
+[2019-02-09 01:27:39,259] [INFO] log : {}
+[2019-02-09 01:27:39,288] [INFO] log : COMMIT
+[2019-02-09 01:27:39,291] [INFO] log : CREATE INDEX idx_post_id ON post_tags (post_id, updated_at)
+[2019-02-09 01:27:39,293] [INFO] log : {}
+[2019-02-09 01:27:39,322] [INFO] log : COMMIT
+[2019-02-09 01:27:39,324] [INFO] log : 
+CREATE TABLE roles_users (
+	user_id INTEGER, 
+	role_id INTEGER, 
+	FOREIGN KEY(user_id) REFERENCES users (id), 
+	FOREIGN KEY(role_id) REFERENCES `role` (id)
+)
+
+
+[2019-02-09 01:27:39,327] [INFO] log : {}
+[2019-02-09 01:27:39,379] [INFO] log : COMMIT
+[2019-02-09 01:27:39,381] [INFO] log : DESCRIBE `social_auth_usersocialauth`
+[2019-02-09 01:27:39,381] [INFO] log : {}
+[2019-02-09 01:27:39,383] [INFO] log : ROLLBACK
+[2019-02-09 01:27:39,384] [INFO] log : DESCRIBE `social_auth_nonce`
+[2019-02-09 01:27:39,385] [INFO] log : {}
+[2019-02-09 01:27:39,386] [INFO] log : ROLLBACK
+[2019-02-09 01:27:39,387] [INFO] log : DESCRIBE `social_auth_association`
+[2019-02-09 01:27:39,388] [INFO] log : {}
+[2019-02-09 01:27:39,389] [INFO] log : ROLLBACK
+[2019-02-09 01:27:39,391] [INFO] log : DESCRIBE `social_auth_code`
+[2019-02-09 01:27:39,391] [INFO] log : {}
+[2019-02-09 01:27:39,395] [INFO] log : ROLLBACK
+[2019-02-09 01:27:39,396] [INFO] log : DESCRIBE `social_auth_partial`
+[2019-02-09 01:27:39,397] [INFO] log : {}
+[2019-02-09 01:27:39,400] [INFO] log : ROLLBACK
+[2019-02-09 01:27:39,402] [INFO] log : 
+CREATE TABLE social_auth_usersocialauth (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	provider VARCHAR(32), 
+	extra_data TEXT, 
+	uid VARCHAR(255), 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+[2019-02-09 01:27:39,403] [INFO] log : {}
+[2019-02-09 01:27:39,444] [INFO] log : COMMIT
+[2019-02-09 01:27:39,446] [INFO] log : CREATE INDEX ix_social_auth_usersocialauth_user_id ON social_auth_usersocialauth (user_id)
+[2019-02-09 01:27:39,447] [INFO] log : {}
+[2019-02-09 01:27:39,477] [INFO] log : COMMIT
+[2019-02-09 01:27:39,479] [INFO] log : 
+CREATE TABLE social_auth_nonce (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	server_url VARCHAR(255), 
+	timestamp INTEGER, 
+	salt VARCHAR(40), 
+	PRIMARY KEY (id), 
+	UNIQUE (server_url, timestamp, salt)
+)
+
+
+[2019-02-09 01:27:39,480] [INFO] log : {}
+[2019-02-09 01:27:39,510] [INFO] log : COMMIT
+[2019-02-09 01:27:39,513] [INFO] log : 
+CREATE TABLE social_auth_association (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	server_url VARCHAR(255), 
+	handle VARCHAR(255), 
+	secret VARCHAR(255), 
+	issued INTEGER, 
+	lifetime INTEGER, 
+	assoc_type VARCHAR(64), 
+	PRIMARY KEY (id), 
+	UNIQUE (server_url, handle)
+)
+
+
+[2019-02-09 01:27:39,515] [INFO] log : {}
+[2019-02-09 01:27:39,548] [INFO] log : COMMIT
+[2019-02-09 01:27:39,550] [INFO] log : 
+CREATE TABLE social_auth_code (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	email VARCHAR(200), 
+	code VARCHAR(32), 
+	PRIMARY KEY (id), 
+	UNIQUE (code, email)
+)
+
+
+[2019-02-09 01:27:39,551] [INFO] log : {}
+[2019-02-09 01:27:39,583] [INFO] log : COMMIT
+[2019-02-09 01:27:39,585] [INFO] log : CREATE INDEX ix_social_auth_code_code ON social_auth_code (code)
+[2019-02-09 01:27:39,586] [INFO] log : {}
+[2019-02-09 01:27:39,615] [INFO] log : COMMIT
+[2019-02-09 01:27:39,617] [INFO] log : 
+CREATE TABLE social_auth_partial (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	token VARCHAR(32), 
+	data TEXT, 
+	next_step INTEGER, 
+	backend VARCHAR(32), 
+	PRIMARY KEY (id)
+)
+
+
+[2019-02-09 01:27:39,618] [INFO] log : {}
+[2019-02-09 01:27:39,640] [INFO] log : COMMIT
+[2019-02-09 01:27:39,642] [INFO] log : CREATE INDEX ix_social_auth_partial_token ON social_auth_partial (token)
+[2019-02-09 01:27:39,643] [INFO] log : {}
+[2019-02-09 01:27:39,672] [INFO] log : COMMIT
+[2019-02-09 01:28:18,405] [INFO] log : SHOW VARIABLES LIKE 'sql_mode'
+[2019-02-09 01:28:18,406] [INFO] log : {}
+[2019-02-09 01:28:18,410] [INFO] log : SHOW VARIABLES LIKE 'lower_case_table_names'
+[2019-02-09 01:28:18,410] [INFO] log : {}
+[2019-02-09 01:28:18,413] [INFO] log : SELECT DATABASE()
+[2019-02-09 01:28:18,414] [INFO] log : {}
+[2019-02-09 01:28:18,415] [INFO] log : show collation where `Charset` = 'utf8mb4' and `Collation` = 'utf8mb4_bin'
+[2019-02-09 01:28:18,416] [INFO] log : {}
+[2019-02-09 01:28:18,420] [INFO] log : SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
+[2019-02-09 01:28:18,421] [INFO] log : {}
+[2019-02-09 01:28:18,423] [INFO] log : SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
+[2019-02-09 01:28:18,423] [INFO] log : {}
+[2019-02-09 01:28:18,425] [INFO] log : SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8mb4) COLLATE utf8mb4_bin AS anon_1
+[2019-02-09 01:28:18,426] [INFO] log : {}
+[2019-02-09 01:28:18,429] [INFO] log : DESCRIBE `social_auth_usersocialauth`
+[2019-02-09 01:28:18,430] [INFO] log : {}
+[2019-02-09 01:28:18,435] [INFO] log : DESCRIBE `social_auth_nonce`
+[2019-02-09 01:28:18,436] [INFO] log : {}
+[2019-02-09 01:28:18,440] [INFO] log : DESCRIBE `social_auth_association`
+[2019-02-09 01:28:18,441] [INFO] log : {}
+[2019-02-09 01:28:18,444] [INFO] log : DESCRIBE `social_auth_code`
+[2019-02-09 01:28:18,445] [INFO] log : {}
+[2019-02-09 01:28:18,448] [INFO] log : DESCRIBE `social_auth_partial`
+[2019-02-09 01:28:18,449] [INFO] log : {}
+[2019-02-09 01:28:18,453] [INFO] log : 
+DROP TABLE social_auth_partial
+[2019-02-09 01:28:18,453] [INFO] log : {}
+[2019-02-09 01:28:18,477] [INFO] log : COMMIT
+[2019-02-09 01:28:18,479] [INFO] log : 
+DROP TABLE social_auth_code
+[2019-02-09 01:28:18,479] [INFO] log : {}
+[2019-02-09 01:28:18,496] [INFO] log : COMMIT
+[2019-02-09 01:28:18,498] [INFO] log : 
+DROP TABLE social_auth_association
+[2019-02-09 01:28:18,499] [INFO] log : {}
+[2019-02-09 01:28:18,514] [INFO] log : COMMIT
+[2019-02-09 01:28:18,516] [INFO] log : 
+DROP TABLE social_auth_nonce
+[2019-02-09 01:28:18,518] [INFO] log : {}
+[2019-02-09 01:28:18,537] [INFO] log : COMMIT
+[2019-02-09 01:28:18,539] [INFO] log : 
+DROP TABLE social_auth_usersocialauth
+[2019-02-09 01:28:18,540] [INFO] log : {}
+[2019-02-09 01:28:18,562] [INFO] log : COMMIT
+[2019-02-09 01:28:18,565] [INFO] log : DESCRIBE `contacts`
+[2019-02-09 01:28:18,566] [INFO] log : {}
+[2019-02-09 01:28:18,569] [INFO] log : DESCRIBE `user_follow_stats`
+[2019-02-09 01:28:18,570] [INFO] log : {}
+[2019-02-09 01:28:18,575] [INFO] log : DESCRIBE `roles_users`
+[2019-02-09 01:28:18,576] [INFO] log : {}
+[2019-02-09 01:28:18,580] [INFO] log : DESCRIBE `role`
+[2019-02-09 01:28:18,581] [INFO] log : {}
+[2019-02-09 01:28:18,586] [INFO] log : DESCRIBE `users`
+[2019-02-09 01:28:18,587] [INFO] log : {}
+[2019-02-09 01:28:18,591] [INFO] log : DESCRIBE `like_items`
+[2019-02-09 01:28:18,592] [INFO] log : {}
+[2019-02-09 01:28:18,595] [INFO] log : DESCRIBE `comment_items`
+[2019-02-09 01:28:18,596] [INFO] log : {}
+[2019-02-09 01:28:18,599] [INFO] log : DESCRIBE `collect_items`
+[2019-02-09 01:28:18,600] [INFO] log : {}
+[2019-02-09 01:28:18,604] [INFO] log : DESCRIBE `posts`
+[2019-02-09 01:28:18,604] [INFO] log : {}
+[2019-02-09 01:28:18,608] [INFO] log : DESCRIBE `tags`
+[2019-02-09 01:28:18,608] [INFO] log : {}
+[2019-02-09 01:28:18,612] [INFO] log : DESCRIBE `post_tags`
+[2019-02-09 01:28:18,613] [INFO] log : {}
+[2019-02-09 01:28:18,617] [INFO] log : 
+DROP TABLE roles_users
+[2019-02-09 01:28:18,618] [INFO] log : {}
+[2019-02-09 01:28:18,650] [INFO] log : COMMIT
+[2019-02-09 01:28:18,651] [INFO] log : 
+DROP TABLE post_tags
+[2019-02-09 01:28:18,652] [INFO] log : {}
+[2019-02-09 01:28:18,669] [INFO] log : COMMIT
+[2019-02-09 01:28:18,671] [INFO] log : 
+DROP TABLE tags
+[2019-02-09 01:28:18,672] [INFO] log : {}
+[2019-02-09 01:28:18,689] [INFO] log : COMMIT
+[2019-02-09 01:28:18,690] [INFO] log : 
+DROP TABLE posts
+[2019-02-09 01:28:18,691] [INFO] log : {}
+[2019-02-09 01:28:18,706] [INFO] log : COMMIT
+[2019-02-09 01:28:18,708] [INFO] log : 
+DROP TABLE collect_items
+[2019-02-09 01:28:18,709] [INFO] log : {}
+[2019-02-09 01:28:18,727] [INFO] log : COMMIT
+[2019-02-09 01:28:18,728] [INFO] log : 
+DROP TABLE comment_items
+[2019-02-09 01:28:18,729] [INFO] log : {}
+[2019-02-09 01:28:18,747] [INFO] log : COMMIT
+[2019-02-09 01:28:18,748] [INFO] log : 
+DROP TABLE like_items
+[2019-02-09 01:28:18,749] [INFO] log : {}
+[2019-02-09 01:28:18,767] [INFO] log : COMMIT
+[2019-02-09 01:28:18,769] [INFO] log : 
+DROP TABLE users
+[2019-02-09 01:28:18,770] [INFO] log : {}
+[2019-02-09 01:28:18,789] [INFO] log : COMMIT
+[2019-02-09 01:28:18,790] [INFO] log : 
+DROP TABLE `role`
+[2019-02-09 01:28:18,791] [INFO] log : {}
+[2019-02-09 01:28:18,807] [INFO] log : COMMIT
+[2019-02-09 01:28:18,809] [INFO] log : 
+DROP TABLE user_follow_stats
+[2019-02-09 01:28:18,810] [INFO] log : {}
+[2019-02-09 01:28:18,911] [INFO] log : COMMIT
+[2019-02-09 01:28:18,913] [INFO] log : 
+DROP TABLE contacts
+[2019-02-09 01:28:18,914] [INFO] log : {}
+[2019-02-09 01:28:18,933] [INFO] log : COMMIT
+[2019-02-09 01:28:18,935] [INFO] log : DESCRIBE `contacts`
+[2019-02-09 01:28:18,936] [INFO] log : {}
+[2019-02-09 01:28:18,939] [INFO] log : ROLLBACK
+[2019-02-09 01:28:18,940] [INFO] log : DESCRIBE `user_follow_stats`
+[2019-02-09 01:28:18,941] [INFO] log : {}
+[2019-02-09 01:28:18,943] [INFO] log : ROLLBACK
+[2019-02-09 01:28:18,945] [INFO] log : DESCRIBE `roles_users`
+[2019-02-09 01:28:18,946] [INFO] log : {}
+[2019-02-09 01:28:18,949] [INFO] log : ROLLBACK
+[2019-02-09 01:28:18,951] [INFO] log : DESCRIBE `role`
+[2019-02-09 01:28:18,952] [INFO] log : {}
+[2019-02-09 01:28:18,955] [INFO] log : ROLLBACK
+[2019-02-09 01:28:18,956] [INFO] log : DESCRIBE `users`
+[2019-02-09 01:28:18,957] [INFO] log : {}
+[2019-02-09 01:28:18,959] [INFO] log : ROLLBACK
+[2019-02-09 01:28:18,960] [INFO] log : DESCRIBE `like_items`
+[2019-02-09 01:28:18,961] [INFO] log : {}
+[2019-02-09 01:28:18,963] [INFO] log : ROLLBACK
+[2019-02-09 01:28:18,964] [INFO] log : DESCRIBE `comment_items`
+[2019-02-09 01:28:18,965] [INFO] log : {}
+[2019-02-09 01:28:18,967] [INFO] log : ROLLBACK
+[2019-02-09 01:28:18,968] [INFO] log : DESCRIBE `collect_items`
+[2019-02-09 01:28:18,969] [INFO] log : {}
+[2019-02-09 01:28:18,971] [INFO] log : ROLLBACK
+[2019-02-09 01:28:18,972] [INFO] log : DESCRIBE `posts`
+[2019-02-09 01:28:18,973] [INFO] log : {}
+[2019-02-09 01:28:18,975] [INFO] log : ROLLBACK
+[2019-02-09 01:28:18,976] [INFO] log : DESCRIBE `tags`
+[2019-02-09 01:28:18,977] [INFO] log : {}
+[2019-02-09 01:28:18,979] [INFO] log : ROLLBACK
+[2019-02-09 01:28:18,982] [INFO] log : DESCRIBE `post_tags`
+[2019-02-09 01:28:18,983] [INFO] log : {}
+[2019-02-09 01:28:18,985] [INFO] log : ROLLBACK
+[2019-02-09 01:28:18,988] [INFO] log : 
+CREATE TABLE contacts (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created_at DATETIME, 
+	updated_at DATETIME, 
+	to_id INTEGER, 
+	from_id INTEGER, 
+	PRIMARY KEY (id), 
+	CONSTRAINT uk_from_to UNIQUE (from_id, to_id)
+)
+
+
+[2019-02-09 01:28:18,988] [INFO] log : {}
+[2019-02-09 01:28:19,023] [INFO] log : COMMIT
+[2019-02-09 01:28:19,024] [INFO] log : CREATE INDEX idx_time_to_from ON contacts (created_at, to_id, from_id)
+[2019-02-09 01:28:19,025] [INFO] log : {}
+[2019-02-09 01:28:19,045] [INFO] log : COMMIT
+[2019-02-09 01:28:19,047] [INFO] log : CREATE INDEX idx_to_time_from ON contacts (to_id, created_at, from_id)
+[2019-02-09 01:28:19,048] [INFO] log : {}
+[2019-02-09 01:28:19,071] [INFO] log : COMMIT
+[2019-02-09 01:28:19,073] [INFO] log : 
+CREATE TABLE user_follow_stats (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created_at DATETIME, 
+	updated_at DATETIME, 
+	follower_count INTEGER, 
+	following_count INTEGER, 
+	PRIMARY KEY (id)
+)CHARSET=utf8mb4
+
+
+[2019-02-09 01:28:19,073] [INFO] log : {}
+[2019-02-09 01:28:19,095] [INFO] log : COMMIT
+[2019-02-09 01:28:19,097] [INFO] log : 
+CREATE TABLE `role` (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created_at DATETIME, 
+	updated_at DATETIME, 
+	name VARCHAR(80), 
+	description VARCHAR(191), 
+	PRIMARY KEY (id), 
+	UNIQUE (name)
+)CHARSET=utf8mb4
+
+
+[2019-02-09 01:28:19,098] [INFO] log : {}
+[2019-02-09 01:28:19,126] [INFO] log : COMMIT
+[2019-02-09 01:28:19,128] [INFO] log : 
+CREATE TABLE users (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created_at DATETIME, 
+	updated_at DATETIME, 
+	bio VARCHAR(128), 
+	name VARCHAR(128), 
+	nickname VARCHAR(128), 
+	email VARCHAR(191), 
+	password VARCHAR(191), 
+	website VARCHAR(191), 
+	github_url VARCHAR(191), 
+	last_login_at DATETIME, 
+	current_login_at DATETIME, 
+	last_login_ip VARCHAR(100), 
+	current_login_ip VARCHAR(100), 
+	login_count INTEGER, 
+	active BOOL, 
+	icon_color VARCHAR(7), 
+	confirmed_at DATETIME, 
+	company VARCHAR(191), 
+	avatar_id VARCHAR(20), 
+	PRIMARY KEY (id), 
+	CHECK (active IN (0, 1))
+)
+
+
+[2019-02-09 01:28:19,129] [INFO] log : {}
+[2019-02-09 01:28:19,159] [INFO] log : COMMIT
+[2019-02-09 01:28:19,161] [INFO] log : CREATE INDEX idx_email ON users (email)
+[2019-02-09 01:28:19,161] [INFO] log : {}
+[2019-02-09 01:28:19,188] [INFO] log : COMMIT
+[2019-02-09 01:28:19,190] [INFO] log : 
+CREATE TABLE like_items (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created_at DATETIME, 
+	updated_at DATETIME, 
+	user_id INTEGER, 
+	target_id INTEGER, 
+	target_kind INTEGER, 
+	PRIMARY KEY (id)
+)
+
+
+[2019-02-09 01:28:19,191] [INFO] log : {}
+[2019-02-09 01:28:19,211] [INFO] log : COMMIT
+[2019-02-09 01:28:19,213] [INFO] log : CREATE INDEX idx_ti ON like_items (target_id, target_kind, user_id)
+[2019-02-09 01:28:19,214] [INFO] log : {}
+[2019-02-09 01:28:19,238] [INFO] log : COMMIT
+[2019-02-09 01:28:19,240] [INFO] log : 
+CREATE TABLE comment_items (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created_at DATETIME, 
+	updated_at DATETIME, 
+	user_id INTEGER, 
+	target_id INTEGER, 
+	target_kind INTEGER, 
+	ref_id INTEGER, 
+	PRIMARY KEY (id)
+)
+
+
+[2019-02-09 01:28:19,241] [INFO] log : {}
+[2019-02-09 01:28:19,262] [INFO] log : COMMIT
+[2019-02-09 01:28:19,264] [INFO] log : CREATE INDEX idx_ti_tk ON comment_items (target_id, target_kind, user_id)
+[2019-02-09 01:28:19,264] [INFO] log : {}
+[2019-02-09 01:28:19,288] [INFO] log : COMMIT
+[2019-02-09 01:28:19,290] [INFO] log : 
+CREATE TABLE collect_items (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created_at DATETIME, 
+	updated_at DATETIME, 
+	user_id INTEGER, 
+	target_id INTEGER, 
+	target_kind INTEGER, 
+	PRIMARY KEY (id)
+)
+
+
+[2019-02-09 01:28:19,291] [INFO] log : {}
+[2019-02-09 01:28:19,310] [INFO] log : COMMIT
+[2019-02-09 01:28:19,312] [INFO] log : CREATE INDEX idx_ti_tk_ui ON collect_items (target_id, target_kind, user_id)
+[2019-02-09 01:28:19,313] [INFO] log : {}
+[2019-02-09 01:28:19,334] [INFO] log : COMMIT
+[2019-02-09 01:28:19,337] [INFO] log : 
+CREATE TABLE posts (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created_at DATETIME, 
+	updated_at DATETIME, 
+	author_id INTEGER, 
+	title VARCHAR(128), 
+	orig_url VARCHAR(255), 
+	can_comment BOOL, 
+	PRIMARY KEY (id), 
+	CHECK (can_comment IN (0, 1))
+)
+
+
+[2019-02-09 01:28:19,338] [INFO] log : {}
+[2019-02-09 01:28:19,359] [INFO] log : COMMIT
+[2019-02-09 01:28:19,361] [INFO] log : CREATE INDEX `idx_authorId` ON posts (author_id)
+[2019-02-09 01:28:19,362] [INFO] log : {}
+[2019-02-09 01:28:19,386] [INFO] log : COMMIT
+[2019-02-09 01:28:19,388] [INFO] log : CREATE INDEX idx_title ON posts (title)
+[2019-02-09 01:28:19,389] [INFO] log : {}
+[2019-02-09 01:28:19,410] [INFO] log : COMMIT
+[2019-02-09 01:28:19,412] [INFO] log : 
+CREATE TABLE tags (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created_at DATETIME, 
+	updated_at DATETIME, 
+	name VARCHAR(128), 
+	PRIMARY KEY (id), 
+	UNIQUE (name)
+)
+
+
+[2019-02-09 01:28:19,413] [INFO] log : {}
+[2019-02-09 01:28:19,440] [INFO] log : COMMIT
+[2019-02-09 01:28:19,442] [INFO] log : CREATE INDEX idx_name ON tags (name)
+[2019-02-09 01:28:19,442] [INFO] log : {}
+[2019-02-09 01:28:19,466] [INFO] log : COMMIT
+[2019-02-09 01:28:19,468] [INFO] log : 
+CREATE TABLE post_tags (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created_at DATETIME, 
+	updated_at DATETIME, 
+	post_id INTEGER, 
+	tag_id INTEGER, 
+	PRIMARY KEY (id)
+)
+
+
+[2019-02-09 01:28:19,468] [INFO] log : {}
+[2019-02-09 01:28:19,489] [INFO] log : COMMIT
+[2019-02-09 01:28:19,492] [INFO] log : CREATE INDEX idx_tag_id ON post_tags (tag_id, updated_at)
+[2019-02-09 01:28:19,493] [INFO] log : {}
+[2019-02-09 01:28:19,514] [INFO] log : COMMIT
+[2019-02-09 01:28:19,515] [INFO] log : CREATE INDEX idx_post_id ON post_tags (post_id, updated_at)
+[2019-02-09 01:28:19,516] [INFO] log : {}
+[2019-02-09 01:28:19,539] [INFO] log : COMMIT
+[2019-02-09 01:28:19,541] [INFO] log : 
+CREATE TABLE roles_users (
+	user_id INTEGER, 
+	role_id INTEGER, 
+	FOREIGN KEY(user_id) REFERENCES users (id), 
+	FOREIGN KEY(role_id) REFERENCES `role` (id)
+)
+
+
+[2019-02-09 01:28:19,541] [INFO] log : {}
+[2019-02-09 01:28:19,580] [INFO] log : COMMIT
+[2019-02-09 01:28:19,582] [INFO] log : DESCRIBE `social_auth_usersocialauth`
+[2019-02-09 01:28:19,582] [INFO] log : {}
+[2019-02-09 01:28:19,584] [INFO] log : ROLLBACK
+[2019-02-09 01:28:19,586] [INFO] log : DESCRIBE `social_auth_nonce`
+[2019-02-09 01:28:19,587] [INFO] log : {}
+[2019-02-09 01:28:19,589] [INFO] log : ROLLBACK
+[2019-02-09 01:28:19,590] [INFO] log : DESCRIBE `social_auth_association`
+[2019-02-09 01:28:19,591] [INFO] log : {}
+[2019-02-09 01:28:19,592] [INFO] log : ROLLBACK
+[2019-02-09 01:28:19,593] [INFO] log : DESCRIBE `social_auth_code`
+[2019-02-09 01:28:19,594] [INFO] log : {}
+[2019-02-09 01:28:19,596] [INFO] log : ROLLBACK
+[2019-02-09 01:28:19,597] [INFO] log : DESCRIBE `social_auth_partial`
+[2019-02-09 01:28:19,597] [INFO] log : {}
+[2019-02-09 01:28:19,599] [INFO] log : ROLLBACK
+[2019-02-09 01:28:19,602] [INFO] log : 
+CREATE TABLE social_auth_usersocialauth (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	provider VARCHAR(32), 
+	extra_data TEXT, 
+	uid VARCHAR(255), 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+[2019-02-09 01:28:19,603] [INFO] log : {}
+[2019-02-09 01:28:19,631] [INFO] log : COMMIT
+[2019-02-09 01:28:19,634] [INFO] log : CREATE INDEX ix_social_auth_usersocialauth_user_id ON social_auth_usersocialauth (user_id)
+[2019-02-09 01:28:19,634] [INFO] log : {}
+[2019-02-09 01:28:19,655] [INFO] log : COMMIT
+[2019-02-09 01:28:19,657] [INFO] log : 
+CREATE TABLE social_auth_nonce (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	server_url VARCHAR(255), 
+	timestamp INTEGER, 
+	salt VARCHAR(40), 
+	PRIMARY KEY (id), 
+	UNIQUE (server_url, timestamp, salt)
+)
+
+
+[2019-02-09 01:28:19,658] [INFO] log : {}
+[2019-02-09 01:28:19,682] [INFO] log : COMMIT
+[2019-02-09 01:28:19,683] [INFO] log : 
+CREATE TABLE social_auth_association (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	server_url VARCHAR(255), 
+	handle VARCHAR(255), 
+	secret VARCHAR(255), 
+	issued INTEGER, 
+	lifetime INTEGER, 
+	assoc_type VARCHAR(64), 
+	PRIMARY KEY (id), 
+	UNIQUE (server_url, handle)
+)
+
+
+[2019-02-09 01:28:19,684] [INFO] log : {}
+[2019-02-09 01:28:19,709] [INFO] log : COMMIT
+[2019-02-09 01:28:19,710] [INFO] log : 
+CREATE TABLE social_auth_code (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	email VARCHAR(200), 
+	code VARCHAR(32), 
+	PRIMARY KEY (id), 
+	UNIQUE (code, email)
+)
+
+
+[2019-02-09 01:28:19,711] [INFO] log : {}
+[2019-02-09 01:28:19,739] [INFO] log : COMMIT
+[2019-02-09 01:28:19,742] [INFO] log : CREATE INDEX ix_social_auth_code_code ON social_auth_code (code)
+[2019-02-09 01:28:19,743] [INFO] log : {}
+[2019-02-09 01:28:19,768] [INFO] log : COMMIT
+[2019-02-09 01:28:19,770] [INFO] log : 
+CREATE TABLE social_auth_partial (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	token VARCHAR(32), 
+	data TEXT, 
+	next_step INTEGER, 
+	backend VARCHAR(32), 
+	PRIMARY KEY (id)
+)
+
+
+[2019-02-09 01:28:19,771] [INFO] log : {}
+[2019-02-09 01:28:19,794] [INFO] log : COMMIT
+[2019-02-09 01:28:19,795] [INFO] log : CREATE INDEX ix_social_auth_partial_token ON social_auth_partial (token)
+[2019-02-09 01:28:19,796] [INFO] log : {}
+[2019-02-09 01:28:19,819] [INFO] log : COMMIT
+[2019-02-09 01:37:45,508] [INFO] _internal :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2019-02-09 01:47:38,676] [ERROR] __init__ : Error: Directory migrations already exists
+[2019-02-09 01:57:28,323] [INFO] log : SHOW VARIABLES LIKE 'sql_mode'
+[2019-02-09 01:57:28,323] [INFO] log : {}
+[2019-02-09 01:57:28,326] [INFO] log : SHOW VARIABLES LIKE 'lower_case_table_names'
+[2019-02-09 01:57:28,327] [INFO] log : {}
+[2019-02-09 01:57:28,330] [INFO] log : SELECT DATABASE()
+[2019-02-09 01:57:28,330] [INFO] log : {}
+[2019-02-09 01:57:28,332] [INFO] log : show collation where `Charset` = 'utf8mb4' and `Collation` = 'utf8mb4_bin'
+[2019-02-09 01:57:28,333] [INFO] log : {}
+[2019-02-09 01:57:28,336] [INFO] log : SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
+[2019-02-09 01:57:28,337] [INFO] log : {}
+[2019-02-09 01:57:28,338] [INFO] log : SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
+[2019-02-09 01:57:28,339] [INFO] log : {}
+[2019-02-09 01:57:28,340] [INFO] log : SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8mb4) COLLATE utf8mb4_bin AS anon_1
+[2019-02-09 01:57:28,340] [INFO] log : {}
+[2019-02-09 01:57:28,344] [INFO] log : DESCRIBE `social_auth_usersocialauth`
+[2019-02-09 01:57:28,345] [INFO] log : {}
+[2019-02-09 01:57:28,348] [INFO] log : DESCRIBE `social_auth_nonce`
+[2019-02-09 01:57:28,349] [INFO] log : {}
+[2019-02-09 01:57:28,352] [INFO] log : DESCRIBE `social_auth_association`
+[2019-02-09 01:57:28,353] [INFO] log : {}
+[2019-02-09 01:57:28,355] [INFO] log : DESCRIBE `social_auth_code`
+[2019-02-09 01:57:28,356] [INFO] log : {}
+[2019-02-09 01:57:28,359] [INFO] log : DESCRIBE `social_auth_partial`
+[2019-02-09 01:57:28,360] [INFO] log : {}
+[2019-02-09 01:57:28,363] [INFO] log : 
+DROP TABLE social_auth_partial
+[2019-02-09 01:57:28,364] [INFO] log : {}
+[2019-02-09 01:57:28,487] [INFO] log : COMMIT
+[2019-02-09 01:57:28,489] [INFO] log : 
+DROP TABLE social_auth_code
+[2019-02-09 01:57:28,489] [INFO] log : {}
+[2019-02-09 01:57:28,506] [INFO] log : COMMIT
+[2019-02-09 01:57:28,508] [INFO] log : 
+DROP TABLE social_auth_association
+[2019-02-09 01:57:28,509] [INFO] log : {}
+[2019-02-09 01:57:28,524] [INFO] log : COMMIT
+[2019-02-09 01:57:28,526] [INFO] log : 
+DROP TABLE social_auth_nonce
+[2019-02-09 01:57:28,527] [INFO] log : {}
+[2019-02-09 01:57:28,542] [INFO] log : COMMIT
+[2019-02-09 01:57:28,543] [INFO] log : 
+DROP TABLE social_auth_usersocialauth
+[2019-02-09 01:57:28,544] [INFO] log : {}
+[2019-02-09 01:57:28,563] [INFO] log : COMMIT
+[2019-02-09 01:57:28,566] [INFO] log : DESCRIBE `contacts`
+[2019-02-09 01:57:28,567] [INFO] log : {}
+[2019-02-09 01:57:28,570] [INFO] log : DESCRIBE `user_follow_stats`
+[2019-02-09 01:57:28,570] [INFO] log : {}
+[2019-02-09 01:57:28,573] [INFO] log : DESCRIBE `roles_users`
+[2019-02-09 01:57:28,574] [INFO] log : {}
+[2019-02-09 01:57:28,576] [INFO] log : DESCRIBE `role`
+[2019-02-09 01:57:28,576] [INFO] log : {}
+[2019-02-09 01:57:28,580] [INFO] log : DESCRIBE `users`
+[2019-02-09 01:57:28,580] [INFO] log : {}
+[2019-02-09 01:57:28,585] [INFO] log : DESCRIBE `like_items`
+[2019-02-09 01:57:28,586] [INFO] log : {}
+[2019-02-09 01:57:28,588] [INFO] log : DESCRIBE `comment_items`
+[2019-02-09 01:57:28,589] [INFO] log : {}
+[2019-02-09 01:57:28,592] [INFO] log : DESCRIBE `collect_items`
+[2019-02-09 01:57:28,593] [INFO] log : {}
+[2019-02-09 01:57:28,596] [INFO] log : DESCRIBE `posts`
+[2019-02-09 01:57:28,597] [INFO] log : {}
+[2019-02-09 01:57:28,600] [INFO] log : DESCRIBE `tags`
+[2019-02-09 01:57:28,601] [INFO] log : {}
+[2019-02-09 01:57:28,604] [INFO] log : DESCRIBE `post_tags`
+[2019-02-09 01:57:28,605] [INFO] log : {}
+[2019-02-09 01:57:28,607] [INFO] log : 
+DROP TABLE roles_users
+[2019-02-09 01:57:28,608] [INFO] log : {}
+[2019-02-09 01:57:28,627] [INFO] log : COMMIT
+[2019-02-09 01:57:28,629] [INFO] log : 
+DROP TABLE post_tags
+[2019-02-09 01:57:28,629] [INFO] log : {}
+[2019-02-09 01:57:28,644] [INFO] log : COMMIT
+[2019-02-09 01:57:28,645] [INFO] log : 
+DROP TABLE tags
+[2019-02-09 01:57:28,645] [INFO] log : {}
+[2019-02-09 01:57:28,658] [INFO] log : COMMIT
+[2019-02-09 01:57:28,660] [INFO] log : 
+DROP TABLE posts
+[2019-02-09 01:57:28,660] [INFO] log : {}
+[2019-02-09 01:57:28,674] [INFO] log : COMMIT
+[2019-02-09 01:57:28,675] [INFO] log : 
+DROP TABLE collect_items
+[2019-02-09 01:57:28,676] [INFO] log : {}
+[2019-02-09 01:57:28,689] [INFO] log : COMMIT
+[2019-02-09 01:57:28,690] [INFO] log : 
+DROP TABLE comment_items
+[2019-02-09 01:57:28,691] [INFO] log : {}
+[2019-02-09 01:57:28,704] [INFO] log : COMMIT
+[2019-02-09 01:57:28,705] [INFO] log : 
+DROP TABLE like_items
+[2019-02-09 01:57:28,706] [INFO] log : {}
+[2019-02-09 01:57:28,720] [INFO] log : COMMIT
+[2019-02-09 01:57:28,721] [INFO] log : 
+DROP TABLE users
+[2019-02-09 01:57:28,722] [INFO] log : {}
+[2019-02-09 01:57:28,738] [INFO] log : COMMIT
+[2019-02-09 01:57:28,739] [INFO] log : 
+DROP TABLE `role`
+[2019-02-09 01:57:28,739] [INFO] log : {}
+[2019-02-09 01:57:28,754] [INFO] log : COMMIT
+[2019-02-09 01:57:28,755] [INFO] log : 
+DROP TABLE user_follow_stats
+[2019-02-09 01:57:28,756] [INFO] log : {}
+[2019-02-09 01:57:28,769] [INFO] log : COMMIT
+[2019-02-09 01:57:28,771] [INFO] log : 
+DROP TABLE contacts
+[2019-02-09 01:57:28,771] [INFO] log : {}
+[2019-02-09 01:57:28,786] [INFO] log : COMMIT
+[2019-02-09 01:57:28,788] [INFO] log : DESCRIBE `contacts`
+[2019-02-09 01:57:28,788] [INFO] log : {}
+[2019-02-09 01:57:28,791] [INFO] log : ROLLBACK
+[2019-02-09 01:57:28,792] [INFO] log : DESCRIBE `user_follow_stats`
+[2019-02-09 01:57:28,792] [INFO] log : {}
+[2019-02-09 01:57:28,794] [INFO] log : ROLLBACK
+[2019-02-09 01:57:28,795] [INFO] log : DESCRIBE `roles_users`
+[2019-02-09 01:57:28,796] [INFO] log : {}
+[2019-02-09 01:57:28,797] [INFO] log : ROLLBACK
+[2019-02-09 01:57:28,798] [INFO] log : DESCRIBE `role`
+[2019-02-09 01:57:28,799] [INFO] log : {}
+[2019-02-09 01:57:28,800] [INFO] log : ROLLBACK
+[2019-02-09 01:57:28,801] [INFO] log : DESCRIBE `users`
+[2019-02-09 01:57:28,801] [INFO] log : {}
+[2019-02-09 01:57:28,803] [INFO] log : ROLLBACK
+[2019-02-09 01:57:28,803] [INFO] log : DESCRIBE `like_items`
+[2019-02-09 01:57:28,804] [INFO] log : {}
+[2019-02-09 01:57:28,805] [INFO] log : ROLLBACK
+[2019-02-09 01:57:28,806] [INFO] log : DESCRIBE `comment_items`
+[2019-02-09 01:57:28,806] [INFO] log : {}
+[2019-02-09 01:57:28,807] [INFO] log : ROLLBACK
+[2019-02-09 01:57:28,808] [INFO] log : DESCRIBE `collect_items`
+[2019-02-09 01:57:28,809] [INFO] log : {}
+[2019-02-09 01:57:28,810] [INFO] log : ROLLBACK
+[2019-02-09 01:57:28,811] [INFO] log : DESCRIBE `posts`
+[2019-02-09 01:57:28,811] [INFO] log : {}
+[2019-02-09 01:57:28,813] [INFO] log : ROLLBACK
+[2019-02-09 01:57:28,814] [INFO] log : DESCRIBE `tags`
+[2019-02-09 01:57:28,815] [INFO] log : {}
+[2019-02-09 01:57:28,817] [INFO] log : ROLLBACK
+[2019-02-09 01:57:28,819] [INFO] log : DESCRIBE `post_tags`
+[2019-02-09 01:57:28,820] [INFO] log : {}
+[2019-02-09 01:57:28,821] [INFO] log : ROLLBACK
+[2019-02-09 01:57:28,823] [INFO] log : 
+CREATE TABLE contacts (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created_at DATETIME, 
+	updated_at DATETIME, 
+	to_id INTEGER, 
+	from_id INTEGER, 
+	PRIMARY KEY (id), 
+	CONSTRAINT uk_from_to UNIQUE (from_id, to_id)
+)
+
+
+[2019-02-09 01:57:28,823] [INFO] log : {}
+[2019-02-09 01:57:28,847] [INFO] log : COMMIT
+[2019-02-09 01:57:28,848] [INFO] log : CREATE INDEX idx_time_to_from ON contacts (created_at, to_id, from_id)
+[2019-02-09 01:57:28,849] [INFO] log : {}
+[2019-02-09 01:57:28,866] [INFO] log : COMMIT
+[2019-02-09 01:57:28,867] [INFO] log : CREATE INDEX idx_to_time_from ON contacts (to_id, created_at, from_id)
+[2019-02-09 01:57:28,868] [INFO] log : {}
+[2019-02-09 01:57:28,886] [INFO] log : COMMIT
+[2019-02-09 01:57:28,888] [INFO] log : 
+CREATE TABLE user_follow_stats (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created_at DATETIME, 
+	updated_at DATETIME, 
+	follower_count INTEGER, 
+	following_count INTEGER, 
+	PRIMARY KEY (id)
+)CHARSET=utf8mb4
+
+
+[2019-02-09 01:57:28,890] [INFO] log : {}
+[2019-02-09 01:57:28,906] [INFO] log : COMMIT
+[2019-02-09 01:57:28,909] [INFO] log : 
+CREATE TABLE `role` (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created_at DATETIME, 
+	updated_at DATETIME, 
+	name VARCHAR(80), 
+	description VARCHAR(191), 
+	PRIMARY KEY (id), 
+	UNIQUE (name)
+)CHARSET=utf8mb4
+
+
+[2019-02-09 01:57:28,910] [INFO] log : {}
+[2019-02-09 01:57:28,933] [INFO] log : COMMIT
+[2019-02-09 01:57:28,935] [INFO] log : 
+CREATE TABLE users (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created_at DATETIME, 
+	updated_at DATETIME, 
+	bio VARCHAR(128), 
+	name VARCHAR(128), 
+	nickname VARCHAR(128), 
+	email VARCHAR(191), 
+	password VARCHAR(191), 
+	website VARCHAR(191), 
+	github_url VARCHAR(191), 
+	last_login_at DATETIME, 
+	current_login_at DATETIME, 
+	last_login_ip VARCHAR(100), 
+	current_login_ip VARCHAR(100), 
+	login_count INTEGER, 
+	active BOOL, 
+	icon_color VARCHAR(7), 
+	confirmed_at DATETIME, 
+	company VARCHAR(191), 
+	avatar_id VARCHAR(20), 
+	PRIMARY KEY (id), 
+	CHECK (active IN (0, 1))
+)
+
+
+[2019-02-09 01:57:28,936] [INFO] log : {}
+[2019-02-09 01:57:28,955] [INFO] log : COMMIT
+[2019-02-09 01:57:28,956] [INFO] log : CREATE INDEX idx_email ON users (email)
+[2019-02-09 01:57:28,957] [INFO] log : {}
+[2019-02-09 01:57:28,977] [INFO] log : COMMIT
+[2019-02-09 01:57:28,979] [INFO] log : 
+CREATE TABLE like_items (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created_at DATETIME, 
+	updated_at DATETIME, 
+	user_id INTEGER, 
+	target_id INTEGER, 
+	target_kind INTEGER, 
+	PRIMARY KEY (id)
+)
+
+
+[2019-02-09 01:57:28,980] [INFO] log : {}
+[2019-02-09 01:57:28,997] [INFO] log : COMMIT
+[2019-02-09 01:57:28,998] [INFO] log : CREATE INDEX idx_ti ON like_items (target_id, target_kind, user_id)
+[2019-02-09 01:57:28,999] [INFO] log : {}
+[2019-02-09 01:57:29,018] [INFO] log : COMMIT
+[2019-02-09 01:57:29,020] [INFO] log : 
+CREATE TABLE comment_items (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created_at DATETIME, 
+	updated_at DATETIME, 
+	user_id INTEGER, 
+	target_id INTEGER, 
+	target_kind INTEGER, 
+	ref_id INTEGER, 
+	PRIMARY KEY (id)
+)
+
+
+[2019-02-09 01:57:29,021] [INFO] log : {}
+[2019-02-09 01:57:29,036] [INFO] log : COMMIT
+[2019-02-09 01:57:29,037] [INFO] log : CREATE INDEX idx_ti_tk ON comment_items (target_id, target_kind, user_id)
+[2019-02-09 01:57:29,038] [INFO] log : {}
+[2019-02-09 01:57:29,057] [INFO] log : COMMIT
+[2019-02-09 01:57:29,059] [INFO] log : 
+CREATE TABLE collect_items (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created_at DATETIME, 
+	updated_at DATETIME, 
+	user_id INTEGER, 
+	target_id INTEGER, 
+	target_kind INTEGER, 
+	PRIMARY KEY (id)
+)
+
+
+[2019-02-09 01:57:29,060] [INFO] log : {}
+[2019-02-09 01:57:29,075] [INFO] log : COMMIT
+[2019-02-09 01:57:29,077] [INFO] log : CREATE INDEX idx_ti_tk_ui ON collect_items (target_id, target_kind, user_id)
+[2019-02-09 01:57:29,077] [INFO] log : {}
+[2019-02-09 01:57:29,096] [INFO] log : COMMIT
+[2019-02-09 01:57:29,098] [INFO] log : 
+CREATE TABLE posts (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created_at DATETIME, 
+	updated_at DATETIME, 
+	author_id INTEGER, 
+	title VARCHAR(128), 
+	orig_url VARCHAR(255), 
+	can_comment BOOL, 
+	PRIMARY KEY (id), 
+	CHECK (can_comment IN (0, 1))
+)
+
+
+[2019-02-09 01:57:29,099] [INFO] log : {}
+[2019-02-09 01:57:29,115] [INFO] log : COMMIT
+[2019-02-09 01:57:29,117] [INFO] log : CREATE INDEX `idx_authorId` ON posts (author_id)
+[2019-02-09 01:57:29,118] [INFO] log : {}
+[2019-02-09 01:57:29,136] [INFO] log : COMMIT
+[2019-02-09 01:57:29,138] [INFO] log : CREATE INDEX idx_title ON posts (title)
+[2019-02-09 01:57:29,138] [INFO] log : {}
+[2019-02-09 01:57:29,157] [INFO] log : COMMIT
+[2019-02-09 01:57:29,159] [INFO] log : 
+CREATE TABLE tags (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created_at DATETIME, 
+	updated_at DATETIME, 
+	name VARCHAR(128), 
+	PRIMARY KEY (id), 
+	UNIQUE (name)
+)
+
+
+[2019-02-09 01:57:29,159] [INFO] log : {}
+[2019-02-09 01:57:29,181] [INFO] log : COMMIT
+[2019-02-09 01:57:29,183] [INFO] log : CREATE INDEX idx_name ON tags (name)
+[2019-02-09 01:57:29,184] [INFO] log : {}
+[2019-02-09 01:57:29,204] [INFO] log : COMMIT
+[2019-02-09 01:57:29,206] [INFO] log : 
+CREATE TABLE post_tags (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created_at DATETIME, 
+	updated_at DATETIME, 
+	post_id INTEGER, 
+	tag_id INTEGER, 
+	PRIMARY KEY (id)
+)
+
+
+[2019-02-09 01:57:29,206] [INFO] log : {}
+[2019-02-09 01:57:29,224] [INFO] log : COMMIT
+[2019-02-09 01:57:29,225] [INFO] log : CREATE INDEX idx_post_id ON post_tags (post_id, updated_at)
+[2019-02-09 01:57:29,226] [INFO] log : {}
+[2019-02-09 01:57:29,243] [INFO] log : COMMIT
+[2019-02-09 01:57:29,245] [INFO] log : CREATE INDEX idx_tag_id ON post_tags (tag_id, updated_at)
+[2019-02-09 01:57:29,246] [INFO] log : {}
+[2019-02-09 01:57:29,263] [INFO] log : COMMIT
+[2019-02-09 01:57:29,265] [INFO] log : 
+CREATE TABLE roles_users (
+	user_id INTEGER, 
+	role_id INTEGER, 
+	FOREIGN KEY(user_id) REFERENCES users (id), 
+	FOREIGN KEY(role_id) REFERENCES `role` (id)
+)
+
+
+[2019-02-09 01:57:29,265] [INFO] log : {}
+[2019-02-09 01:57:29,296] [INFO] log : COMMIT
+[2019-02-09 01:57:29,298] [INFO] log : DESCRIBE `social_auth_usersocialauth`
+[2019-02-09 01:57:29,299] [INFO] log : {}
+[2019-02-09 01:57:29,300] [INFO] log : ROLLBACK
+[2019-02-09 01:57:29,302] [INFO] log : DESCRIBE `social_auth_nonce`
+[2019-02-09 01:57:29,302] [INFO] log : {}
+[2019-02-09 01:57:29,304] [INFO] log : ROLLBACK
+[2019-02-09 01:57:29,305] [INFO] log : DESCRIBE `social_auth_association`
+[2019-02-09 01:57:29,305] [INFO] log : {}
+[2019-02-09 01:57:29,307] [INFO] log : ROLLBACK
+[2019-02-09 01:57:29,308] [INFO] log : DESCRIBE `social_auth_code`
+[2019-02-09 01:57:29,308] [INFO] log : {}
+[2019-02-09 01:57:29,310] [INFO] log : ROLLBACK
+[2019-02-09 01:57:29,310] [INFO] log : DESCRIBE `social_auth_partial`
+[2019-02-09 01:57:29,311] [INFO] log : {}
+[2019-02-09 01:57:29,313] [INFO] log : ROLLBACK
+[2019-02-09 01:57:29,315] [INFO] log : 
+CREATE TABLE social_auth_usersocialauth (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	provider VARCHAR(32), 
+	extra_data TEXT, 
+	uid VARCHAR(255), 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+[2019-02-09 01:57:29,316] [INFO] log : {}
+[2019-02-09 01:57:29,343] [INFO] log : COMMIT
+[2019-02-09 01:57:29,345] [INFO] log : CREATE INDEX ix_social_auth_usersocialauth_user_id ON social_auth_usersocialauth (user_id)
+[2019-02-09 01:57:29,346] [INFO] log : {}
+[2019-02-09 01:57:29,365] [INFO] log : COMMIT
+[2019-02-09 01:57:29,366] [INFO] log : 
+CREATE TABLE social_auth_nonce (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	server_url VARCHAR(255), 
+	timestamp INTEGER, 
+	salt VARCHAR(40), 
+	PRIMARY KEY (id), 
+	UNIQUE (server_url, timestamp, salt)
+)
+
+
+[2019-02-09 01:57:29,367] [INFO] log : {}
+[2019-02-09 01:57:29,390] [INFO] log : COMMIT
+[2019-02-09 01:57:29,392] [INFO] log : 
+CREATE TABLE social_auth_association (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	server_url VARCHAR(255), 
+	handle VARCHAR(255), 
+	secret VARCHAR(255), 
+	issued INTEGER, 
+	lifetime INTEGER, 
+	assoc_type VARCHAR(64), 
+	PRIMARY KEY (id), 
+	UNIQUE (server_url, handle)
+)
+
+
+[2019-02-09 01:57:29,392] [INFO] log : {}
+[2019-02-09 01:57:29,413] [INFO] log : COMMIT
+[2019-02-09 01:57:29,415] [INFO] log : 
+CREATE TABLE social_auth_code (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	email VARCHAR(200), 
+	code VARCHAR(32), 
+	PRIMARY KEY (id), 
+	UNIQUE (code, email)
+)
+
+
+[2019-02-09 01:57:29,415] [INFO] log : {}
+[2019-02-09 01:57:29,437] [INFO] log : COMMIT
+[2019-02-09 01:57:29,439] [INFO] log : CREATE INDEX ix_social_auth_code_code ON social_auth_code (code)
+[2019-02-09 01:57:29,439] [INFO] log : {}
+[2019-02-09 01:57:29,460] [INFO] log : COMMIT
+[2019-02-09 01:57:29,462] [INFO] log : 
+CREATE TABLE social_auth_partial (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	token VARCHAR(32), 
+	data TEXT, 
+	next_step INTEGER, 
+	backend VARCHAR(32), 
+	PRIMARY KEY (id)
+)
+
+
+[2019-02-09 01:57:29,463] [INFO] log : {}
+[2019-02-09 01:57:29,477] [INFO] log : COMMIT
+[2019-02-09 01:57:29,479] [INFO] log : CREATE INDEX ix_social_auth_partial_token ON social_auth_partial (token)
+[2019-02-09 01:57:29,480] [INFO] log : {}
+[2019-02-09 01:57:29,499] [INFO] log : COMMIT
+[2019-02-09 02:02:23,926] [INFO] _internal : 172.30.0.3 - - [09/Feb/2019 02:02:23] "GET /index/ HTTP/1.0" 200 -
+[2019-02-09 02:02:24,288] [INFO] post_api : getPostList
+[2019-02-09 02:02:24,292] [INFO] _internal : 172.30.0.3 - - [09/Feb/2019 02:02:24] "POST /api/post/getTag HTTP/1.0" 200 -
+[2019-02-09 02:02:24,294] [ERROR] app : Exception on /api/post/getPostList [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 493, in connect
+    sock = self._connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+OSError: [Errno 99] Cannot assign requested address
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/walrus/database.py", line 118, in execute_command
+    connection.send_command(*args)
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 594, in send_packed_command
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 498, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 99 connecting to localhost:6379. Cannot assign requested address.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 493, in connect
+    sock = self._connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+OSError: [Errno 99] Cannot assign requested address
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/code/api_views/base/api.py", line 28, in dispatch_request
+    return api_method()
+  File "/code/api_views/post_api.py", line 43, in getPostList
+    res = Post.get_posts_list(page, limit, order_by)
+  File "/code/base/mc.py", line 100, in _
+    r = rdb.get(key) if not force else None
+  File "/usr/local/lib/python3.6/site-packages/redis/client.py", line 1207, in get
+    return self.execute_command('GET', name)
+  File "/usr/local/lib/python3.6/site-packages/walrus/database.py", line 125, in execute_command
+    connection.send_command(*args)
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 594, in send_packed_command
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 498, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 99 connecting to localhost:6379. Cannot assign requested address.
+[2019-02-09 02:02:24,327] [INFO] _internal : 172.30.0.3 - - [09/Feb/2019 02:02:24] "POST /api/post/getPostList HTTP/1.0" 500 -
+[2019-02-09 02:02:24,341] [ERROR] _internal : Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python3.6/site-packages/werkzeug/serving.py", line 258, in execute
+    application_iter = app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2295, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1748, in handle_exception
+    return self.finalize_request(handler(e), from_error_handler=True)
+  File "/code/flask_app/app.py", line 140, in error_handler
+    msg = error.message
+AttributeError: 'ConnectionError' object has no attribute 'message'
+[2019-02-09 02:04:18,193] [INFO] _internal :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2019-02-09 02:04:18,196] [INFO] _internal :  * Restarting with stat
+[2019-02-09 02:04:19,917] [WARNING] _internal :  * Debugger is active!
+[2019-02-09 02:04:19,922] [INFO] _internal :  * Debugger PIN: 968-959-205
+[2019-02-09 02:04:54,230] [INFO] _internal :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2019-02-09 02:05:42,399] [INFO] _internal : 172.30.0.3 - - [09/Feb/2019 02:05:42] "GET /index/ HTTP/1.0" 200 -
+[2019-02-09 02:05:42,823] [INFO] post_api : getPostList
+[2019-02-09 02:05:42,827] [INFO] _internal : 172.30.0.3 - - [09/Feb/2019 02:05:42] "POST /api/post/getTag HTTP/1.0" 200 -
+[2019-02-09 02:05:42,828] [ERROR] app : Exception on /api/post/getPostList [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 493, in connect
+    sock = self._connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+OSError: [Errno 99] Cannot assign requested address
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/walrus/database.py", line 118, in execute_command
+    connection.send_command(*args)
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 594, in send_packed_command
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 498, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 99 connecting to localhost:6379. Cannot assign requested address.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 493, in connect
+    sock = self._connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+OSError: [Errno 99] Cannot assign requested address
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/code/api_views/base/api.py", line 28, in dispatch_request
+    return api_method()
+  File "/code/api_views/post_api.py", line 43, in getPostList
+    res = Post.get_posts_list(page, limit, order_by)
+  File "/code/base/mc.py", line 100, in _
+    r = rdb.get(key) if not force else None
+  File "/usr/local/lib/python3.6/site-packages/redis/client.py", line 1207, in get
+    return self.execute_command('GET', name)
+  File "/usr/local/lib/python3.6/site-packages/walrus/database.py", line 125, in execute_command
+    connection.send_command(*args)
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 594, in send_packed_command
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 498, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 99 connecting to localhost:6379. Cannot assign requested address.
+[2019-02-09 02:05:42,864] [INFO] _internal : 172.30.0.3 - - [09/Feb/2019 02:05:42] "POST /api/post/getPostList HTTP/1.0" 500 -
+[2019-02-09 02:05:42,879] [ERROR] _internal : Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python3.6/site-packages/werkzeug/serving.py", line 258, in execute
+    application_iter = app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2295, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1748, in handle_exception
+    return self.finalize_request(handler(e), from_error_handler=True)
+  File "/code/flask_app/app.py", line 140, in error_handler
+    msg = error.message
+AttributeError: 'ConnectionError' object has no attribute 'message'
+[2019-02-09 02:11:55,517] [INFO] _internal :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2019-02-09 02:15:16,699] [INFO] _internal :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2019-02-09 02:17:57,896] [INFO] _internal :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2019-02-09 12:47:53,449] [INFO] _internal :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2019-02-09 12:50:24,391] [INFO] _internal : 172.30.0.2 - - [09/Feb/2019 12:50:24] "GET /index/ HTTP/1.0" 200 -
+[2019-02-09 12:50:25,173] [INFO] post_api : getPostList
+[2019-02-09 12:50:25,176] [INFO] _internal : 172.30.0.2 - - [09/Feb/2019 12:50:25] "POST /api/post/getTag HTTP/1.0" 200 -
+[2019-02-09 12:50:25,178] [ERROR] app : Exception on /api/post/getPostList [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 493, in connect
+    sock = self._connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+OSError: [Errno 99] Cannot assign requested address
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/walrus/database.py", line 118, in execute_command
+    connection.send_command(*args)
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 594, in send_packed_command
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 498, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 99 connecting to localhost:6379. Cannot assign requested address.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 493, in connect
+    sock = self._connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+OSError: [Errno 99] Cannot assign requested address
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/code/api_views/base/api.py", line 28, in dispatch_request
+    return api_method()
+  File "/code/api_views/post_api.py", line 43, in getPostList
+    res = Post.get_posts_list(page, limit, order_by)
+  File "/code/base/mc.py", line 100, in _
+    r = rdb.get(key) if not force else None
+  File "/usr/local/lib/python3.6/site-packages/redis/client.py", line 1207, in get
+    return self.execute_command('GET', name)
+  File "/usr/local/lib/python3.6/site-packages/walrus/database.py", line 125, in execute_command
+    connection.send_command(*args)
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 594, in send_packed_command
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 498, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 99 connecting to localhost:6379. Cannot assign requested address.
+[2019-02-09 12:50:25,217] [INFO] _internal : 172.30.0.2 - - [09/Feb/2019 12:50:25] "POST /api/post/getPostList HTTP/1.0" 500 -
+[2019-02-09 12:50:25,231] [ERROR] _internal : Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python3.6/site-packages/werkzeug/serving.py", line 258, in execute
+    application_iter = app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2295, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1748, in handle_exception
+    return self.finalize_request(handler(e), from_error_handler=True)
+  File "/code/flask_app/app.py", line 142, in error_handler
+    msg = error.message
+AttributeError: 'ConnectionError' object has no attribute 'message'
+[2019-02-09 12:52:27,707] [INFO] log : SHOW VARIABLES LIKE 'sql_mode'
+[2019-02-09 12:52:27,707] [INFO] log : {}
+[2019-02-09 12:52:27,725] [INFO] log : SHOW VARIABLES LIKE 'lower_case_table_names'
+[2019-02-09 12:52:27,726] [INFO] log : {}
+[2019-02-09 12:52:27,730] [INFO] log : SELECT DATABASE()
+[2019-02-09 12:52:27,731] [INFO] log : {}
+[2019-02-09 12:52:27,735] [INFO] log : show collation where `Charset` = 'utf8mb4' and `Collation` = 'utf8mb4_bin'
+[2019-02-09 12:52:27,736] [INFO] log : {}
+[2019-02-09 12:52:27,744] [INFO] log : SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
+[2019-02-09 12:52:27,744] [INFO] log : {}
+[2019-02-09 12:52:27,746] [INFO] log : SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
+[2019-02-09 12:52:27,747] [INFO] log : {}
+[2019-02-09 12:52:27,749] [INFO] log : SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8mb4) COLLATE utf8mb4_bin AS anon_1
+[2019-02-09 12:52:27,749] [INFO] log : {}
+[2019-02-09 12:52:27,753] [INFO] log : BEGIN (implicit)
+[2019-02-09 12:52:27,755] [INFO] log : SELECT posts.id AS posts_id, posts.created_at AS posts_created_at, posts.updated_at AS posts_updated_at, posts.author_id AS posts_author_id, posts.title AS posts_title, posts.orig_url AS posts_orig_url, posts.can_comment AS posts_can_comment 
+FROM posts
+[2019-02-09 12:52:27,755] [INFO] log : {}
+[2019-02-09 12:53:45,482] [INFO] log : ROLLBACK
+[2019-02-09 12:56:26,461] [INFO] log : SHOW VARIABLES LIKE 'sql_mode'
+[2019-02-09 12:56:26,462] [INFO] log : {}
+[2019-02-09 12:56:26,466] [INFO] log : SHOW VARIABLES LIKE 'lower_case_table_names'
+[2019-02-09 12:56:26,467] [INFO] log : {}
+[2019-02-09 12:56:26,470] [INFO] log : SELECT DATABASE()
+[2019-02-09 12:56:26,471] [INFO] log : {}
+[2019-02-09 12:56:26,473] [INFO] log : show collation where `Charset` = 'utf8mb4' and `Collation` = 'utf8mb4_bin'
+[2019-02-09 12:56:26,474] [INFO] log : {}
+[2019-02-09 12:56:26,478] [INFO] log : SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
+[2019-02-09 12:56:26,479] [INFO] log : {}
+[2019-02-09 12:56:26,481] [INFO] log : SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
+[2019-02-09 12:56:26,482] [INFO] log : {}
+[2019-02-09 12:56:26,484] [INFO] log : SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8mb4) COLLATE utf8mb4_bin AS anon_1
+[2019-02-09 12:56:26,485] [INFO] log : {}
+[2019-02-09 12:56:26,488] [INFO] log : BEGIN (implicit)
+[2019-02-09 12:56:26,489] [INFO] log : SELECT posts.id AS posts_id, posts.created_at AS posts_created_at, posts.updated_at AS posts_updated_at, posts.author_id AS posts_author_id, posts.title AS posts_title, posts.orig_url AS posts_orig_url, posts.can_comment AS posts_can_comment 
+FROM posts
+[2019-02-09 12:56:26,490] [INFO] log : {}
+[2019-02-09 12:56:45,873] [INFO] log : ROLLBACK
+[2019-02-09 13:13:58,978] [INFO] _internal : 172.30.0.2 - - [09/Feb/2019 13:13:58] "GET /index/ HTTP/1.0" 200 -
+[2019-02-09 13:13:59,180] [INFO] post_api : getPostList
+[2019-02-09 13:13:59,182] [INFO] _internal : 172.30.0.2 - - [09/Feb/2019 13:13:59] "POST /api/post/getTag HTTP/1.0" 200 -
+[2019-02-09 13:13:59,184] [ERROR] app : Exception on /api/post/getPostList [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 493, in connect
+    sock = self._connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+OSError: [Errno 99] Cannot assign requested address
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/walrus/database.py", line 118, in execute_command
+    connection.send_command(*args)
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 594, in send_packed_command
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 498, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 99 connecting to localhost:6379. Cannot assign requested address.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 493, in connect
+    sock = self._connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+OSError: [Errno 99] Cannot assign requested address
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/code/api_views/base/api.py", line 28, in dispatch_request
+    return api_method()
+  File "/code/api_views/post_api.py", line 43, in getPostList
+    res = Post.get_posts_list(page, limit, order_by)
+  File "/code/base/mc.py", line 100, in _
+    r = rdb.get(key) if not force else None
+  File "/usr/local/lib/python3.6/site-packages/redis/client.py", line 1207, in get
+    return self.execute_command('GET', name)
+  File "/usr/local/lib/python3.6/site-packages/walrus/database.py", line 125, in execute_command
+    connection.send_command(*args)
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 594, in send_packed_command
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 498, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 99 connecting to localhost:6379. Cannot assign requested address.
+[2019-02-09 13:13:59,190] [INFO] _internal : 172.30.0.2 - - [09/Feb/2019 13:13:59] "POST /api/post/getPostList HTTP/1.0" 500 -
+[2019-02-09 13:13:59,196] [ERROR] _internal : Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python3.6/site-packages/werkzeug/serving.py", line 258, in execute
+    application_iter = app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2295, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1748, in handle_exception
+    return self.finalize_request(handler(e), from_error_handler=True)
+  File "/code/flask_app/app.py", line 142, in error_handler
+    msg = error.message
+AttributeError: 'ConnectionError' object has no attribute 'message'
+[2019-02-09 13:14:57,927] [INFO] _internal :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2019-02-09 13:17:25,637] [INFO] _internal : 172.30.0.2 - - [09/Feb/2019 13:17:25] "GET /index/ HTTP/1.0" 200 -
+[2019-02-09 13:17:25,822] [INFO] post_api : getPostList
+[2019-02-09 13:17:25,823] [INFO] _internal : 172.30.0.2 - - [09/Feb/2019 13:17:25] "POST /api/post/getTag HTTP/1.0" 200 -
+[2019-02-09 13:17:25,824] [ERROR] app : Exception on /api/post/getPostList [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 493, in connect
+    sock = self._connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+OSError: [Errno 99] Cannot assign requested address
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/walrus/database.py", line 118, in execute_command
+    connection.send_command(*args)
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 594, in send_packed_command
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 498, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 99 connecting to localhost:6379. Cannot assign requested address.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 493, in connect
+    sock = self._connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+OSError: [Errno 99] Cannot assign requested address
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/code/api_views/base/api.py", line 28, in dispatch_request
+    return api_method()
+  File "/code/api_views/post_api.py", line 43, in getPostList
+    res = Post.get_posts_list(page, limit, order_by)
+  File "/code/base/mc.py", line 100, in _
+    r = rdb.get(key) if not force else None
+  File "/usr/local/lib/python3.6/site-packages/redis/client.py", line 1207, in get
+    return self.execute_command('GET', name)
+  File "/usr/local/lib/python3.6/site-packages/walrus/database.py", line 125, in execute_command
+    connection.send_command(*args)
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 594, in send_packed_command
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 498, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 99 connecting to localhost:6379. Cannot assign requested address.
+[2019-02-09 13:17:25,849] [INFO] _internal : 172.30.0.2 - - [09/Feb/2019 13:17:25] "POST /api/post/getPostList HTTP/1.0" 500 -
+[2019-02-09 13:17:25,861] [ERROR] _internal : Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python3.6/site-packages/werkzeug/serving.py", line 258, in execute
+    application_iter = app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2295, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1748, in handle_exception
+    return self.finalize_request(handler(e), from_error_handler=True)
+  File "/code/flask_app/app.py", line 142, in error_handler
+    msg = error.message
+AttributeError: 'ConnectionError' object has no attribute 'message'
+[2019-02-09 13:17:35,408] [INFO] _internal : 172.30.0.2 - - [09/Feb/2019 13:17:35] "GET /index/ HTTP/1.0" 200 -
+[2019-02-09 13:17:35,659] [INFO] post_api : getPostList
+[2019-02-09 13:17:35,660] [INFO] _internal : 172.30.0.2 - - [09/Feb/2019 13:17:35] "POST /api/post/getTag HTTP/1.0" 200 -
+[2019-02-09 13:17:35,661] [ERROR] app : Exception on /api/post/getPostList [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 493, in connect
+    sock = self._connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+OSError: [Errno 99] Cannot assign requested address
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/walrus/database.py", line 118, in execute_command
+    connection.send_command(*args)
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 594, in send_packed_command
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 498, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 99 connecting to localhost:6379. Cannot assign requested address.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 493, in connect
+    sock = self._connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+OSError: [Errno 99] Cannot assign requested address
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/code/api_views/base/api.py", line 28, in dispatch_request
+    return api_method()
+  File "/code/api_views/post_api.py", line 43, in getPostList
+    res = Post.get_posts_list(page, limit, order_by)
+  File "/code/base/mc.py", line 100, in _
+    r = rdb.get(key) if not force else None
+  File "/usr/local/lib/python3.6/site-packages/redis/client.py", line 1207, in get
+    return self.execute_command('GET', name)
+  File "/usr/local/lib/python3.6/site-packages/walrus/database.py", line 125, in execute_command
+    connection.send_command(*args)
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 594, in send_packed_command
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 498, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 99 connecting to localhost:6379. Cannot assign requested address.
+[2019-02-09 13:17:35,669] [INFO] _internal : 172.30.0.2 - - [09/Feb/2019 13:17:35] "POST /api/post/getPostList HTTP/1.0" 500 -
+[2019-02-09 13:17:35,676] [ERROR] _internal : Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python3.6/site-packages/werkzeug/serving.py", line 258, in execute
+    application_iter = app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2295, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1748, in handle_exception
+    return self.finalize_request(handler(e), from_error_handler=True)
+  File "/code/flask_app/app.py", line 142, in error_handler
+    msg = error.message
+AttributeError: 'ConnectionError' object has no attribute 'message'
+[2019-02-09 13:17:36,209] [INFO] _internal : 172.30.0.2 - - [09/Feb/2019 13:17:36] "GET /index/ HTTP/1.0" 200 -
+[2019-02-09 13:17:36,385] [INFO] post_api : getPostList
+[2019-02-09 13:17:36,387] [INFO] _internal : 172.30.0.2 - - [09/Feb/2019 13:17:36] "POST /api/post/getTag HTTP/1.0" 200 -
+[2019-02-09 13:17:36,389] [ERROR] app : Exception on /api/post/getPostList [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 493, in connect
+    sock = self._connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+OSError: [Errno 99] Cannot assign requested address
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/walrus/database.py", line 118, in execute_command
+    connection.send_command(*args)
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 594, in send_packed_command
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 498, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 99 connecting to localhost:6379. Cannot assign requested address.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 493, in connect
+    sock = self._connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+OSError: [Errno 99] Cannot assign requested address
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/code/api_views/base/api.py", line 28, in dispatch_request
+    return api_method()
+  File "/code/api_views/post_api.py", line 43, in getPostList
+    res = Post.get_posts_list(page, limit, order_by)
+  File "/code/base/mc.py", line 100, in _
+    r = rdb.get(key) if not force else None
+  File "/usr/local/lib/python3.6/site-packages/redis/client.py", line 1207, in get
+    return self.execute_command('GET', name)
+  File "/usr/local/lib/python3.6/site-packages/walrus/database.py", line 125, in execute_command
+    connection.send_command(*args)
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 594, in send_packed_command
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 498, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 99 connecting to localhost:6379. Cannot assign requested address.
+[2019-02-09 13:17:36,396] [INFO] _internal : 172.30.0.2 - - [09/Feb/2019 13:17:36] "POST /api/post/getPostList HTTP/1.0" 500 -
+[2019-02-09 13:17:36,407] [ERROR] _internal : Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python3.6/site-packages/werkzeug/serving.py", line 258, in execute
+    application_iter = app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2295, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1748, in handle_exception
+    return self.finalize_request(handler(e), from_error_handler=True)
+  File "/code/flask_app/app.py", line 142, in error_handler
+    msg = error.message
+AttributeError: 'ConnectionError' object has no attribute 'message'
+[2019-02-09 13:17:43,883] [INFO] _internal : 172.30.0.2 - - [09/Feb/2019 13:17:43] "GET /index/ HTTP/1.0" 200 -
+[2019-02-09 13:17:44,190] [INFO] post_api : getPostList
+[2019-02-09 13:17:44,192] [INFO] _internal : 172.30.0.2 - - [09/Feb/2019 13:17:44] "POST /api/post/getTag HTTP/1.0" 200 -
+[2019-02-09 13:17:44,194] [ERROR] app : Exception on /api/post/getPostList [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 493, in connect
+    sock = self._connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+OSError: [Errno 99] Cannot assign requested address
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/walrus/database.py", line 118, in execute_command
+    connection.send_command(*args)
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 594, in send_packed_command
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 498, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 99 connecting to localhost:6379. Cannot assign requested address.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 493, in connect
+    sock = self._connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+OSError: [Errno 99] Cannot assign requested address
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/code/api_views/base/api.py", line 28, in dispatch_request
+    return api_method()
+  File "/code/api_views/post_api.py", line 43, in getPostList
+    res = Post.get_posts_list(page, limit, order_by)
+  File "/code/base/mc.py", line 100, in _
+    r = rdb.get(key) if not force else None
+  File "/usr/local/lib/python3.6/site-packages/redis/client.py", line 1207, in get
+    return self.execute_command('GET', name)
+  File "/usr/local/lib/python3.6/site-packages/walrus/database.py", line 125, in execute_command
+    connection.send_command(*args)
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 594, in send_packed_command
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 498, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 99 connecting to localhost:6379. Cannot assign requested address.
+[2019-02-09 13:17:44,203] [INFO] _internal : 172.30.0.2 - - [09/Feb/2019 13:17:44] "POST /api/post/getPostList HTTP/1.0" 500 -
+[2019-02-09 13:17:44,211] [ERROR] _internal : Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python3.6/site-packages/werkzeug/serving.py", line 258, in execute
+    application_iter = app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2295, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1748, in handle_exception
+    return self.finalize_request(handler(e), from_error_handler=True)
+  File "/code/flask_app/app.py", line 142, in error_handler
+    msg = error.message
+AttributeError: 'ConnectionError' object has no attribute 'message'
+[2019-02-09 13:19:02,787] [INFO] _internal : 172.30.0.3 - - [09/Feb/2019 13:19:02] "GET / HTTP/1.1" 200 -
+[2019-02-09 13:19:13,813] [INFO] _internal : 172.29.0.4 - - [09/Feb/2019 13:19:13] "GET / HTTP/1.1" 200 -
+[2019-02-09 13:31:14,337] [INFO] _internal :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2019-02-09 13:31:34,776] [INFO] _internal : 192.168.1.102 - - [09/Feb/2019 13:31:34] "GET / HTTP/1.1" 200 -
+[2019-02-09 14:10:20,007] [INFO] _internal :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2019-02-09 14:10:36,397] [INFO] _internal : 172.30.0.2 - - [09/Feb/2019 14:10:36] "GET /index/ HTTP/1.0" 200 -
+[2019-02-09 14:10:36,768] [INFO] post_api : getPostList
+[2019-02-09 14:10:36,772] [INFO] _internal : 172.30.0.2 - - [09/Feb/2019 14:10:36] "POST /api/post/getTag HTTP/1.0" 200 -
+[2019-02-09 14:10:36,974] [INFO] log : SHOW VARIABLES LIKE 'sql_mode'
+[2019-02-09 14:10:36,976] [INFO] log : {}
+[2019-02-09 14:10:36,985] [INFO] log : SHOW VARIABLES LIKE 'lower_case_table_names'
+[2019-02-09 14:10:36,986] [INFO] log : {}
+[2019-02-09 14:10:36,990] [INFO] log : SELECT DATABASE()
+[2019-02-09 14:10:36,991] [INFO] log : {}
+[2019-02-09 14:10:36,993] [INFO] log : show collation where `Charset` = 'utf8mb4' and `Collation` = 'utf8mb4_bin'
+[2019-02-09 14:10:36,994] [INFO] log : {}
+[2019-02-09 14:10:36,999] [INFO] log : SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
+[2019-02-09 14:10:37,000] [INFO] log : {}
+[2019-02-09 14:10:37,001] [INFO] log : SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
+[2019-02-09 14:10:37,002] [INFO] log : {}
+[2019-02-09 14:10:37,004] [INFO] log : SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8mb4) COLLATE utf8mb4_bin AS anon_1
+[2019-02-09 14:10:37,005] [INFO] log : {}
+[2019-02-09 14:10:37,008] [INFO] log : BEGIN (implicit)
+[2019-02-09 14:10:37,013] [INFO] log : SELECT posts.id AS posts_id, posts.created_at AS posts_created_at, posts.updated_at AS posts_updated_at, posts.author_id AS posts_author_id, posts.title AS posts_title, posts.orig_url AS posts_orig_url, posts.can_comment AS posts_can_comment 
+FROM posts ORDER BY -created_at 
+ LIMIT %(param_1)s, %(param_2)s
+[2019-02-09 14:10:37,013] [INFO] log : {'param_1': 0, 'param_2': 5}
+[2019-02-09 14:10:37,026] [INFO] log : ROLLBACK
+[2019-02-09 14:10:37,028] [INFO] _internal : 172.30.0.2 - - [09/Feb/2019 14:10:37] "POST /api/post/getPostList HTTP/1.0" 200 -

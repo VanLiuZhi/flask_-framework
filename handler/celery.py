@@ -10,10 +10,12 @@
 
 from celery import Celery
 
-from flask_app.settings import DevConfig
+from flask_app.utils import get_config
+
+CONFIG = get_config()
 
 app = Celery('handler', include=['handler.tasks'])
-app.config_from_object(DevConfig)
+app.config_from_object(CONFIG)
 
 if __name__ == '__main__':
     app.start()

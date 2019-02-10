@@ -11,12 +11,12 @@
 import math
 
 from base.base_extend import db
-from flask_app.settings import DevConfig
+from flask_app.utils import get_config
 from base.mixin import BaseMixin
 from base.mc import cache, rdb
 from base.exceptions import NotAllowedException
 
-PER_PAGE = DevConfig.PER_PAGE
+PER_PAGE = get_config().PER_PAGE
 MC_KEY_FOLLOWING = 'following:%s:%s'  # user_id, page
 MC_KEY_FOLLOWERS = 'followers:%s:%s'  # user_id, page
 MC_KEY_FOLLOW_ITEM = 'is_followed:%s:%s'  # from_id, to_id

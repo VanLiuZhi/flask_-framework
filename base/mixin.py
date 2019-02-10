@@ -12,12 +12,12 @@ import math
 from datetime import datetime
 
 from base.base_extend import db
-from flask_app.settings import DevConfig
 from models.consts import K_POST
 from models.utils import incr_key
 from base.mc import cache, rdb
+from flask_app.utils import get_config
 
-PER_PAGE = DevConfig.PER_PAGE
+PER_PAGE = get_config().PER_PAGE
 
 MC_KEY_STATS_N = 'like_n:%s:%s:%s'  # action_type, target_id, target_kind
 MC_KEY_BY_UESR_STATS_N = 'like_n_by_user:%s:%s:%s'  # action_type, user_id, target_kind

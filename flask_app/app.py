@@ -10,6 +10,7 @@
 """
 
 from flask import Flask, render_template
+from flask.helpers import get_debug_flag
 import sys
 
 import IPython
@@ -23,7 +24,7 @@ from flask.cli import with_appcontext
 from flask_app import commands
 from flask_app.extensions import csrf_protect, debug_toolbar, login_manager, mail, log_cfg
 from flask_app.utils import load_env_value
-from flask_app.settings import DevConfig
+from flask_app.settings import DevConfig, ProdConfig
 from models.utils import load_models
 from models.user import user_datastore
 from forms.register import ExtendedLoginForm, ExtendedRegisterForm
@@ -112,8 +113,8 @@ def register_commands(app):
 # 从.env中加载环境变量
 load_env_value()
 
-CONFIG = DevConfig
-
+CONFIG = DevConfig if get_debug_flag() else ProdConfig
+print(f'------- use config is {CONFIG} -------')
 app = create_app(CONFIG)
 
 

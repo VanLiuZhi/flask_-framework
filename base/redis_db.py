@@ -16,11 +16,11 @@ from datetime import datetime
 from walrus import Database as _Database
 from sqlalchemy.ext.serializer import loads, dumps
 
-from flask_app.settings import DevConfig
+from flask_app.utils import get_config
 from .local_cache import lc
 
 
-REDIS_URL = DevConfig.REDIS_URL
+REDIS_URL = get_config().REDIS_URL
 
 class Database(_Database):
     def get2(self, name):

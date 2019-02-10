@@ -17,14 +17,14 @@ from sqlalchemy import and_
 from werkzeug.exceptions import NotFound
 from flask_sqlalchemy import Pagination
 
-from flask_app.settings import DevConfig
+from flask_app.utils import get_config
 from models.user import User
 from models.core import Post
 from models.consts import ONE_MINUTE
 from models.contact import Contact
 from base.redis_db import rdb
 
-PER_PAGE = DevConfig.PER_PAGE
+PER_PAGE = get_config().PER_PAGE
 DAYS = 300  # 应该是3(天)，但是我的博客最近实在没更新内容
 MAX = 100
 FEED_KEY = 'feed:{}'  # user_id

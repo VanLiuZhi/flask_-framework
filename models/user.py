@@ -20,9 +20,9 @@ from base.mixin import BaseMixin
 from .contact import Contact, userFollowStats
 from base.utils import cached_hybrid_property
 
-from flask_app.settings import DevConfig
+from flask_app.utils import get_config
 
-UPLOAD_FOLDER = DevConfig.UPLOAD_FOLDER
+UPLOAD_FOLDER = get_config().UPLOAD_FOLDER
 
 roles_users = db.Table(
     'roles_users',

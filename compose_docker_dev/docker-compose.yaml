@@ -1,0 +1,101 @@
+version: '3'
+services:
+
+  app:
+    image: python_flask:v1
+    container_name: python-web
+    volumes:
+     - ~/PycharmProjects/flask_starlight:/code
+    command: cd /code/flask_starlight
+    command: python auto_app.py
+    depends_on:
+     - mysql
+     - redis
+     - rabbitmq
+     - elasticsearch
+    expose:
+      - 5000
+    networks:
+      net_front:
+        aliases:
+          - python_server
+      net_backend:
+        aliases:
+          - python_backend
+
+  mysql:
+    image: mysql:latest
+    container_name: mysql-web
+    volumes:
+      - ~/dev-mysql:/var/lib/mysql
+    networks:
+      net_backend:
+        aliases:
+          - masterdb
+    environment:
+      MYSQL_ROOT_PASSWORD: root1234
+    expose:
+      - 3306
+
+  redis:
+    image: redis:latest
+    container_name: redis-web
+    expose:
+      - 6379
+    volumes:
+      - ~/redis/data:/data
+    networks:
+      net_backend:
+        aliases:
+          - master_redis
+
+  rabbitmq:
+    image: rabbitmq:latest
+    container_name: rabbitmq-web
+    hostname: rabbit
+    environment:
+      - RABBITMQ_DEFAULT_USER=developer
+      - RABBITMQ_DEFAULT_PASS=dev1234
+    expose:
+      - 5672
+      - 15672
+    networks:
+      net_backend:
+        aliases:
+          - rabbitmq_server
+
+  elasticsearch:
+    image: elasticsearch:5-alpine
+    restart: always
+    container_name: elasticsearch-web
+    expose:
+      - 9200
+      - 9300
+    environment:
+      - discovery.type=single-node
+      - bootstrap.memory_lock=true
+      - xpack.security.enabled=false
+      - "ES_JAVA_OPTS=-Xms256m -Xmx256m -XX:+AssumeMP"
+    networks:
+      net_backend:
+        aliases:
+          - elasticsearch_server
+
+  nginx:
+    image: nginx
+    container_name: nginx-web
+    volumes:
+      - ~/PycharmProjects/flask_starlight/compose_docker_dev/nginx:/etc/nginx
+      - ~/PycharmProjects:/web
+    ports:
+      - 80:80
+    environment:
+      - NGINX_PORT=80
+    depends_on:
+      - app
+    networks:
+      - net_front
+
+networks:
+  net_front:
+  net_backend:

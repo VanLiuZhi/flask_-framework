@@ -27,10 +27,10 @@ from flask_sqlalchemy import (
     SQLAlchemy, Model, BaseQuery, DefaultMeta, _QueryProperty)
 from flask_security import Security
 
-from flask_app.settings import DevConfig
+from flask_app.utils import get_config
 from .redis_db import PropsMixin, PropsItem
 
-REDIS_URL = DevConfig.REDIS_URL  # 缓存服务地址
+REDIS_URL = get_config().REDIS_URL  # 缓存服务地址
 
 
 def md5_key_mangler(key):

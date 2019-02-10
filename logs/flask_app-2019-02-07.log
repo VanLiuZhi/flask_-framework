@@ -1,0 +1,334 @@
+[2019-02-07 17:49:42,445] [INFO] _internal :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2019-02-07 17:51:33,011] [DEBUG] _internal : Initializing Flask-DebugToolbar log handler
+[2019-02-07 17:51:33,011] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 17:51:33] "GET / HTTP/1.1" 200 -
+[2019-02-07 17:51:33,087] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 17:51:33] "GET / HTTP/1.1" 200 -
+[2019-02-07 17:51:33,354] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 17:51:33] "GET /favicon.ico HTTP/1.1" 200 -
+[2019-02-07 17:51:34,376] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 17:51:34] "GET /favicon.ico HTTP/1.1" 200 -
+[2019-02-07 17:51:42,812] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 17:51:42] "GET / HTTP/1.1" 200 -
+[2019-02-07 17:51:43,144] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 17:51:43] "GET /favicon.ico HTTP/1.1" 200 -
+[2019-02-07 17:52:45,011] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 17:52:45] "GET / HTTP/1.1" 200 -
+[2019-02-07 17:52:45,138] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 17:52:45] "GET /favicon.ico HTTP/1.1" 200 -
+[2019-02-07 17:52:45,711] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 17:52:45] "GET / HTTP/1.1" 200 -
+[2019-02-07 17:52:45,839] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 17:52:45] "GET /favicon.ico HTTP/1.1" 200 -
+[2019-02-07 17:52:51,965] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 17:52:51] "GET /index/ HTTP/1.1" 200 -
+[2019-02-07 17:52:51,985] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 17:52:51] "GET /static/ele_ui_web/static/css/app.ec55e1543cb9e0de8f55453c106d7e4e.css HTTP/1.1" 200 -
+[2019-02-07 17:52:51,989] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 17:52:51] "GET /static/ele_ui_web/static/js/manifest.c582ee93643d7c50d417.js HTTP/1.1" 200 -
+[2019-02-07 17:52:51,991] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 17:52:51] "GET /static/ele_ui_web/static/js/app.9116e98aa994e2b5edde.js HTTP/1.1" 200 -
+[2019-02-07 17:52:51,992] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 17:52:51] "GET /static/ele_ui_web/static/js/vendor.d9f8435f7a13d4255019.js HTTP/1.1" 200 -
+[2019-02-07 17:52:51,993] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 17:52:51] "GET /_debug_toolbar/static/js/jquery.js HTTP/1.1" 200 -
+[2019-02-07 17:52:51,997] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 17:52:51] "GET /_debug_toolbar/static/js/jquery.tablesorter.js HTTP/1.1" 200 -
+[2019-02-07 17:52:51,998] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 17:52:51] "GET /_debug_toolbar/static/js/toolbar.js HTTP/1.1" 200 -
+[2019-02-07 17:52:52,199] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 17:52:52] "GET /static/html/apple_watch.html HTTP/1.1" 200 -
+[2019-02-07 17:52:52,282] [INFO] post_api : getPostList
+[2019-02-07 17:52:52,285] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 17:52:52] "POST /api/post/getTag HTTP/1.1" 200 -
+[2019-02-07 17:52:52,286] [ERROR] app : Exception on /api/post/getPostList [POST]
+Traceback (most recent call last):
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/redis/connection.py", line 493, in connect
+    sock = self._connect()
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/walrus/database.py", line 118, in execute_command
+    connection.send_command(*args)
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/redis/connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/redis/connection.py", line 594, in send_packed_command
+    self.connect()
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/redis/connection.py", line 498, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to localhost:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/redis/connection.py", line 493, in connect
+    sock = self._connect()
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/flask_debugtoolbar/__init__.py", line 125, in dispatch_request
+    return view_func(**req.view_args)
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/Users/liuzhi/PycharmProjects/flask_starlight/api_views/base/api.py", line 28, in dispatch_request
+    return api_method()
+  File "/Users/liuzhi/PycharmProjects/flask_starlight/api_views/post_api.py", line 43, in getPostList
+    res = Post.get_posts_list(page, limit, order_by)
+  File "/Users/liuzhi/PycharmProjects/flask_starlight/base/mc.py", line 100, in _
+    r = rdb.get(key) if not force else None
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/redis/client.py", line 1207, in get
+    return self.execute_command('GET', name)
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/walrus/database.py", line 125, in execute_command
+    connection.send_command(*args)
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/redis/connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/redis/connection.py", line 594, in send_packed_command
+    self.connect()
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/redis/connection.py", line 498, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to localhost:6379. Connection refused.
+[2019-02-07 17:52:52,297] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 17:52:52] "POST /api/post/getPostList HTTP/1.1" 500 -
+[2019-02-07 17:52:52,301] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 17:52:52] "GET /_debug_toolbar/static/css/toolbar.css?0.23980705676689396 HTTP/1.1" 200 -
+[2019-02-07 17:52:52,302] [ERROR] _internal : Error on request:
+Traceback (most recent call last):
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/werkzeug/serving.py", line 258, in execute
+    application_iter = app(environ, start_response)
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/flask/app.py", line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/flask/app.py", line 2295, in wsgi_app
+    response = self.handle_exception(e)
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/flask/app.py", line 1748, in handle_exception
+    return self.finalize_request(handler(e), from_error_handler=True)
+  File "/Users/liuzhi/PycharmProjects/flask_starlight/flask_app/app.py", line 139, in error_handler
+    msg = error.message
+AttributeError: 'ConnectionError' object has no attribute 'message'
+[2019-02-07 17:52:52,403] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 17:52:52] "GET /_debug_toolbar/static/img/tick-red.png HTTP/1.1" 200 -
+[2019-02-07 17:52:52,573] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 17:52:52] "GET /static/ele_ui_web/favicon.ico HTTP/1.1" 200 -
+[2019-02-07 22:20:22,379] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 22:20:22] "GET / HTTP/1.1" 200 -
+[2019-02-07 22:20:22,454] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 22:20:22] "GET / HTTP/1.1" 200 -
+[2019-02-07 22:20:22,736] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 22:20:22] "GET /favicon.ico HTTP/1.1" 200 -
+[2019-02-07 22:20:23,372] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 22:20:23] "GET /favicon.ico HTTP/1.1" 200 -
+[2019-02-07 22:20:28,605] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 22:20:28] "GET /index/ HTTP/1.1" 200 -
+[2019-02-07 22:20:28,630] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 22:20:28] "GET /static/ele_ui_web/static/js/app.9116e98aa994e2b5edde.js HTTP/1.1" 200 -
+[2019-02-07 22:20:28,631] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 22:20:28] "GET /static/ele_ui_web/static/css/app.ec55e1543cb9e0de8f55453c106d7e4e.css HTTP/1.1" 200 -
+[2019-02-07 22:20:28,634] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 22:20:28] "GET /_debug_toolbar/static/js/jquery.js HTTP/1.1" 200 -
+[2019-02-07 22:20:28,635] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 22:20:28] "GET /static/ele_ui_web/static/js/vendor.d9f8435f7a13d4255019.js HTTP/1.1" 200 -
+[2019-02-07 22:20:28,635] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 22:20:28] "GET /static/ele_ui_web/static/js/manifest.c582ee93643d7c50d417.js HTTP/1.1" 200 -
+[2019-02-07 22:20:28,636] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 22:20:28] "GET /_debug_toolbar/static/js/jquery.tablesorter.js HTTP/1.1" 200 -
+[2019-02-07 22:20:28,642] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 22:20:28] "GET /_debug_toolbar/static/js/toolbar.js HTTP/1.1" 200 -
+[2019-02-07 22:20:28,865] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 22:20:28] "GET /static/html/apple_watch.html HTTP/1.1" 200 -
+[2019-02-07 22:20:28,948] [INFO] post_api : getPostList
+[2019-02-07 22:20:28,950] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 22:20:28] "POST /api/post/getTag HTTP/1.1" 200 -
+[2019-02-07 22:20:28,952] [ERROR] app : Exception on /api/post/getPostList [POST]
+Traceback (most recent call last):
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/redis/connection.py", line 493, in connect
+    sock = self._connect()
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/walrus/database.py", line 118, in execute_command
+    connection.send_command(*args)
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/redis/connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/redis/connection.py", line 594, in send_packed_command
+    self.connect()
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/redis/connection.py", line 498, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to localhost:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/redis/connection.py", line 493, in connect
+    sock = self._connect()
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/flask_debugtoolbar/__init__.py", line 125, in dispatch_request
+    return view_func(**req.view_args)
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/Users/liuzhi/PycharmProjects/flask_starlight/api_views/base/api.py", line 28, in dispatch_request
+    return api_method()
+  File "/Users/liuzhi/PycharmProjects/flask_starlight/api_views/post_api.py", line 43, in getPostList
+    res = Post.get_posts_list(page, limit, order_by)
+  File "/Users/liuzhi/PycharmProjects/flask_starlight/base/mc.py", line 100, in _
+    r = rdb.get(key) if not force else None
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/redis/client.py", line 1207, in get
+    return self.execute_command('GET', name)
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/walrus/database.py", line 125, in execute_command
+    connection.send_command(*args)
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/redis/connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/redis/connection.py", line 594, in send_packed_command
+    self.connect()
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/redis/connection.py", line 498, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to localhost:6379. Connection refused.
+[2019-02-07 22:20:28,954] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 22:20:28] "POST /api/post/getPostList HTTP/1.1" 500 -
+[2019-02-07 22:20:28,958] [ERROR] _internal : Error on request:
+Traceback (most recent call last):
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/werkzeug/serving.py", line 258, in execute
+    application_iter = app(environ, start_response)
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/flask/app.py", line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/flask/app.py", line 2295, in wsgi_app
+    response = self.handle_exception(e)
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/flask/app.py", line 1748, in handle_exception
+    return self.finalize_request(handler(e), from_error_handler=True)
+  File "/Users/liuzhi/PycharmProjects/flask_starlight/flask_app/app.py", line 139, in error_handler
+    msg = error.message
+AttributeError: 'ConnectionError' object has no attribute 'message'
+[2019-02-07 22:20:28,965] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 22:20:28] "GET /_debug_toolbar/static/css/toolbar.css?0.520290513966015 HTTP/1.1" 200 -
+[2019-02-07 22:20:29,033] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 22:20:29] "GET /_debug_toolbar/static/img/djdt_vertical.png HTTP/1.1" 200 -
+[2019-02-07 22:20:29,986] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 22:20:29] "GET /static/ele_ui_web/static/js/manifest.c582ee93643d7c50d417.js.map HTTP/1.1" 200 -
+[2019-02-07 22:20:29,987] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 22:20:29] "GET /static/ele_ui_web/static/js/vendor.d9f8435f7a13d4255019.js.map HTTP/1.1" 200 -
+[2019-02-07 22:20:29,988] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 22:20:29] "GET /static/ele_ui_web/static/js/app.9116e98aa994e2b5edde.js.map HTTP/1.1" 200 -
+[2019-02-07 22:20:29,997] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 22:20:29] "GET /static/ele_ui_web/static/css/app.ec55e1543cb9e0de8f55453c106d7e4e.css.map HTTP/1.1" 200 -
+[2019-02-07 22:20:36,479] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 22:20:36] "GET /index/ HTTP/1.1" 200 -
+[2019-02-07 22:20:36,508] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 22:20:36] "GET /static/ele_ui_web/static/css/app.ec55e1543cb9e0de8f55453c106d7e4e.css HTTP/1.1" 200 -
+[2019-02-07 22:20:36,511] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 22:20:36] "GET /static/ele_ui_web/static/js/vendor.d9f8435f7a13d4255019.js HTTP/1.1" 200 -
+[2019-02-07 22:20:36,512] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 22:20:36] "GET /static/ele_ui_web/static/js/manifest.c582ee93643d7c50d417.js HTTP/1.1" 200 -
+[2019-02-07 22:20:36,515] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 22:20:36] "GET /static/ele_ui_web/static/js/app.9116e98aa994e2b5edde.js HTTP/1.1" 200 -
+[2019-02-07 22:20:36,515] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 22:20:36] "GET /_debug_toolbar/static/js/jquery.js HTTP/1.1" 200 -
+[2019-02-07 22:20:36,520] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 22:20:36] "GET /_debug_toolbar/static/js/jquery.tablesorter.js HTTP/1.1" 200 -
+[2019-02-07 22:20:36,521] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 22:20:36] "GET /_debug_toolbar/static/js/toolbar.js HTTP/1.1" 200 -
+[2019-02-07 22:20:36,605] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 22:20:36] "GET /static/ele_ui_web/static/js/manifest.c582ee93643d7c50d417.js.map HTTP/1.1" 200 -
+[2019-02-07 22:20:36,609] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 22:20:36] "GET /static/ele_ui_web/static/css/app.ec55e1543cb9e0de8f55453c106d7e4e.css.map HTTP/1.1" 200 -
+[2019-02-07 22:20:36,762] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 22:20:36] "GET /static/ele_ui_web/static/js/vendor.d9f8435f7a13d4255019.js.map HTTP/1.1" 200 -
+[2019-02-07 22:20:36,763] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 22:20:36] "GET /static/ele_ui_web/static/js/app.9116e98aa994e2b5edde.js.map HTTP/1.1" 200 -
+[2019-02-07 22:20:36,766] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 22:20:36] "GET /static/html/apple_watch.html HTTP/1.1" 200 -
+[2019-02-07 22:20:36,785] [INFO] post_api : getPostList
+[2019-02-07 22:20:36,786] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 22:20:36] "POST /api/post/getTag HTTP/1.1" 200 -
+[2019-02-07 22:20:36,788] [ERROR] app : Exception on /api/post/getPostList [POST]
+Traceback (most recent call last):
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/redis/connection.py", line 493, in connect
+    sock = self._connect()
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/walrus/database.py", line 118, in execute_command
+    connection.send_command(*args)
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/redis/connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/redis/connection.py", line 594, in send_packed_command
+    self.connect()
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/redis/connection.py", line 498, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to localhost:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/redis/connection.py", line 493, in connect
+    sock = self._connect()
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/flask_debugtoolbar/__init__.py", line 125, in dispatch_request
+    return view_func(**req.view_args)
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/Users/liuzhi/PycharmProjects/flask_starlight/api_views/base/api.py", line 28, in dispatch_request
+    return api_method()
+  File "/Users/liuzhi/PycharmProjects/flask_starlight/api_views/post_api.py", line 43, in getPostList
+    res = Post.get_posts_list(page, limit, order_by)
+  File "/Users/liuzhi/PycharmProjects/flask_starlight/base/mc.py", line 100, in _
+    r = rdb.get(key) if not force else None
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/redis/client.py", line 1207, in get
+    return self.execute_command('GET', name)
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/walrus/database.py", line 125, in execute_command
+    connection.send_command(*args)
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/redis/connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/redis/connection.py", line 594, in send_packed_command
+    self.connect()
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/redis/connection.py", line 498, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to localhost:6379. Connection refused.
+[2019-02-07 22:20:36,789] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 22:20:36] "POST /api/post/getPostList HTTP/1.1" 500 -
+[2019-02-07 22:20:36,792] [ERROR] _internal : Error on request:
+Traceback (most recent call last):
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/werkzeug/serving.py", line 258, in execute
+    application_iter = app(environ, start_response)
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/flask/app.py", line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/flask/app.py", line 2295, in wsgi_app
+    response = self.handle_exception(e)
+  File "/Users/liuzhi/.local/share/virtualenvs/flask_starlight-qQJqLpQw/lib/python3.6/site-packages/flask/app.py", line 1748, in handle_exception
+    return self.finalize_request(handler(e), from_error_handler=True)
+  File "/Users/liuzhi/PycharmProjects/flask_starlight/flask_app/app.py", line 139, in error_handler
+    msg = error.message
+AttributeError: 'ConnectionError' object has no attribute 'message'
+[2019-02-07 22:20:36,808] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 22:20:36] "GET /_debug_toolbar/static/css/toolbar.css?0.4530386886810813 HTTP/1.1" 200 -
+[2019-02-07 22:20:36,905] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 22:20:36] "GET /_debug_toolbar/static/img/djdt_vertical.png HTTP/1.1" 200 -
+[2019-02-07 22:20:37,168] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 22:20:37] "GET /static/ele_ui_web/favicon.ico HTTP/1.1" 200 -
+[2019-02-07 22:21:12,459] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 22:21:12] "GET /favicon.ico HTTP/1.1" 200 -
+[2019-02-07 22:55:24,673] [INFO] _internal :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2019-02-07 23:01:37,376] [INFO] _internal :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2019-02-07 23:11:07,205] [INFO] _internal :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2019-02-07 23:11:07,209] [INFO] _internal :  * Restarting with stat
+[2019-02-07 23:11:08,400] [WARNING] _internal :  * Debugger is active!
+[2019-02-07 23:11:08,402] [INFO] _internal :  * Debugger PIN: 328-287-893
+[2019-02-07 23:14:29,712] [DEBUG] _internal : Initializing Flask-DebugToolbar log handler
+[2019-02-07 23:14:29,713] [INFO] _internal : 127.0.0.1 - - [07/Feb/2019 23:14:29] "GET / HTTP/1.1" 200 -
+[2019-02-07 23:34:29,299] [INFO] _internal :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2019-02-07 23:34:29,303] [INFO] _internal :  * Restarting with stat
+[2019-02-07 23:34:31,072] [WARNING] _internal :  * Debugger is active!
+[2019-02-07 23:34:31,074] [INFO] _internal :  * Debugger PIN: 103-183-860
+[2019-02-07 23:48:01,986] [INFO] _internal :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2019-02-07 23:48:01,987] [INFO] _internal :  * Restarting with stat
+[2019-02-07 23:48:03,999] [WARNING] _internal :  * Debugger is active!
+[2019-02-07 23:48:04,001] [INFO] _internal :  * Debugger PIN: 389-497-939

@@ -10,6 +10,7 @@
 """
 
 from flask import flash
+from flask.helpers import get_debug_flag
 from dotenv import find_dotenv, load_dotenv
 import os
 
@@ -30,6 +31,13 @@ def load_env_value():
     load environment variable from .env
     """
     load_dotenv(find_dotenv())  # 相当于把.env配置的变量导入，pipenv依赖于python-dotenv
+
+def get_config():
+    """
+    获取当前环境对应的配置文件
+    """
+    from flask_app.settings import DevConfig, ProdConfig
+    return DevConfig if get_debug_flag() else ProdConfig
 
 
 def test():

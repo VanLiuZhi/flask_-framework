@@ -1,0 +1,511 @@
+[2019-02-08 18:58:50,360] [INFO] _internal :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2019-02-08 18:58:50,362] [INFO] _internal :  * Restarting with stat
+[2019-02-08 18:58:51,487] [WARNING] _internal :  * Debugger is active!
+[2019-02-08 18:58:51,502] [INFO] _internal :  * Debugger PIN: 234-543-821
+[2019-02-08 19:08:54,503] [INFO] _internal :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2019-02-08 19:08:54,506] [INFO] _internal :  * Restarting with stat
+[2019-02-08 19:08:56,106] [WARNING] _internal :  * Debugger is active!
+[2019-02-08 19:08:56,108] [INFO] _internal :  * Debugger PIN: 219-381-225
+[2019-02-08 19:17:53,362] [INFO] _internal :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2019-02-08 19:17:53,364] [INFO] _internal :  * Restarting with stat
+[2019-02-08 19:17:55,169] [WARNING] _internal :  * Debugger is active!
+[2019-02-08 19:17:55,170] [INFO] _internal :  * Debugger PIN: 460-327-934
+[2019-02-08 19:20:27,307] [DEBUG] _internal : Initializing Flask-DebugToolbar log handler
+[2019-02-08 19:20:27,308] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 19:20:27] "GET / HTTP/1.1" 200 -
+[2019-02-08 19:21:28,974] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 19:21:28] "GET /index/ HTTP/1.1" 200 -
+[2019-02-08 19:22:40,036] [INFO] _internal :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2019-02-08 19:22:40,039] [INFO] _internal :  * Restarting with stat
+[2019-02-08 19:22:41,928] [WARNING] _internal :  * Debugger is active!
+[2019-02-08 19:22:41,930] [INFO] _internal :  * Debugger PIN: 100-803-651
+[2019-02-08 19:30:20,202] [INFO] _internal :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2019-02-08 19:30:20,204] [INFO] _internal :  * Restarting with stat
+[2019-02-08 19:30:21,930] [WARNING] _internal :  * Debugger is active!
+[2019-02-08 19:30:21,932] [INFO] _internal :  * Debugger PIN: 184-011-019
+[2019-02-08 19:30:25,683] [DEBUG] _internal : Initializing Flask-DebugToolbar log handler
+[2019-02-08 19:30:25,685] [INFO] _internal : 172.23.0.6 - - [08/Feb/2019 19:30:25] "GET / HTTP/1.0" 200 -
+[2019-02-08 19:30:35,107] [INFO] _internal : 172.23.0.6 - - [08/Feb/2019 19:30:35] "GET /index/ HTTP/1.0" 200 -
+[2019-02-08 19:30:35,608] [INFO] post_api : getPostList
+[2019-02-08 19:30:35,611] [INFO] _internal : 172.23.0.6 - - [08/Feb/2019 19:30:35] "POST /api/post/getTag HTTP/1.0" 200 -
+[2019-02-08 19:30:35,649] [INFO] _internal : 172.23.0.6 - - [08/Feb/2019 19:30:35] "POST /api/post/getPostList HTTP/1.0" 500 -
+[2019-02-08 19:36:30,181] [INFO] _internal : 172.23.0.6 - - [08/Feb/2019 19:36:30] "GET /index/ HTTP/1.0" 200 -
+[2019-02-08 19:36:30,602] [INFO] post_api : getPostList
+[2019-02-08 19:36:30,604] [INFO] _internal : 172.23.0.6 - - [08/Feb/2019 19:36:30] "POST /api/post/getTag HTTP/1.0" 200 -
+[2019-02-08 19:36:30,645] [INFO] _internal : 172.23.0.6 - - [08/Feb/2019 19:36:30] "POST /api/post/getPostList HTTP/1.0" 500 -
+[2019-02-08 19:38:54,494] [INFO] _internal : 172.23.0.6 - - [08/Feb/2019 19:38:54] "GET /index/ HTTP/1.0" 200 -
+[2019-02-08 19:38:54,882] [INFO] post_api : getPostList
+[2019-02-08 19:38:54,885] [INFO] _internal : 172.23.0.6 - - [08/Feb/2019 19:38:54] "POST /api/post/getTag HTTP/1.0" 200 -
+[2019-02-08 19:38:54,936] [INFO] _internal : 172.23.0.6 - - [08/Feb/2019 19:38:54] "POST /api/post/getPostList HTTP/1.0" 500 -
+[2019-02-08 19:39:07,411] [INFO] _internal : 172.23.0.6 - - [08/Feb/2019 19:39:07] "GET /index/ HTTP/1.0" 200 -
+[2019-02-08 19:39:07,817] [INFO] post_api : getPostList
+[2019-02-08 19:39:07,819] [INFO] _internal : 172.23.0.6 - - [08/Feb/2019 19:39:07] "POST /api/post/getTag HTTP/1.0" 200 -
+[2019-02-08 19:39:07,866] [INFO] _internal : 172.23.0.6 - - [08/Feb/2019 19:39:07] "POST /api/post/getPostList HTTP/1.0" 500 -
+[2019-02-08 19:39:11,174] [INFO] post_api : getPostList
+[2019-02-08 19:39:11,199] [INFO] _internal : 172.23.0.6 - - [08/Feb/2019 19:39:11] "POST /api/post/getPostList HTTP/1.0" 500 -
+[2019-02-08 19:51:22,998] [INFO] _internal :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2019-02-08 19:51:23,001] [INFO] _internal :  * Restarting with stat
+[2019-02-08 19:51:24,756] [WARNING] _internal :  * Debugger is active!
+[2019-02-08 19:51:24,759] [INFO] _internal :  * Debugger PIN: 198-240-768
+[2019-02-08 19:51:30,186] [DEBUG] _internal : Initializing Flask-DebugToolbar log handler
+[2019-02-08 19:51:30,258] [INFO] _internal : 172.23.0.6 - - [08/Feb/2019 19:51:30] "GET /index/ HTTP/1.0" 200 -
+[2019-02-08 19:51:30,744] [INFO] post_api : getPostList
+[2019-02-08 19:51:30,747] [INFO] _internal : 172.23.0.6 - - [08/Feb/2019 19:51:30] "POST /api/post/getTag HTTP/1.0" 200 -
+[2019-02-08 19:51:30,790] [INFO] _internal : 172.23.0.6 - - [08/Feb/2019 19:51:30] "POST /api/post/getPostList HTTP/1.0" 500 -
+[2019-02-08 20:10:48,852] [INFO] _internal : 172.23.0.6 - - [08/Feb/2019 20:10:48] "GET /index/ HTTP/1.0" 200 -
+[2019-02-08 20:10:49,267] [INFO] post_api : getPostList
+[2019-02-08 20:10:49,273] [INFO] _internal : 172.23.0.6 - - [08/Feb/2019 20:10:49] "POST /api/post/getTag HTTP/1.0" 200 -
+[2019-02-08 20:10:49,323] [INFO] _internal : 172.23.0.6 - - [08/Feb/2019 20:10:49] "POST /api/post/getPostList HTTP/1.0" 500 -
+[2019-02-08 20:40:54,129] [INFO] _internal : 172.23.0.6 - - [08/Feb/2019 20:40:54] "GET / HTTP/1.0" 200 -
+[2019-02-08 20:41:38,717] [INFO] _internal :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2019-02-08 20:41:38,720] [INFO] _internal :  * Restarting with stat
+[2019-02-08 20:41:40,605] [WARNING] _internal :  * Debugger is active!
+[2019-02-08 20:41:40,607] [INFO] _internal :  * Debugger PIN: 315-186-136
+[2019-02-08 21:01:36,135] [INFO] _internal :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2019-02-08 21:01:36,137] [INFO] _internal :  * Restarting with stat
+[2019-02-08 21:01:37,898] [WARNING] _internal :  * Debugger is active!
+[2019-02-08 21:01:37,900] [INFO] _internal :  * Debugger PIN: 315-186-136
+[2019-02-08 21:01:46,899] [DEBUG] _internal : Initializing Flask-DebugToolbar log handler
+[2019-02-08 21:01:46,901] [INFO] _internal : 172.24.0.6 - - [08/Feb/2019 21:01:46] "GET / HTTP/1.0" 200 -
+[2019-02-08 21:01:50,552] [INFO] _internal : 172.24.0.6 - - [08/Feb/2019 21:01:50] "GET /index/ HTTP/1.0" 200 -
+[2019-02-08 21:01:50,924] [INFO] post_api : getPostList
+[2019-02-08 21:01:50,926] [INFO] _internal : 172.24.0.6 - - [08/Feb/2019 21:01:50] "POST /api/post/getTag HTTP/1.0" 200 -
+[2019-02-08 21:01:50,954] [INFO] _internal : 172.24.0.6 - - [08/Feb/2019 21:01:50] "POST /api/post/getPostList HTTP/1.0" 500 -
+[2019-02-08 23:44:48,247] [INFO] _internal : 172.24.0.6 - - [08/Feb/2019 23:44:48] "GET /index/ HTTP/1.0" 200 -
+[2019-02-08 23:44:48,548] [INFO] post_api : getPostList
+[2019-02-08 23:44:48,553] [INFO] _internal : 172.24.0.6 - - [08/Feb/2019 23:44:48] "POST /api/post/getTag HTTP/1.0" 200 -
+[2019-02-08 23:44:48,586] [INFO] _internal : 172.24.0.6 - - [08/Feb/2019 23:44:48] "POST /api/post/getPostList HTTP/1.0" 500 -
+[2019-02-08 23:45:03,228] [INFO] _internal : 172.24.0.6 - - [08/Feb/2019 23:45:03] "GET /index/ HTTP/1.0" 200 -
+[2019-02-08 23:45:03,578] [INFO] post_api : getPostList
+[2019-02-08 23:45:03,585] [INFO] _internal : 172.24.0.6 - - [08/Feb/2019 23:45:03] "POST /api/post/getTag HTTP/1.0" 200 -
+[2019-02-08 23:45:03,610] [INFO] _internal : 172.24.0.6 - - [08/Feb/2019 23:45:03] "POST /api/post/getPostList HTTP/1.0" 500 -
+[2019-02-08 23:49:07,046] [INFO] _internal : 172.24.0.6 - - [08/Feb/2019 23:49:07] "GET /index/ HTTP/1.0" 200 -
+[2019-02-08 23:49:08,990] [INFO] _internal : 172.24.0.6 - - [08/Feb/2019 23:49:08] "GET /index/ HTTP/1.0" 200 -
+[2019-02-08 23:52:03,860] [INFO] _internal : 172.24.0.6 - - [08/Feb/2019 23:52:03] "GET /index/ HTTP/1.0" 200 -
+[2019-02-08 23:52:04,323] [INFO] post_api : getPostList
+[2019-02-08 23:52:04,331] [INFO] _internal : 172.24.0.6 - - [08/Feb/2019 23:52:04] "POST /api/post/getTag HTTP/1.0" 200 -
+[2019-02-08 23:52:04,372] [INFO] _internal : 172.24.0.6 - - [08/Feb/2019 23:52:04] "POST /api/post/getPostList HTTP/1.0" 500 -
+[2019-02-08 23:52:06,637] [INFO] _internal : 172.24.0.6 - - [08/Feb/2019 23:52:06] "GET /index/ HTTP/1.0" 200 -
+[2019-02-08 23:52:07,022] [INFO] post_api : getPostList
+[2019-02-08 23:52:07,025] [INFO] _internal : 172.24.0.6 - - [08/Feb/2019 23:52:07] "POST /api/post/getTag HTTP/1.0" 200 -
+[2019-02-08 23:52:07,069] [INFO] _internal : 172.24.0.6 - - [08/Feb/2019 23:52:07] "POST /api/post/getPostList HTTP/1.0" 500 -
+[2019-02-08 23:52:34,966] [INFO] _internal :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2019-02-08 23:52:36,769] [DEBUG] _internal : Initializing Flask-DebugToolbar log handler
+[2019-02-08 23:52:36,770] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:52:36] "GET / HTTP/1.1" 200 -
+[2019-02-08 23:52:36,885] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:52:36] "GET / HTTP/1.1" 200 -
+[2019-02-08 23:52:37,249] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:52:37] "GET /favicon.ico HTTP/1.1" 200 -
+[2019-02-08 23:52:37,855] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:52:37] "GET /favicon.ico HTTP/1.1" 200 -
+[2019-02-08 23:52:43,638] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:52:43] "GET /index/ HTTP/1.1" 200 -
+[2019-02-08 23:52:43,661] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:52:43] "GET /static/ele_ui_web/static/css/app.ec55e1543cb9e0de8f55453c106d7e4e.css HTTP/1.1" 200 -
+[2019-02-08 23:52:43,667] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:52:43] "GET /static/ele_ui_web/static/js/vendor.d9f8435f7a13d4255019.js HTTP/1.1" 200 -
+[2019-02-08 23:52:43,668] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:52:43] "GET /static/ele_ui_web/static/js/manifest.c582ee93643d7c50d417.js HTTP/1.1" 200 -
+[2019-02-08 23:52:43,670] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:52:43] "GET /static/ele_ui_web/static/js/app.9116e98aa994e2b5edde.js HTTP/1.1" 200 -
+[2019-02-08 23:52:43,673] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:52:43] "GET /_debug_toolbar/static/js/jquery.js HTTP/1.1" 200 -
+[2019-02-08 23:52:43,673] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:52:43] "GET /_debug_toolbar/static/js/jquery.tablesorter.js HTTP/1.1" 200 -
+[2019-02-08 23:52:43,678] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:52:43] "GET /_debug_toolbar/static/js/toolbar.js HTTP/1.1" 200 -
+[2019-02-08 23:52:43,938] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:52:43] "GET /static/html/apple_watch.html HTTP/1.1" 200 -
+[2019-02-08 23:52:44,031] [INFO] post_api : getPostList
+[2019-02-08 23:52:44,033] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:52:44] "POST /api/post/getTag HTTP/1.1" 200 -
+[2019-02-08 23:52:44,051] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:52:44] "GET /_debug_toolbar/static/css/toolbar.css?0.17592670803630384 HTTP/1.1" 200 -
+[2019-02-08 23:52:44,091] [INFO] log : SHOW VARIABLES LIKE 'sql_mode'
+[2019-02-08 23:52:44,091] [INFO] log : {}
+[2019-02-08 23:52:44,113] [INFO] log : SHOW VARIABLES LIKE 'lower_case_table_names'
+[2019-02-08 23:52:44,113] [INFO] log : {}
+[2019-02-08 23:52:44,116] [INFO] log : SELECT DATABASE()
+[2019-02-08 23:52:44,116] [INFO] log : {}
+[2019-02-08 23:52:44,118] [INFO] log : show collation where `Charset` = 'utf8mb4' and `Collation` = 'utf8mb4_bin'
+[2019-02-08 23:52:44,118] [INFO] log : {}
+[2019-02-08 23:52:44,129] [INFO] log : SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
+[2019-02-08 23:52:44,129] [INFO] log : {}
+[2019-02-08 23:52:44,130] [INFO] log : SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
+[2019-02-08 23:52:44,130] [INFO] log : {}
+[2019-02-08 23:52:44,131] [INFO] log : SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8mb4) COLLATE utf8mb4_bin AS anon_1
+[2019-02-08 23:52:44,131] [INFO] log : {}
+[2019-02-08 23:52:44,133] [INFO] log : BEGIN (implicit)
+[2019-02-08 23:52:44,137] [INFO] log : SELECT posts.id AS posts_id, posts.created_at AS posts_created_at, posts.updated_at AS posts_updated_at, posts.author_id AS posts_author_id, posts.title AS posts_title, posts.orig_url AS posts_orig_url, posts.can_comment AS posts_can_comment 
+FROM posts ORDER BY -created_at 
+ LIMIT %(param_1)s, %(param_2)s
+[2019-02-08 23:52:44,137] [INFO] log : {'param_1': 0, 'param_2': 5}
+[2019-02-08 23:52:44,159] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT posts.id AS posts_id, posts.created_at AS posts_created_at, posts.updated_at AS posts_updated_at, posts.author_id AS posts_author_id, posts.title AS posts_title, posts.orig_url AS posts_orig_url, posts.can_comment AS posts_can_comment 
+FROM posts) AS anon_1
+[2019-02-08 23:52:44,160] [INFO] log : {}
+[2019-02-08 23:52:44,164] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:52:44] "GET /_debug_toolbar/static/img/tick-red.png HTTP/1.1" 200 -
+[2019-02-08 23:52:44,171] [INFO] log : SELECT post_tags.tag_id AS post_tags_tag_id 
+FROM post_tags 
+WHERE post_tags.post_id = %(post_id_1)s
+[2019-02-08 23:52:44,171] [INFO] log : {'post_id_1': 1}
+[2019-02-08 23:52:44,178] [INFO] log : SELECT tags.id AS tags_id, tags.created_at AS tags_created_at, tags.updated_at AS tags_updated_at, tags.name AS tags_name 
+FROM tags 
+WHERE tags.id IN (%(id_1)s, %(id_2)s, %(id_3)s, %(id_4)s)
+[2019-02-08 23:52:44,178] [INFO] log : {'id_1': 1, 'id_2': 2, 'id_3': 3, 'id_4': 4}
+[2019-02-08 23:52:44,197] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT like_items.id AS like_items_id, like_items.created_at AS like_items_created_at, like_items.updated_at AS like_items_updated_at, like_items.user_id AS like_items_user_id, like_items.target_id AS like_items_target_id, like_items.target_kind AS like_items_target_kind 
+FROM like_items 
+WHERE like_items.target_id = %(target_id_1)s AND like_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-02-08 23:52:44,198] [INFO] log : {'target_id_1': 1, 'target_kind_1': 1001}
+[2019-02-08 23:52:44,210] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT comment_items.id AS comment_items_id, comment_items.created_at AS comment_items_created_at, comment_items.updated_at AS comment_items_updated_at, comment_items.user_id AS comment_items_user_id, comment_items.target_id AS comment_items_target_id, comment_items.target_kind AS comment_items_target_kind, comment_items.ref_id AS comment_items_ref_id 
+FROM comment_items 
+WHERE comment_items.target_id = %(target_id_1)s AND comment_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-02-08 23:52:44,210] [INFO] log : {'target_id_1': 1, 'target_kind_1': 1001}
+[2019-02-08 23:52:44,220] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT collect_items.id AS collect_items_id, collect_items.created_at AS collect_items_created_at, collect_items.updated_at AS collect_items_updated_at, collect_items.user_id AS collect_items_user_id, collect_items.target_id AS collect_items_target_id, collect_items.target_kind AS collect_items_target_kind 
+FROM collect_items 
+WHERE collect_items.target_id = %(target_id_1)s AND collect_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-02-08 23:52:44,221] [INFO] log : {'target_id_1': 1, 'target_kind_1': 1001}
+[2019-02-08 23:52:44,229] [INFO] log : SELECT post_tags.tag_id AS post_tags_tag_id 
+FROM post_tags 
+WHERE post_tags.post_id = %(post_id_1)s
+[2019-02-08 23:52:44,230] [INFO] log : {'post_id_1': 2}
+[2019-02-08 23:52:44,232] [INFO] log : SELECT tags.id AS tags_id, tags.created_at AS tags_created_at, tags.updated_at AS tags_updated_at, tags.name AS tags_name 
+FROM tags 
+WHERE tags.id IN (%(id_1)s, %(id_2)s)
+[2019-02-08 23:52:44,232] [INFO] log : {'id_1': 5, 'id_2': 6}
+[2019-02-08 23:52:44,248] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT like_items.id AS like_items_id, like_items.created_at AS like_items_created_at, like_items.updated_at AS like_items_updated_at, like_items.user_id AS like_items_user_id, like_items.target_id AS like_items_target_id, like_items.target_kind AS like_items_target_kind 
+FROM like_items 
+WHERE like_items.target_id = %(target_id_1)s AND like_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-02-08 23:52:44,248] [INFO] log : {'target_id_1': 2, 'target_kind_1': 1001}
+[2019-02-08 23:52:44,257] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT comment_items.id AS comment_items_id, comment_items.created_at AS comment_items_created_at, comment_items.updated_at AS comment_items_updated_at, comment_items.user_id AS comment_items_user_id, comment_items.target_id AS comment_items_target_id, comment_items.target_kind AS comment_items_target_kind, comment_items.ref_id AS comment_items_ref_id 
+FROM comment_items 
+WHERE comment_items.target_id = %(target_id_1)s AND comment_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-02-08 23:52:44,258] [INFO] log : {'target_id_1': 2, 'target_kind_1': 1001}
+[2019-02-08 23:52:44,265] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT collect_items.id AS collect_items_id, collect_items.created_at AS collect_items_created_at, collect_items.updated_at AS collect_items_updated_at, collect_items.user_id AS collect_items_user_id, collect_items.target_id AS collect_items_target_id, collect_items.target_kind AS collect_items_target_kind 
+FROM collect_items 
+WHERE collect_items.target_id = %(target_id_1)s AND collect_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-02-08 23:52:44,265] [INFO] log : {'target_id_1': 2, 'target_kind_1': 1001}
+[2019-02-08 23:52:44,272] [INFO] log : SELECT post_tags.tag_id AS post_tags_tag_id 
+FROM post_tags 
+WHERE post_tags.post_id = %(post_id_1)s
+[2019-02-08 23:52:44,273] [INFO] log : {'post_id_1': 3}
+[2019-02-08 23:52:44,274] [INFO] log : SELECT tags.id AS tags_id, tags.created_at AS tags_created_at, tags.updated_at AS tags_updated_at, tags.name AS tags_name 
+FROM tags 
+WHERE tags.id IN (%(id_1)s, %(id_2)s)
+[2019-02-08 23:52:44,275] [INFO] log : {'id_1': 8, 'id_2': 7}
+[2019-02-08 23:52:44,283] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT like_items.id AS like_items_id, like_items.created_at AS like_items_created_at, like_items.updated_at AS like_items_updated_at, like_items.user_id AS like_items_user_id, like_items.target_id AS like_items_target_id, like_items.target_kind AS like_items_target_kind 
+FROM like_items 
+WHERE like_items.target_id = %(target_id_1)s AND like_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-02-08 23:52:44,284] [INFO] log : {'target_id_1': 3, 'target_kind_1': 1001}
+[2019-02-08 23:52:44,290] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT comment_items.id AS comment_items_id, comment_items.created_at AS comment_items_created_at, comment_items.updated_at AS comment_items_updated_at, comment_items.user_id AS comment_items_user_id, comment_items.target_id AS comment_items_target_id, comment_items.target_kind AS comment_items_target_kind, comment_items.ref_id AS comment_items_ref_id 
+FROM comment_items 
+WHERE comment_items.target_id = %(target_id_1)s AND comment_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-02-08 23:52:44,290] [INFO] log : {'target_id_1': 3, 'target_kind_1': 1001}
+[2019-02-08 23:52:44,297] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT collect_items.id AS collect_items_id, collect_items.created_at AS collect_items_created_at, collect_items.updated_at AS collect_items_updated_at, collect_items.user_id AS collect_items_user_id, collect_items.target_id AS collect_items_target_id, collect_items.target_kind AS collect_items_target_kind 
+FROM collect_items 
+WHERE collect_items.target_id = %(target_id_1)s AND collect_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-02-08 23:52:44,297] [INFO] log : {'target_id_1': 3, 'target_kind_1': 1001}
+[2019-02-08 23:52:44,301] [INFO] log : SELECT post_tags.tag_id AS post_tags_tag_id 
+FROM post_tags 
+WHERE post_tags.post_id = %(post_id_1)s
+[2019-02-08 23:52:44,301] [INFO] log : {'post_id_1': 4}
+[2019-02-08 23:52:44,303] [INFO] log : SELECT tags.id AS tags_id, tags.created_at AS tags_created_at, tags.updated_at AS tags_updated_at, tags.name AS tags_name 
+FROM tags 
+WHERE tags.id IN (%(id_1)s, %(id_2)s, %(id_3)s, %(id_4)s, %(id_5)s)
+[2019-02-08 23:52:44,303] [INFO] log : {'id_1': 5, 'id_2': 6, 'id_3': 8, 'id_4': 9, 'id_5': 10}
+[2019-02-08 23:52:44,312] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT like_items.id AS like_items_id, like_items.created_at AS like_items_created_at, like_items.updated_at AS like_items_updated_at, like_items.user_id AS like_items_user_id, like_items.target_id AS like_items_target_id, like_items.target_kind AS like_items_target_kind 
+FROM like_items 
+WHERE like_items.target_id = %(target_id_1)s AND like_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-02-08 23:52:44,312] [INFO] log : {'target_id_1': 4, 'target_kind_1': 1001}
+[2019-02-08 23:52:44,318] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT comment_items.id AS comment_items_id, comment_items.created_at AS comment_items_created_at, comment_items.updated_at AS comment_items_updated_at, comment_items.user_id AS comment_items_user_id, comment_items.target_id AS comment_items_target_id, comment_items.target_kind AS comment_items_target_kind, comment_items.ref_id AS comment_items_ref_id 
+FROM comment_items 
+WHERE comment_items.target_id = %(target_id_1)s AND comment_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-02-08 23:52:44,318] [INFO] log : {'target_id_1': 4, 'target_kind_1': 1001}
+[2019-02-08 23:52:44,324] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT collect_items.id AS collect_items_id, collect_items.created_at AS collect_items_created_at, collect_items.updated_at AS collect_items_updated_at, collect_items.user_id AS collect_items_user_id, collect_items.target_id AS collect_items_target_id, collect_items.target_kind AS collect_items_target_kind 
+FROM collect_items 
+WHERE collect_items.target_id = %(target_id_1)s AND collect_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-02-08 23:52:44,324] [INFO] log : {'target_id_1': 4, 'target_kind_1': 1001}
+[2019-02-08 23:52:44,329] [INFO] log : SELECT post_tags.tag_id AS post_tags_tag_id 
+FROM post_tags 
+WHERE post_tags.post_id = %(post_id_1)s
+[2019-02-08 23:52:44,329] [INFO] log : {'post_id_1': 5}
+[2019-02-08 23:52:44,330] [INFO] log : SELECT tags.id AS tags_id, tags.created_at AS tags_created_at, tags.updated_at AS tags_updated_at, tags.name AS tags_name 
+FROM tags 
+WHERE tags.id IN (%(id_1)s, %(id_2)s, %(id_3)s, %(id_4)s, %(id_5)s)
+[2019-02-08 23:52:44,330] [INFO] log : {'id_1': 8, 'id_2': 9, 'id_3': 10, 'id_4': 11, 'id_5': 12}
+[2019-02-08 23:52:44,338] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT like_items.id AS like_items_id, like_items.created_at AS like_items_created_at, like_items.updated_at AS like_items_updated_at, like_items.user_id AS like_items_user_id, like_items.target_id AS like_items_target_id, like_items.target_kind AS like_items_target_kind 
+FROM like_items 
+WHERE like_items.target_id = %(target_id_1)s AND like_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-02-08 23:52:44,338] [INFO] log : {'target_id_1': 5, 'target_kind_1': 1001}
+[2019-02-08 23:52:44,344] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT comment_items.id AS comment_items_id, comment_items.created_at AS comment_items_created_at, comment_items.updated_at AS comment_items_updated_at, comment_items.user_id AS comment_items_user_id, comment_items.target_id AS comment_items_target_id, comment_items.target_kind AS comment_items_target_kind, comment_items.ref_id AS comment_items_ref_id 
+FROM comment_items 
+WHERE comment_items.target_id = %(target_id_1)s AND comment_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-02-08 23:52:44,345] [INFO] log : {'target_id_1': 5, 'target_kind_1': 1001}
+[2019-02-08 23:52:44,351] [INFO] log : SELECT count(*) AS count_1 
+FROM (SELECT collect_items.id AS collect_items_id, collect_items.created_at AS collect_items_created_at, collect_items.updated_at AS collect_items_updated_at, collect_items.user_id AS collect_items_user_id, collect_items.target_id AS collect_items_target_id, collect_items.target_kind AS collect_items_target_kind 
+FROM collect_items 
+WHERE collect_items.target_id = %(target_id_1)s AND collect_items.target_kind = %(target_kind_1)s) AS anon_1
+[2019-02-08 23:52:44,351] [INFO] log : {'target_id_1': 5, 'target_kind_1': 1001}
+[2019-02-08 23:52:44,354] [INFO] log : ROLLBACK
+[2019-02-08 23:52:44,355] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:52:44] "POST /api/post/getPostList HTTP/1.1" 200 -
+[2019-02-08 23:52:44,458] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:52:44] "GET /static/ele_ui_web/favicon.ico HTTP/1.1" 200 -
+[2019-02-08 23:52:44,903] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:52:44] "GET /static/ele_ui_web/static/js/vendor.d9f8435f7a13d4255019.js.map HTTP/1.1" 200 -
+[2019-02-08 23:52:44,907] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:52:44] "GET /static/ele_ui_web/static/js/manifest.c582ee93643d7c50d417.js.map HTTP/1.1" 200 -
+[2019-02-08 23:52:44,909] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:52:44] "GET /static/ele_ui_web/static/js/app.9116e98aa994e2b5edde.js.map HTTP/1.1" 200 -
+[2019-02-08 23:52:44,935] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:52:44] "GET /static/ele_ui_web/static/css/app.ec55e1543cb9e0de8f55453c106d7e4e.css.map HTTP/1.1" 200 -
+[2019-02-08 23:52:46,756] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:52:46] "GET /index/ HTTP/1.1" 200 -
+[2019-02-08 23:52:46,799] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:52:46] "GET /_debug_toolbar/static/js/jquery.js HTTP/1.1" 200 -
+[2019-02-08 23:52:46,802] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:52:46] "GET /_debug_toolbar/static/js/jquery.tablesorter.js HTTP/1.1" 200 -
+[2019-02-08 23:52:46,802] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:52:46] "GET /static/ele_ui_web/static/js/manifest.c582ee93643d7c50d417.js HTTP/1.1" 200 -
+[2019-02-08 23:52:46,803] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:52:46] "GET /static/ele_ui_web/static/css/app.ec55e1543cb9e0de8f55453c106d7e4e.css HTTP/1.1" 200 -
+[2019-02-08 23:52:46,804] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:52:46] "GET /static/ele_ui_web/static/js/vendor.d9f8435f7a13d4255019.js HTTP/1.1" 200 -
+[2019-02-08 23:52:46,807] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:52:46] "GET /static/ele_ui_web/static/js/app.9116e98aa994e2b5edde.js HTTP/1.1" 200 -
+[2019-02-08 23:52:46,812] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:52:46] "GET /_debug_toolbar/static/js/toolbar.js HTTP/1.1" 200 -
+[2019-02-08 23:52:46,910] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:52:46] "GET /static/ele_ui_web/static/js/manifest.c582ee93643d7c50d417.js.map HTTP/1.1" 200 -
+[2019-02-08 23:52:46,915] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:52:46] "GET /static/ele_ui_web/static/css/app.ec55e1543cb9e0de8f55453c106d7e4e.css.map HTTP/1.1" 200 -
+[2019-02-08 23:52:47,156] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:52:47] "GET /static/ele_ui_web/static/js/vendor.d9f8435f7a13d4255019.js.map HTTP/1.1" 200 -
+[2019-02-08 23:52:47,157] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:52:47] "GET /static/ele_ui_web/static/js/app.9116e98aa994e2b5edde.js.map HTTP/1.1" 200 -
+[2019-02-08 23:52:47,162] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:52:47] "GET /static/html/apple_watch.html HTTP/1.1" 200 -
+[2019-02-08 23:52:47,194] [INFO] post_api : getPostList
+[2019-02-08 23:52:47,197] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:52:47] "POST /api/post/getTag HTTP/1.1" 200 -
+[2019-02-08 23:52:47,234] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:52:47] "GET /_debug_toolbar/static/css/toolbar.css?0.013740166065647097 HTTP/1.1" 200 -
+[2019-02-08 23:52:47,242] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:52:47] "POST /api/post/getPostList HTTP/1.1" 200 -
+[2019-02-08 23:52:47,400] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:52:47] "GET /_debug_toolbar/static/img/tick-red.png HTTP/1.1" 200 -
+[2019-02-08 23:52:47,704] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:52:47] "GET /static/ele_ui_web/favicon.ico HTTP/1.1" 200 -
+[2019-02-08 23:53:03,049] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:53:03] "GET /_debug_toolbar/static/js/jquery.js HTTP/1.1" 200 -
+[2019-02-08 23:53:03,650] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:53:03] "GET /favicon.ico HTTP/1.1" 200 -
+[2019-02-08 23:53:29,683] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:53:29] "GET /_debug_toolbar/static/ HTTP/1.1" 200 -
+[2019-02-08 23:53:29,988] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:53:29] "GET /favicon.ico HTTP/1.1" 200 -
+[2019-02-08 23:53:33,640] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:53:33] "GET /_debug_toolbar HTTP/1.1" 200 -
+[2019-02-08 23:53:33,948] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:53:33] "GET /favicon.ico HTTP/1.1" 200 -
+[2019-02-08 23:53:55,680] [INFO] _internal :  * Detected change in '/code/auto_app.py', reloading
+[2019-02-08 23:53:55,861] [INFO] _internal :  * Restarting with stat
+[2019-02-08 23:53:57,189] [INFO] _internal :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2019-02-08 23:54:02,571] [DEBUG] _internal : Initializing Flask-DebugToolbar log handler
+[2019-02-08 23:54:02,635] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:54:02] "GET /index/ HTTP/1.1" 200 -
+[2019-02-08 23:54:02,663] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:54:02] "GET /static/ele_ui_web/static/css/app.ec55e1543cb9e0de8f55453c106d7e4e.css HTTP/1.1" 200 -
+[2019-02-08 23:54:02,666] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:54:02] "GET /static/ele_ui_web/static/js/manifest.c582ee93643d7c50d417.js HTTP/1.1" 200 -
+[2019-02-08 23:54:02,669] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:54:02] "GET /static/ele_ui_web/static/js/vendor.d9f8435f7a13d4255019.js HTTP/1.1" 200 -
+[2019-02-08 23:54:02,670] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:54:02] "GET /static/ele_ui_web/static/js/app.9116e98aa994e2b5edde.js HTTP/1.1" 200 -
+[2019-02-08 23:54:02,679] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:54:02] "GET /_debug_toolbar/static/js/jquery.js HTTP/1.1" 200 -
+[2019-02-08 23:54:02,680] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:54:02] "GET /_debug_toolbar/static/js/jquery.tablesorter.js HTTP/1.1" 200 -
+[2019-02-08 23:54:02,682] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:54:02] "GET /_debug_toolbar/static/js/toolbar.js HTTP/1.1" 200 -
+[2019-02-08 23:54:02,770] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:54:02] "GET /static/ele_ui_web/static/js/manifest.c582ee93643d7c50d417.js.map HTTP/1.1" 200 -
+[2019-02-08 23:54:02,809] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:54:02] "GET /static/ele_ui_web/static/css/app.ec55e1543cb9e0de8f55453c106d7e4e.css.map HTTP/1.1" 200 -
+[2019-02-08 23:54:03,091] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:54:03] "GET /static/ele_ui_web/static/js/app.9116e98aa994e2b5edde.js.map HTTP/1.1" 200 -
+[2019-02-08 23:54:03,094] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:54:03] "GET /static/ele_ui_web/static/js/vendor.d9f8435f7a13d4255019.js.map HTTP/1.1" 200 -
+[2019-02-08 23:54:03,097] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:54:03] "GET /static/html/apple_watch.html HTTP/1.1" 200 -
+[2019-02-08 23:54:03,122] [INFO] post_api : getPostList
+[2019-02-08 23:54:03,125] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:54:03] "POST /api/post/getTag HTTP/1.1" 200 -
+[2019-02-08 23:54:03,151] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:54:03] "GET /_debug_toolbar/static/css/toolbar.css?0.30008804418080537 HTTP/1.1" 200 -
+[2019-02-08 23:54:03,188] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:54:03] "POST /api/post/getPostList HTTP/1.1" 200 -
+[2019-02-08 23:54:03,269] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:54:03] "GET /_debug_toolbar/static/img/tick-red.png HTTP/1.1" 200 -
+[2019-02-08 23:54:05,714] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:54:05] "GET /index/ HTTP/1.1" 200 -
+[2019-02-08 23:54:05,772] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:54:05] "GET /static/ele_ui_web/static/js/vendor.d9f8435f7a13d4255019.js HTTP/1.1" 200 -
+[2019-02-08 23:54:05,775] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:54:05] "GET /static/ele_ui_web/static/js/app.9116e98aa994e2b5edde.js HTTP/1.1" 200 -
+[2019-02-08 23:54:05,775] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:54:05] "GET /static/ele_ui_web/static/js/manifest.c582ee93643d7c50d417.js HTTP/1.1" 200 -
+[2019-02-08 23:54:05,776] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:54:05] "GET /_debug_toolbar/static/js/jquery.tablesorter.js HTTP/1.1" 200 -
+[2019-02-08 23:54:05,778] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:54:05] "GET /_debug_toolbar/static/js/jquery.js HTTP/1.1" 200 -
+[2019-02-08 23:54:05,779] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:54:05] "GET /static/ele_ui_web/static/css/app.ec55e1543cb9e0de8f55453c106d7e4e.css HTTP/1.1" 200 -
+[2019-02-08 23:54:05,783] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:54:05] "GET /_debug_toolbar/static/js/toolbar.js HTTP/1.1" 200 -
+[2019-02-08 23:54:05,859] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:54:05] "GET /static/ele_ui_web/static/js/manifest.c582ee93643d7c50d417.js.map HTTP/1.1" 200 -
+[2019-02-08 23:54:05,875] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:54:05] "GET /static/ele_ui_web/static/css/app.ec55e1543cb9e0de8f55453c106d7e4e.css.map HTTP/1.1" 200 -
+[2019-02-08 23:54:06,098] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:54:06] "GET /static/ele_ui_web/static/js/vendor.d9f8435f7a13d4255019.js.map HTTP/1.1" 200 -
+[2019-02-08 23:54:06,101] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:54:06] "GET /static/ele_ui_web/static/js/app.9116e98aa994e2b5edde.js.map HTTP/1.1" 200 -
+[2019-02-08 23:54:06,102] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:54:06] "GET /static/html/apple_watch.html HTTP/1.1" 200 -
+[2019-02-08 23:54:06,123] [INFO] post_api : getPostList
+[2019-02-08 23:54:06,126] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:54:06] "POST /api/post/getTag HTTP/1.1" 200 -
+[2019-02-08 23:54:06,152] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:54:06] "GET /_debug_toolbar/static/css/toolbar.css?0.8268961669988852 HTTP/1.1" 200 -
+[2019-02-08 23:54:06,155] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:54:06] "POST /api/post/getPostList HTTP/1.1" 200 -
+[2019-02-08 23:54:06,299] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:54:06] "GET /_debug_toolbar/static/img/tick-red.png HTTP/1.1" 200 -
+[2019-02-08 23:54:06,611] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:54:06] "GET /static/ele_ui_web/favicon.ico HTTP/1.1" 200 -
+[2019-02-08 23:54:18,729] [INFO] _internal :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2019-02-08 23:55:11,516] [INFO] _internal :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2019-02-08 23:55:13,060] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:55:13] "GET /index/ HTTP/1.1" 200 -
+[2019-02-08 23:55:13,113] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:55:13] "GET /static/ele_ui_web/static/css/app.ec55e1543cb9e0de8f55453c106d7e4e.css HTTP/1.1" 200 -
+[2019-02-08 23:55:13,114] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:55:13] "GET /static/ele_ui_web/static/js/manifest.c582ee93643d7c50d417.js HTTP/1.1" 200 -
+[2019-02-08 23:55:13,117] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:55:13] "GET /static/ele_ui_web/static/js/vendor.d9f8435f7a13d4255019.js HTTP/1.1" 200 -
+[2019-02-08 23:55:13,119] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:55:13] "GET /static/ele_ui_web/static/js/app.9116e98aa994e2b5edde.js HTTP/1.1" 200 -
+[2019-02-08 23:55:13,216] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:55:13] "GET /static/ele_ui_web/static/js/manifest.c582ee93643d7c50d417.js.map HTTP/1.1" 200 -
+[2019-02-08 23:55:13,238] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:55:13] "GET /static/ele_ui_web/static/css/app.ec55e1543cb9e0de8f55453c106d7e4e.css.map HTTP/1.1" 200 -
+[2019-02-08 23:55:13,462] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:55:13] "GET /static/ele_ui_web/static/js/vendor.d9f8435f7a13d4255019.js.map HTTP/1.1" 200 -
+[2019-02-08 23:55:13,463] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:55:13] "GET /static/ele_ui_web/static/js/app.9116e98aa994e2b5edde.js.map HTTP/1.1" 200 -
+[2019-02-08 23:55:13,465] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:55:13] "GET /static/html/apple_watch.html HTTP/1.1" 200 -
+[2019-02-08 23:55:13,487] [INFO] post_api : getPostList
+[2019-02-08 23:55:13,489] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:55:13] "POST /api/post/getTag HTTP/1.1" 200 -
+[2019-02-08 23:55:13,551] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:55:13] "POST /api/post/getPostList HTTP/1.1" 200 -
+[2019-02-08 23:55:13,879] [INFO] _internal : 127.0.0.1 - - [08/Feb/2019 23:55:13] "GET /static/ele_ui_web/favicon.ico HTTP/1.1" 200 -
+[2019-02-08 23:55:32,362] [DEBUG] _internal : Initializing Flask-DebugToolbar log handler
+[2019-02-08 23:55:32,449] [INFO] _internal : 172.24.0.6 - - [08/Feb/2019 23:55:32] "GET /index/ HTTP/1.0" 200 -
+[2019-02-08 23:55:32,856] [INFO] post_api : getPostList
+[2019-02-08 23:55:32,863] [INFO] _internal : 172.24.0.6 - - [08/Feb/2019 23:55:32] "POST /api/post/getTag HTTP/1.0" 200 -
+[2019-02-08 23:55:32,858] [ERROR] app : Exception on /api/post/getPostList [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 493, in connect
+    sock = self._connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+OSError: [Errno 99] Cannot assign requested address
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/walrus/database.py", line 118, in execute_command
+    connection.send_command(*args)
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 594, in send_packed_command
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 498, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 99 connecting to localhost:6379. Cannot assign requested address.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 493, in connect
+    sock = self._connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+OSError: [Errno 99] Cannot assign requested address
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask_debugtoolbar/__init__.py", line 125, in dispatch_request
+    return view_func(**req.view_args)
+  File "/usr/local/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/code/api_views/base/api.py", line 28, in dispatch_request
+    return api_method()
+  File "/code/api_views/post_api.py", line 43, in getPostList
+    res = Post.get_posts_list(page, limit, order_by)
+  File "/code/base/mc.py", line 100, in _
+    r = rdb.get(key) if not force else None
+  File "/usr/local/lib/python3.6/site-packages/redis/client.py", line 1207, in get
+    return self.execute_command('GET', name)
+  File "/usr/local/lib/python3.6/site-packages/walrus/database.py", line 125, in execute_command
+    connection.send_command(*args)
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 594, in send_packed_command
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 498, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 99 connecting to localhost:6379. Cannot assign requested address.
+[2019-02-08 23:55:32,902] [INFO] _internal : 172.24.0.6 - - [08/Feb/2019 23:55:32] "POST /api/post/getPostList HTTP/1.0" 500 -
+[2019-02-08 23:55:32,920] [ERROR] _internal : Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python3.6/site-packages/werkzeug/serving.py", line 258, in execute
+    application_iter = app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2295, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1748, in handle_exception
+    return self.finalize_request(handler(e), from_error_handler=True)
+  File "/code/flask_app/app.py", line 139, in error_handler
+    msg = error.message
+AttributeError: 'ConnectionError' object has no attribute 'message'
+[2019-02-08 23:55:53,797] [INFO] _internal :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2019-02-08 23:55:55,932] [INFO] _internal : 172.24.0.6 - - [08/Feb/2019 23:55:55] "GET /index/ HTTP/1.0" 200 -
+[2019-02-08 23:55:56,477] [INFO] post_api : getPostList
+[2019-02-08 23:55:56,488] [INFO] _internal : 172.24.0.6 - - [08/Feb/2019 23:55:56] "POST /api/post/getTag HTTP/1.0" 200 -
+[2019-02-08 23:55:56,480] [ERROR] app : Exception on /api/post/getPostList [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 493, in connect
+    sock = self._connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+OSError: [Errno 99] Cannot assign requested address
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/walrus/database.py", line 118, in execute_command
+    connection.send_command(*args)
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 594, in send_packed_command
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 498, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 99 connecting to localhost:6379. Cannot assign requested address.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 493, in connect
+    sock = self._connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+OSError: [Errno 99] Cannot assign requested address
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/code/api_views/base/api.py", line 28, in dispatch_request
+    return api_method()
+  File "/code/api_views/post_api.py", line 43, in getPostList
+    res = Post.get_posts_list(page, limit, order_by)
+  File "/code/base/mc.py", line 100, in _
+    r = rdb.get(key) if not force else None
+  File "/usr/local/lib/python3.6/site-packages/redis/client.py", line 1207, in get
+    return self.execute_command('GET', name)
+  File "/usr/local/lib/python3.6/site-packages/walrus/database.py", line 125, in execute_command
+    connection.send_command(*args)
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 594, in send_packed_command
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 498, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 99 connecting to localhost:6379. Cannot assign requested address.
+[2019-02-08 23:55:56,526] [INFO] _internal : 172.24.0.6 - - [08/Feb/2019 23:55:56] "POST /api/post/getPostList HTTP/1.0" 500 -
+[2019-02-08 23:55:56,546] [ERROR] _internal : Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python3.6/site-packages/werkzeug/serving.py", line 258, in execute
+    application_iter = app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2295, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1748, in handle_exception
+    return self.finalize_request(handler(e), from_error_handler=True)
+  File "/code/flask_app/app.py", line 139, in error_handler
+    msg = error.message
+AttributeError: 'ConnectionError' object has no attribute 'message'
