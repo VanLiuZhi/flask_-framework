@@ -7,7 +7,7 @@
 1. 数据库
     1. MySQL(主数据库)，使用SQLALchemy
     2. Redis(缓存，副数据库)
-    3. MongoDB(副数据库)，使用MongoEngine
+    3. MongoDB(副数据库)，使用MongoEngine (没用到)
 
 2. 任务队列
     1. Celery
@@ -27,12 +27,8 @@
 
 1. 模型
     1. User 用户
-    2. Contact 
-    3. Post 
-    4. Comment 评论
-    5. Like 点赞
-    6. Collect 收藏
-    7. Tag 标签
+    2. Post 
+    3. Tag 标签
 
 
 ### 启动文件
@@ -45,3 +41,5 @@
 1. flask db init
 2. flask db migrate
 3. flask db upgrade
+
+## 部分内容是测试写的，如果从博客来的，不要在意
