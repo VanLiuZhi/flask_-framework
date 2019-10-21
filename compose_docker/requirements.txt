@@ -77,7 +77,7 @@ urllib3==1.24.1
 vine==1.2.0
 walrus==0.6.4
 wcwidth==0.1.7
-Werkzeug==0.14.1
+Werkzeug==0.15.3
 WTForms==2.2.1
 social-auth-app-flask-sqlalchemy==1.0.1
 flask_security==3.0.0
